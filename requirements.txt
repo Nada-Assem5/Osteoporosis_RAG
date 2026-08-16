@@ -1,0 +1,6 @@
+# PDF Ingestion & Layout-Aware Cleaning
+unstructured[pdf]>=0.14.0
+
+# Testing & Quality
+pytest>=8.0.0
+pytest-cov>=5.0.0

@@ -1,0 +1,63 @@
+Screening for Osteoporosis to Prevent Fractures
+US Preventive Services Task Force Recommendation Statement
+
+Summary of Recommendations
+• Women 65 years or older: The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older. (Grade B)
+• Postmenopausal women younger than 65 years with 1 or more risk factors for osteoporosis: The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years who are at increased risk for an osteoporotic fracture as estimated by clinical risk assessment. (Grade B)
+• Men: The USPSTF concludes that the current evidence is insufficient to assess the balance of benefits and harms of screening for osteoporosis to prevent osteoporotic fractures in men. (Grade I statement)
+
+Importance
+Osteoporosis is a skeletal disorder characterized by decreased bone mass leading to increased bone fragility and fracture risk. Osteoporotic fractures are associated with psychological distress, subsequent fractures, loss of independence, reduced ability to perform activities of daily living, and death. Morbidity from fragility fractures at central skeletal sites, particularly the hip, is much greater than morbidity from fragility fractures at other sites. Evidence shows that only 40% to 60% of persons experiencing a hip fracture recover their prefracture level of mobility and ability to perform activities of daily living.
+The age-adjusted prevalence of osteoporosis is 12.6% among community-dwelling US residents 50 years or older. Prevalence of osteoporosis is higher among persons 65 years or older (27.1% in women and 5.7% in men), in women compared with men, and among Asian, Hispanic, and White persons.
+
+USPSTF Assessment of Magnitude of Net Benefit
+The US Preventive Services Task Force (USPSTF) concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older has moderate net benefit.
+The USPSTF concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years at increased risk has moderate net benefit.
+The USPSTF concludes that the evidence is insufficient and the balance of benefits and harms for screening for osteoporosis to prevent osteoporotic fractures in men cannot be determined.
+
+Practice Considerations
+
+Patient Population Under Consideration
+This recommendation applies to adults 40 years or older without known osteoporosis or history of fragility fractures. It does not apply to persons with secondary osteoporosis due to an underlying medical condition (eg, cancer, metabolic bone diseases, or hyperthyroidism) or chronic use of a medication (eg, glucocorticoids) associated with bone loss.
+In this recommendation statement, the recommendations are stratified by "men" and "women," although the net benefit estimates are driven by sex as assigned at birth (ie, male/female) rather than gender identity. In describing the evidence, sex terms are reported as used by study authors, which are typically "men" and "women." Transgender men and transgender women who have not undergone any hormonal treatment associated with transitioning likely have the same risks as persons assigned female and male sex at birth; however, they should consult with their clinician to determine which recommendation best applies to them.
+
+Definitions
+In 1994, the World Health Organization defined osteoporosis in postmenopausal White women as bone density at the hip or lumbar spine that is 2.5 standard deviations or lower (T score ≤ -2.5) than the mean bone mineral density (BMD) measured at that site for a reference population of young healthy White women. This ultimately became the reference standard for persons of all racial and ethnic groups, and for males and females.
+Fragility fractures (also known as "low-energy" or "low-trauma" fractures) are fractures sustained from a fall from standing height or lower that would not cause a fracture in most healthy persons.
+Major osteoporotic fracture (MOF) is defined as a fracture of the hip, spine, wrist, or shoulder.
+
+Assessment of Risk
+Although bone density is an important risk factor for fragility fractures, advancing age is a stronger determinant. Older adults have much higher fracture rates than younger adults with the same BMD because of concurrent increasing risk from declining bone quality and an increasing risk of falling.
+When deciding which postmenopausal women younger than 65 years to screen, the USPSTF suggests a 2-step approach. Clinicians can first determine the presence of risk factors for osteoporosis and fracture. These include menopausal status, low body weight, parental history of hip fracture, cigarette smoking, and excess alcohol consumption. For postmenopausal women younger than 65 years with 1 or more risk factors (in addition to postmenopausal status), the USPSTF then recommends using a clinical risk assessment tool (ie, a tool designed to identify osteoporosis or predict fracture risk) to estimate risk and help decide whether screening is warranted.
+Other medical conditions and medications (eg, corticosteroids or diabetes treated with insulin) may also increase risk of osteoporosis and, subsequently, fragility fractures.
+
+Screening Tests and Screening Strategies
+The most commonly used bone measurement test to screen for osteoporosis is dual-energy X-ray absorptiometry (DXA) at a central site (eg, total hip, femoral neck, or lumbar spine). Centrally measured DXA correlates with bone strength and clinical fracture outcomes and uses low doses of radiation. Fracture risk at a specific site is best predicted if bone density is measured at that site.
+Risk assessment tools designed to estimate future fracture risk that can be used with or without BMD as a risk factor input include FRAX, the Fracture Risk Calculator (FRC), and the Garvan Fracture Risk Calculator. Of note, the predictive accuracy of these tools often improves when BMD is included in the risk assessment calculation. Risk assessment tools designed to identify osteoporosis (eg, the Osteoporosis Risk Assessment Instrument [ORAI] and the Osteoporosis Self-assessment Tool [OST]) generally require fewer risk inputs than tools designed to predict fracture risk.
+
+Table 2: Characteristics of Selected Risk Assessment Tools for Osteoporosis or Fracture Risk
+• OST (<2 frequently used as threshold to define increased osteoporosis risk)
+  Scoring: (Weight in kg - Age in years) * 0.2
+• ORAI (≥9 frequently used as threshold to define increased osteoporosis risk)
+  Age: ≥75: 15; 65-74: 9; 55-64: 5; 45-54: 0
+  Weight: <60 kg: 9; 60-69 kg: 3; ≥70 kg: 0
+  No current estrogen use: 2
+• FRAX (predicts 10-year probability of hip fracture or MOF for persons aged 40 to 90 years)
+  Inputs: Age, Sex, Weight, Height, Previous fracture, Parental hip fracture, Current smoking, Glucocorticoid use, Rheumatoid arthritis, Secondary osteoporosis, Alcohol consumption ≥ 3 units/day
+
+Screening Intervals
+Cohort studies evaluating screening intervals suggest that repeating BMD testing at an interval of 4 to 8 years does not result in additional accuracy in predicting fractures. Other studies attempted to identify appropriate screening intervals based on the time in which it takes individuals to transition to osteoporosis or a certain fracture risk threshold. The screening intervals varied across studies, but generally, transition to osteoporosis occurred over shorter intervals for individuals with lower baseline T scores and older age (eg, almost 17 years for 10% of women with normal BMD at baseline to develop osteoporosis vs about 5 years for women with a baseline T score in the -1.50 to -1.99 range).
+
+Treatment
+The US Food and Drug Administration has approved several drug therapies for the treatment or prevention of osteoporosis, including bisphosphonates, denosumab, romosozumab, parathyroid hormone, raloxifene, calcitonin, and estrogen (with or without progesterone).
+Clinicians should be aware that treatment recommendations that are based on risk assessment tools with race-specific calculators (eg, FRAX) but that use fixed fracture risk treatment thresholds not specific to race and ethnicity may be less likely to identify Asian, Black, and Hispanic persons as high risk and, subsequently, may be less likely to offer treatment compared with White persons of the same age, BMD, and clinical risk profile.
+
+Suggestions for Practice Regarding the I Statement (Men)
+When deciding whether to screen for osteoporosis to prevent osteoporotic fractures in men, clinicians should consider the following factors:
+Age-adjusted prevalence of osteoporosis is 4.4% in men aged 50 and over (and 5.7% in men 65 and over). Although osteoporosis and fragility fractures are more common in women than men, excess mortality related to osteoporosis and fragility fractures is greater in men. Men have similar risk factors associated with fragility fractures as women, including increasing age, low BMI, excessive alcohol intake, current smoking, chronic corticosteroid use, history of prior fractures, history of falls within the past year, hypogonadism, history of cerebrovascular accident, and history of diabetes. In the absence of evidence, clinicians and their patients should decide together whether to be screened.
+
+Recommendations of Others
+• Canadian Task Force on Preventive Health Care: Recommends screening women 65 years or older for fracture risk with the Canadian FRAX tool to facilitate shared decision-making about pharmacotherapy. If pharmacotherapy is considered, it then recommends ordering DXA testing to reestimate fracture risk with BMD input. It recommended against screening men 40 years or older and women younger than 65 years.
+• American Association of Clinical Endocrinologists (AACE): Recommends evaluating all women 50 years or older for fracture risk and considering BMD measurement based on clinical fracture risk profile.
+• American College of Obstetricians and Gynecologists (ACOG): Recommends BMD screening with DXA beginning at age 65 years in all women and selective screening with BMD in women younger than 65 years who have an elevated risk based on a formal clinical risk assessment tool.
+• American Academy of Family Physicians (AAFP): Recommends against DXA screening in women younger than 65 years and in men younger than 70 years with no risk factors.
