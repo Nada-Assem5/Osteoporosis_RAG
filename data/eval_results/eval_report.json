@@ -1,0 +1,1030 @@
+{
+  "retrieval": {
+    "keyword": {
+      "mode": "keyword",
+      "queries": 16,
+      "precision_at_3": 0.8958,
+      "precision_at_5": 0.9125,
+      "hit_at_3": 93.75,
+      "hit_at_5": 100.0,
+      "mrr": 0.95
+    },
+    "semantic": {
+      "mode": "semantic",
+      "queries": 16,
+      "precision_at_3": 0.6667,
+      "precision_at_5": 0.675,
+      "hit_at_3": 87.5,
+      "hit_at_5": 100.0,
+      "mrr": 0.8125
+    },
+    "hybrid": {
+      "mode": "hybrid",
+      "queries": 16,
+      "precision_at_3": 0.8958,
+      "precision_at_5": 0.875,
+      "hit_at_3": 93.75,
+      "hit_at_5": 93.75,
+      "mrr": 0.9375
+    }
+  },
+  "citation_accuracy": {
+    "total_citations_checked": 48,
+    "correct_citations": 29,
+    "citation_accuracy_pct": 60.42
+  },
+  "faithfulness": {
+    "total_claims_generated": 64,
+    "supported_claims": 57,
+    "unsupported_claims": 7,
+    "faithfulness_pct": 89.06,
+    "unsupported_claim_rate_pct": 10.94
+  },
+  "grid_comparison": {
+    "total_queries": 16,
+    "configs_tested": 3,
+    "modes_tested": [
+      "keyword",
+      "semantic",
+      "hybrid"
+    ],
+    "top_k_tested": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "grid_matrix": [
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "KEYWORD",
+        "top_k": 1,
+        "precision_at_k": 0.875,
+        "hit_at_k_pct": 87.5,
+        "mrr": 0.875,
+        "avg_top1_similarity": 0.2782,
+        "latency_ms": 3.97
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "KEYWORD",
+        "top_k": 3,
+        "precision_at_k": 0.8958,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.2782,
+        "latency_ms": 4.02
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "KEYWORD",
+        "top_k": 5,
+        "precision_at_k": 0.9125,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.2782,
+        "latency_ms": 4.83
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "KEYWORD",
+        "top_k": 10,
+        "precision_at_k": 0.8375,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.2782,
+        "latency_ms": 4.44
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "SEMANTIC",
+        "top_k": 1,
+        "precision_at_k": 0.625,
+        "hit_at_k_pct": 62.5,
+        "mrr": 0.625,
+        "avg_top1_similarity": 0.4671,
+        "latency_ms": 5.92
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "SEMANTIC",
+        "top_k": 3,
+        "precision_at_k": 0.6875,
+        "hit_at_k_pct": 87.5,
+        "mrr": 0.7292,
+        "avg_top1_similarity": 0.4671,
+        "latency_ms": 5.68
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "SEMANTIC",
+        "top_k": 5,
+        "precision_at_k": 0.6625,
+        "hit_at_k_pct": 87.5,
+        "mrr": 0.7292,
+        "avg_top1_similarity": 0.4671,
+        "latency_ms": 5.88
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "SEMANTIC",
+        "top_k": 10,
+        "precision_at_k": 0.6187,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.7361,
+        "avg_top1_similarity": 0.4671,
+        "latency_ms": 6.62
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "HYBRID",
+        "top_k": 1,
+        "precision_at_k": 0.875,
+        "hit_at_k_pct": 87.5,
+        "mrr": 0.875,
+        "avg_top1_similarity": 0.9776,
+        "latency_ms": 16.43
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "HYBRID",
+        "top_k": 3,
+        "precision_at_k": 0.8958,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.9776,
+        "latency_ms": 10.37
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "HYBRID",
+        "top_k": 5,
+        "precision_at_k": 0.9125,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.9776,
+        "latency_ms": 10.4
+      },
+      {
+        "chunk_config": "100 tok (~400 ch) / 20 tok ovlp",
+        "tokens": 100,
+        "overlap_tokens": 20,
+        "chars": 400,
+        "total_chunks": 454,
+        "search_mode": "HYBRID",
+        "top_k": 10,
+        "precision_at_k": 0.8312,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.9776,
+        "latency_ms": 10.44
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "KEYWORD",
+        "top_k": 1,
+        "precision_at_k": 0.9375,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9375,
+        "avg_top1_similarity": 0.2391,
+        "latency_ms": 4.24
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "KEYWORD",
+        "top_k": 3,
+        "precision_at_k": 0.8958,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9375,
+        "avg_top1_similarity": 0.2391,
+        "latency_ms": 5.11
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "KEYWORD",
+        "top_k": 5,
+        "precision_at_k": 0.9125,
+        "hit_at_k_pct": 100.0,
+        "mrr": 0.95,
+        "avg_top1_similarity": 0.2391,
+        "latency_ms": 3.16
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "KEYWORD",
+        "top_k": 10,
+        "precision_at_k": 0.8438,
+        "hit_at_k_pct": 100.0,
+        "mrr": 0.95,
+        "avg_top1_similarity": 0.2391,
+        "latency_ms": 3.3
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "SEMANTIC",
+        "top_k": 1,
+        "precision_at_k": 0.6875,
+        "hit_at_k_pct": 68.75,
+        "mrr": 0.6875,
+        "avg_top1_similarity": 0.4341,
+        "latency_ms": 4.6
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "SEMANTIC",
+        "top_k": 3,
+        "precision_at_k": 0.6667,
+        "hit_at_k_pct": 87.5,
+        "mrr": 0.7812,
+        "avg_top1_similarity": 0.4341,
+        "latency_ms": 3.49
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "SEMANTIC",
+        "top_k": 5,
+        "precision_at_k": 0.6875,
+        "hit_at_k_pct": 100.0,
+        "mrr": 0.8125,
+        "avg_top1_similarity": 0.4341,
+        "latency_ms": 3.69
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "SEMANTIC",
+        "top_k": 10,
+        "precision_at_k": 0.675,
+        "hit_at_k_pct": 100.0,
+        "mrr": 0.8125,
+        "avg_top1_similarity": 0.4341,
+        "latency_ms": 4.0
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "HYBRID",
+        "top_k": 1,
+        "precision_at_k": 0.9375,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9375,
+        "avg_top1_similarity": 0.9707,
+        "latency_ms": 7.55
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "HYBRID",
+        "top_k": 3,
+        "precision_at_k": 0.8958,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9375,
+        "avg_top1_similarity": 0.9707,
+        "latency_ms": 7.2
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "HYBRID",
+        "top_k": 5,
+        "precision_at_k": 0.875,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9375,
+        "avg_top1_similarity": 0.9707,
+        "latency_ms": 8.74
+      },
+      {
+        "chunk_config": "150 tok (~600 ch) / 30 tok ovlp",
+        "tokens": 150,
+        "overlap_tokens": 30,
+        "chars": 600,
+        "total_chunks": 292,
+        "search_mode": "HYBRID",
+        "top_k": 10,
+        "precision_at_k": 0.8375,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9375,
+        "avg_top1_similarity": 0.9707,
+        "latency_ms": 9.78
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "KEYWORD",
+        "top_k": 1,
+        "precision_at_k": 0.875,
+        "hit_at_k_pct": 87.5,
+        "mrr": 0.875,
+        "avg_top1_similarity": 0.2073,
+        "latency_ms": 2.61
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "KEYWORD",
+        "top_k": 3,
+        "precision_at_k": 0.875,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.2073,
+        "latency_ms": 2.34
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "KEYWORD",
+        "top_k": 5,
+        "precision_at_k": 0.8625,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.2073,
+        "latency_ms": 2.34
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "KEYWORD",
+        "top_k": 10,
+        "precision_at_k": 0.8438,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.2073,
+        "latency_ms": 2.73
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "SEMANTIC",
+        "top_k": 1,
+        "precision_at_k": 0.6875,
+        "hit_at_k_pct": 68.75,
+        "mrr": 0.6875,
+        "avg_top1_similarity": 0.4172,
+        "latency_ms": 2.08
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "SEMANTIC",
+        "top_k": 3,
+        "precision_at_k": 0.6875,
+        "hit_at_k_pct": 81.25,
+        "mrr": 0.75,
+        "avg_top1_similarity": 0.4172,
+        "latency_ms": 2.07
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "SEMANTIC",
+        "top_k": 5,
+        "precision_at_k": 0.7375,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.7781,
+        "avg_top1_similarity": 0.4172,
+        "latency_ms": 2.12
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "SEMANTIC",
+        "top_k": 10,
+        "precision_at_k": 0.7125,
+        "hit_at_k_pct": 100.0,
+        "mrr": 0.7871,
+        "avg_top1_similarity": 0.4172,
+        "latency_ms": 2.77
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "HYBRID",
+        "top_k": 1,
+        "precision_at_k": 0.875,
+        "hit_at_k_pct": 87.5,
+        "mrr": 0.875,
+        "avg_top1_similarity": 0.967,
+        "latency_ms": 6.61
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "HYBRID",
+        "top_k": 3,
+        "precision_at_k": 0.875,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.967,
+        "latency_ms": 5.53
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "HYBRID",
+        "top_k": 5,
+        "precision_at_k": 0.8625,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.967,
+        "latency_ms": 4.78
+      },
+      {
+        "chunk_config": "250 tok (~1000 ch) / 50 tok ovlp",
+        "tokens": 250,
+        "overlap_tokens": 50,
+        "chars": 1000,
+        "total_chunks": 164,
+        "search_mode": "HYBRID",
+        "top_k": 10,
+        "precision_at_k": 0.8,
+        "hit_at_k_pct": 93.75,
+        "mrr": 0.9062,
+        "avg_top1_similarity": 0.967,
+        "latency_ms": 4.65
+      }
+    ],
+    "per_query_breakdown": [
+      {
+        "query": "When should a DXA bone density scan be offered according to NICE guidelines?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_042"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_042",
+            "section": "1.4 Bone density assessment",
+            "similarity_score": 0.9841,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
+            "section": "1.4 Bone density assessment",
+            "similarity_score": 0.9621,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_052",
+            "section": "1.4 Bone density assessment",
+            "similarity_score": 0.9387,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "What is the USPSTF screening recommendation for osteoporosis in women aged 65 and older?",
+        "expected_chunk_ids": [
+          "osteoporosis-screening-final-recommendation_chk_005",
+          "osteoporosis-screening-final-recommendation_chk_010"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_006",
+            "section": "General Overview",
+            "similarity_score": 0.9919,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_045",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9766,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_005",
+            "section": "General Overview",
+            "similarity_score": 0.9541,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "Which clinical risk prediction tools are recommended for calculating 10-year fracture risk?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_030",
+          "osteoporosis-screening-final-recommendation_chk_022"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_034",
+            "section": "1.3 Risk prediction tools",
+            "similarity_score": 1.0,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_030",
+            "section": "1.3 Risk prediction tools",
+            "similarity_score": 0.9761,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_067",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9137,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "What is the USPSTF recommendation regarding screening for osteoporosis in men?",
+        "expected_chunk_ids": [
+          "osteoporosis-screening-final-recommendation_chk_005",
+          "osteoporosis-screening-final-recommendation_chk_014"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_049",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9919,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_074",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.942,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_012",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9215,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "What clinical risk score threshold is used for screening postmenopausal women under 65?",
+        "expected_chunk_ids": [
+          "osteoporosis-screening-final-recommendation_chk_005",
+          "osteoporosis-screening-final-recommendation_chk_012"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_011",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9472,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_109",
+            "section": "1.10 Timing of follow-up DXA scans",
+            "similarity_score": 0.9458,
+            "is_relevant": false
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_123",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.942,
+            "is_relevant": true
+          }
+        ],
+        "hits": 2,
+        "precision_at_3": 0.6667
+      },
+      {
+        "query": "What are the indications for vertebral fracture assessment (VFA) and lateral spine imaging?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_062",
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_063"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_056",
+            "section": "1.5 DXA-based vertebral fracture assessment (VFA) scan",
+            "similarity_score": 0.9766,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_062",
+            "section": "1.5 DXA-based vertebral fracture assessment (VFA) scan",
+            "similarity_score": 0.9387,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_060",
+            "section": "1.5 DXA-based vertebral fracture assessment (VFA) scan",
+            "similarity_score": 0.9155,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "What WHO T-score criteria define osteopenia and osteoporosis on a DXA scan?",
+        "expected_chunk_ids": [
+          "osteoporosis-screening-final-recommendation_chk_017",
+          "osteoporosis-screening-final-recommendation_chk_018"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_077",
+            "section": "1.7 Criteria for pha rmacological treatment",
+            "similarity_score": 1.0,
+            "is_relevant": false
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_079",
+            "section": "1.7 Criteria for pha rmacological treatment",
+            "similarity_score": 0.9472,
+            "is_relevant": false
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_069",
+            "section": "1.7 Criteria for pha rmacological treatment",
+            "similarity_score": 0.9251,
+            "is_relevant": false
+          }
+        ],
+        "hits": 0,
+        "precision_at_3": 0.0
+      },
+      {
+        "query": "What lifestyle modifications and vitamin D or calcium intakes are recommended for bone health?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_075",
+          "osteoporosis-screening-final-recommendation_chk_025"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_051",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9621,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_084",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9612,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_085",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.8607,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "Which first-line pharmacological treatments and bisphosphonates reduce fracture risk?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_068",
+          "osteoporosis-screening-final-recommendation_chk_028"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_038",
+            "section": "1.3 Risk prediction tools",
+            "similarity_score": 0.8861,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_082",
+            "section": "1.7 Criteria for pha rmacological treatment",
+            "similarity_score": 0.8727,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_049",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.8474,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "When should fracture risk be assessed in women under 65 and men under 70?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_015",
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_016"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_032",
+            "section": "1.3 Risk prediction tools",
+            "similarity_score": 0.9685,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_026",
+            "section": "1.1 Risk factors for fragility fractures",
+            "similarity_score": 0.9552,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_018",
+            "section": "1.1 Risk factors for fragility fractures",
+            "similarity_score": 0.9458,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "How is the Osteoporosis Self-Assessment Tool (OST) calculated and interpreted?",
+        "expected_chunk_ids": [
+          "osteoporosis-screening-final-recommendation_chk_022",
+          "osteoporosis-screening-final-recommendation_chk_023"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_066",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9612,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_067",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9314,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_028",
+            "section": "1.1 Risk factors for fragility fractures",
+            "similarity_score": 0.8542,
+            "is_relevant": false
+          }
+        ],
+        "hits": 2,
+        "precision_at_3": 0.6667
+      },
+      {
+        "query": "What anatomical sites should be measured during a DXA bone density scan?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
+          "osteoporosis-screening-final-recommendation_chk_017"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
+            "section": "1.4 Bone density assessment",
+            "similarity_score": 0.9841,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_046",
+            "section": "1.4 Bone density assessment",
+            "similarity_score": 0.942,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_096",
+            "section": "1.10 Timing of follow-up DXA scans",
+            "similarity_score": 0.8917,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "How does systemic glucocorticoid steroid therapy affect osteoporosis fracture risk?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_017",
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_036"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_084",
+            "section": "1.7 Criteria for pha rmacological treatment",
+            "similarity_score": 0.9531,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_079",
+            "section": "1.7 Criteria for pha rmacological treatment",
+            "similarity_score": 0.9013,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_037",
+            "section": "1.3 Risk prediction tools",
+            "similarity_score": 0.8688,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "What are the clinical consequences and 1-year mortality associated with osteoporotic hip fractures?",
+        "expected_chunk_ids": [
+          "osteoporosis-screening-final-recommendation_chk_001",
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_001"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_077",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 1.0,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-screening-final-recommendation_chk_026",
+            "section": "Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.",
+            "similarity_score": 0.9042,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_101",
+            "section": "1.10 Timing of follow-up DXA scans",
+            "similarity_score": 0.8928,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "When should anabolic agents such as teriparatide and romosozumab be considered?",
+        "expected_chunk_ids": [
+          "osteoporosis-screening-final-recommendation_chk_028",
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_068"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_050",
+            "section": "1.4 Bone density assessment",
+            "similarity_score": 0.9552,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_079",
+            "section": "1.7 Criteria for pha rmacological treatment",
+            "similarity_score": 0.8944,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_059",
+            "section": "1.5 DXA-based vertebral fracture assessment (VFA) scan",
+            "similarity_score": 0.8656,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      },
+      {
+        "query": "How should intermediate fracture risk results from prediction tools be managed?",
+        "expected_chunk_ids": [
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_033",
+          "osteoporosis-risk-assessment-pdf-66144025463749_chk_041"
+        ],
+        "top_retrieved": [
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_061",
+            "section": "1.5 DXA-based vertebral fracture assessment (VFA) scan",
+            "similarity_score": 0.9685,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_040",
+            "section": "1.3 Risk prediction tools",
+            "similarity_score": 0.9357,
+            "is_relevant": true
+          },
+          {
+            "chunk_id": "osteoporosis-risk-assessment-pdf-66144025463749_chk_028",
+            "section": "1.1 Risk factors for fragility fractures",
+            "similarity_score": 0.9262,
+            "is_relevant": true
+          }
+        ],
+        "hits": 3,
+        "precision_at_3": 1.0
+      }
+    ]
+  }
+}

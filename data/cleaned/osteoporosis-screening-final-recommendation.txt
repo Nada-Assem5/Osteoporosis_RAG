@@ -1,63 +1,519 @@
-Screening for Osteoporosis to Prevent Fractures
-US Preventive Services Task Force Recommendation Statement
+JAMA | USPreventive Services Task Force | RECOMMENDATION STATEMENT Screening for Osteoporosis to Prevent Fractures US Preventive Services Task Force Recommendation Statement
 
-Summary of Recommendations
-• Women 65 years or older: The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older. (Grade B)
-• Postmenopausal women younger than 65 years with 1 or more risk factors for osteoporosis: The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years who are at increased risk for an osteoporotic fracture as estimated by clinical risk assessment. (Grade B)
-• Men: The USPSTF concludes that the current evidence is insufficient to assess the balance of benefits and harms of screening for osteoporosis to prevent osteoporotic fractures in men. (Grade I statement)
+Editorial
 
-Importance
-Osteoporosis is a skeletal disorder characterized by decreased bone mass leading to increased bone fragility and fracture risk. Osteoporotic fractures are associated with psychological distress, subsequent fractures, loss of independence, reduced ability to perform activities of daily living, and death. Morbidity from fragility fractures at central skeletal sites, particularly the hip, is much greater than morbidity from fragility fractures at other sites. Evidence shows that only 40% to 60% of persons experiencing a hip fracture recover their prefracture level of mobility and ability to perform activities of daily living.
-The age-adjusted prevalence of osteoporosis is 12.6% among community-dwelling US residents 50 years or older. Prevalence of osteoporosis is higher among persons 65 years or older (27.1% in women and 5.7% in men), in women compared with men, and among Asian, Hispanic, and White persons.
+IMPORTANCE Osteoporotic fractures are associated with psychological distress, subsequent fractures, loss of independence, reduced ability to perform activities of daily living, and death.
+
+Related article and JAMA Patient Page
+
+OBJECTIVE The US Preventive Services Task Force (USPSTF) commissioned a systematic review to evaluate the evidence on the benefits and harms of screening for osteoporosis to prevent fractures in adults 40 years or older with no known diagnosis of osteoporosis or history of fragility fracture.
+
+POPULATION Adults 40 years or older without known osteoporosis or history of fragility fractures.
+
+Related article at jama network open com
+
+EVIDENCE ASSESSMENT The USPSTF concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older has moderate net benefit. The USPSTF concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years at increased risk has moderate net benefit. The USPSTF concludes that the evidence is insufficient and the balance of benefits and harms for screening for osteoporosis to prevent osteoporotic fractures in men cannot be determined.
+
+RECOMMENDATION The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older. (B recommendation) The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years who are at increased risk for an osteoporotic fracture as estimated by clinical risk assessment. (B recommendation) The USPSTF concludes that the current evidence is insufficient to assess the balance of benefits and harms of screening for osteoporosis to prevent osteoporotic fractures in men. (I statement)
+
+JAMA.  Published online January 14, 2025.
+
+Group Information: The US Preventive Services Task Force (USPSTF) members appear listed at the end of this article.
+
+See the Summary of Rec ommendations figure.
+
+Preamble
+
+situat ion.Similarly ,theUSPSTFnote sthatpolicyan dcoveragedeci- sionsinvol veconsiderati onsinaddition totheevidence ofclinicalben- efits and harms.
+
+The US Preventive Services Task Force (USPSTF) makes recommen- dations about the effectiveness of specific preventive care services for patients without obvious related signs or symptoms to improve the health of people nationwide.
+
+Itb asesitsrecomm endationsonth eevidenceofbo ththebenefits andha rmsoftheservi ceandanassess mentofthebala nce.TheUSPSTF does not consider the costs of providing a service in this assessment. The USPSTFrecogn izesthatclini caldecisionsi nvolvemorecon- siderations than evidence alone. Clinicians should understand the evidence but individualize decision making to the specific patient or
+
+The USPSTFiscommi ttedtomitigat ingthehealthi nequitiesthat prevent many people from fully benefiting from preventive services. Systemicor structuralrac ismresultsinp oliciesandpra ctices,includ- ing health care delivery, that can lead to inequities in health. The USPSTFreco gnizesthatrac e,ethnicity,a ndgenderareal lsocialrather than biological constructs. However, they are also often important predictors of health risk. The USPSTF is committed to helping re- verse the negative impacts of systemic and structural racism gender- baseddiscr imination,bia s,andothersou rcesofhealthi nequities,and their effects on health, throughout its work.
+
+Women 65 years or older
+
+The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older.
+
+See the Practice Con siderations section for more information on screening tests.
+
+Postmenopausal women younger than 65 years with 1 or more risk factors for osteoporosis
+
+The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years who are at increased risk for an osteoporotic fracture as estimated by clinical risk assessment.
+
+See the Practice Con siderations section for more information on risk assessment and screening tests.
+
+Men
+
+The USPSTF concludes that the current evidence is insufficient to assess the balance of benefits and harms of screening for osteoporosis to prevent osteoporotic fractures in men.
+
+See the Practice Con siderations section for suggestions for practice regarding the I statement.
+
+Pathwayto Benefit
+
+To achieve the benefit of screening to reduce morbidity and mortality from fractures, women found to have osteoporosis should be further evaluated, counseled, and, if appropriate, receive evidence based management.
+
+SeeTable1 formoreinform ationontheUSP STFrecommenda- tion rationale and assessment and the eFigure in the Supplement for information on the recommendation grade See the Figure for a summary of the recommendation for clinicians For more details on the methods the US PST Fuses to determine the net benefit see the USPSTF Procedure Manual.5
+
+Practice Con siderations
+
+Osteoporosis is a skeletal disorder characterized by decreased bone massle adingtoincrea sedbonefragil ityandfractur erisk.Osteopo- rotic fractures are associated with psychological distress, subse- quent fractures, loss of independence, reduced ability to perform activities of daily living, and death. Morbidity from fragility frac- tures at central skeletal sites, particularly the hip, is much greater than morbidity from fragility fractures at other sites 1 Evidence shows that only 40% to 60% of persons experiencing a hip fracture re- cover their prefracture level of mobility and ability to perform ac- tivities of daily living.2
+
+The age-adjusted prevalence of osteoporosis is 12.6% among community dwelling US residents 50 years or older. Prevalence of osteoporosis is higher among persons 65 years or older (27.1% in women and 5.7% in men), in women compared with men,3 and among Asian, Hispanic, and White persons.4
+
+Patient Population Under Consideration This recommendation applies to adults 40 years or older without knowno steoporosisor historyoffrag ilityfracture s.Itdoesnotap- ply to persons with secondary osteoporosis due to an underlying medical condition (eg, cancer, metabolic bone diseases, or hyper- thyroi dism)orchroni cuseofamedica tion(eg,gluco corticoids)as- sociated with bone loss.
+
+Inthisrecomm endationstate ment,therecom mendationsare stratified by “men” and “women,” although the net benefit esti- mates aredrivenbyse xasassignedat birth(ie,male /female)rather than gender identity. In describing the evidence, sex terms are re- ported as used by study authors, which are typically “men” and “women Transgender men and transgender women who have not undergone any hormonal treatment associated with transitioning likely have the same risks as persons assigned female and male sex at birth; however, they should consult with their clinician to deter- mine which recommendation best applies to them.
 
 USPSTF Assessment of Magnitude of Net Benefit
-The US Preventive Services Task Force (USPSTF) concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older has moderate net benefit.
-The USPSTF concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years at increased risk has moderate net benefit.
-The USPSTF concludes that the evidence is insufficient and the balance of benefits and harms for screening for osteoporosis to prevent osteoporotic fractures in men cannot be determined.
 
-Practice Considerations
+The US Preventive Services Task Force (USPSTF) concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older has moderate netbenefit.
 
-Patient Population Under Consideration
-This recommendation applies to adults 40 years or older without known osteoporosis or history of fragility fractures. It does not apply to persons with secondary osteoporosis due to an underlying medical condition (eg, cancer, metabolic bone diseases, or hyperthyroidism) or chronic use of a medication (eg, glucocorticoids) associated with bone loss.
-In this recommendation statement, the recommendations are stratified by "men" and "women," although the net benefit estimates are driven by sex as assigned at birth (ie, male/female) rather than gender identity. In describing the evidence, sex terms are reported as used by study authors, which are typically "men" and "women." Transgender men and transgender women who have not undergone any hormonal treatment associated with transitioning likely have the same risks as persons assigned female and male sex at birth; however, they should consult with their clinician to determine which recommendation best applies to them.
+The USPSTF concludes with moderate certainty that screen- ing for osteoporosis to prevent osteoporotic fractures in post- menopausal women younger than 65 years at increased risk has moderate net benefit.
 
-Definitions
-In 1994, the World Health Organization defined osteoporosis in postmenopausal White women as bone density at the hip or lumbar spine that is 2.5 standard deviations or lower (T score ≤ -2.5) than the mean bone mineral density (BMD) measured at that site for a reference population of young healthy White women. This ultimately became the reference standard for persons of all racial and ethnic groups, and for males and females.
-Fragility fractures (also known as "low-energy" or "low-trauma" fractures) are fractures sustained from a fall from standing height or lower that would not cause a fracture in most healthy persons.
-Major osteoporotic fracture (MOF) is defined as a fracture of the hip, spine, wrist, or shoulder.
+The USPSTFconcl udesthattheev idenceisinsuf ficientandthe balance of benefits and harms for screening for osteoporosis to pre- vent osteoporotic fractures in men cannot be determined.
 
-Assessment of Risk
-Although bone density is an important risk factor for fragility fractures, advancing age is a stronger determinant. Older adults have much higher fracture rates than younger adults with the same BMD because of concurrent increasing risk from declining bone quality and an increasing risk of falling.
-When deciding which postmenopausal women younger than 65 years to screen, the USPSTF suggests a 2-step approach. Clinicians can first determine the presence of risk factors for osteoporosis and fracture. These include menopausal status, low body weight, parental history of hip fracture, cigarette smoking, and excess alcohol consumption. For postmenopausal women younger than 65 years with 1 or more risk factors (in addition to postmenopausal status), the USPSTF then recommends using a clinical risk assessment tool (ie, a tool designed to identify osteoporosis or predict fracture risk) to estimate risk and help decide whether screening is warranted.
-Other medical conditions and medications (eg, corticosteroids or diabetes treated with insulin) may also increase risk of osteoporosis and, subsequently, fragility fractures.
+Definitions In 1994 the World Health Organization defined osteoporosis in post- menopausal White women as bone density at the hip or lumbar spine thatis2.5st andarddeviati onsorlower(Ts core(cid:2)–2 .5)thanthemean bone mineral density (BMD) measured at that site for a reference population of young healthy White women.6 This ultimately be- came the reference standard for persons of all racial and ethnic groups, and for males and females.7
 
-Screening Tests and Screening Strategies
-The most commonly used bone measurement test to screen for osteoporosis is dual-energy X-ray absorptiometry (DXA) at a central site (eg, total hip, femoral neck, or lumbar spine). Centrally measured DXA correlates with bone strength and clinical fracture outcomes and uses low doses of radiation. Fracture risk at a specific site is best predicted if bone density is measured at that site.
-Risk assessment tools designed to estimate future fracture risk that can be used with or without BMD as a risk factor input include FRAX, the Fracture Risk Calculator (FRC), and the Garvan Fracture Risk Calculator. Of note, the predictive accuracy of these tools often improves when BMD is included in the risk assessment calculation. Risk assessment tools designed to identify osteoporosis (eg, the Osteoporosis Risk Assessment Instrument [ORAI] and the Osteoporosis Self-assessment Tool [OST]) generally require fewer risk inputs than tools designed to predict fracture risk.
+Fragility fractures (also known as “low-energy” or “low- trauma fractures are fractures sustained from a fall from standing height or lower that would not cause a fracture in most healthy persons.8
 
-Table 2: Characteristics of Selected Risk Assessment Tools for Osteoporosis or Fracture Risk
-• OST (<2 frequently used as threshold to define increased osteoporosis risk)
-  Scoring: (Weight in kg - Age in years) * 0.2
-• ORAI (≥9 frequently used as threshold to define increased osteoporosis risk)
-  Age: ≥75: 15; 65-74: 9; 55-64: 5; 45-54: 0
-  Weight: <60 kg: 9; 60-69 kg: 3; ≥70 kg: 0
-  No current estrogen use: 2
-• FRAX (predicts 10-year probability of hip fracture or MOF for persons aged 40 to 90 years)
-  Inputs: Age, Sex, Weight, Height, Previous fracture, Parental hip fracture, Current smoking, Glucocorticoid use, Rheumatoid arthritis, Secondary osteoporosis, Alcohol consumption ≥ 3 units/day
+Detection
 
-Screening Intervals
-Cohort studies evaluating screening intervals suggest that repeating BMD testing at an interval of 4 to 8 years does not result in additional accuracy in predicting fractures. Other studies attempted to identify appropriate screening intervals based on the time in which it takes individuals to transition to osteoporosis or a certain fracture risk threshold. The screening intervals varied across studies, but generally, transition to osteoporosis occurred over shorter intervals for individuals with lower baseline T scores and older age (eg, almost 17 years for 10% of women with normal BMD at baseline to develop osteoporosis vs about 5 years for women with a baseline T score in the -1.50 to -1.99 range).
+The USPSTF found adequate evidence that centrally measured DXA BMD can accurately predict osteoporotic fractures in women.
 
-Treatment
-The US Food and Drug Administration has approved several drug therapies for the treatment or prevention of osteoporosis, including bisphosphonates, denosumab, romosozumab, parathyroid hormone, raloxifene, calcitonin, and estrogen (with or without progesterone).
-Clinicians should be aware that treatment recommendations that are based on risk assessment tools with race-specific calculators (eg, FRAX) but that use fixed fracture risk treatment thresholds not specific to race and ethnicity may be less likely to identify Asian, Black, and Hispanic persons as high risk and, subsequently, may be less likely to offer treatment compared with White persons of the same age, BMD, and clinical risk profile.
+The USPSTF found adequate evidence that clinical risk assessment tools have sufficient accuracy to identify osteoporosis in women and predict certain osteoporotic fractures, particularly hip fractures, in women and men.
 
-Suggestions for Practice Regarding the I Statement (Men)
-When deciding whether to screen for osteoporosis to prevent osteoporotic fractures in men, clinicians should consider the following factors:
-Age-adjusted prevalence of osteoporosis is 4.4% in men aged 50 and over (and 5.7% in men 65 and over). Although osteoporosis and fragility fractures are more common in women than men, excess mortality related to osteoporosis and fragility fractures is greater in men. Men have similar risk factors associated with fragility fractures as women, including increasing age, low BMI, excessive alcohol intake, current smoking, chronic corticosteroid use, history of prior fractures, history of falls within the past year, hypogonadism, history of cerebrovascular accident, and history of diabetes. In the absence of evidence, clinicians and their patients should decide together whether to be screened.
+Benefits of early detection and intervention and treatment
 
-Recommendations of Others
-• Canadian Task Force on Preventive Health Care: Recommends screening women 65 years or older for fracture risk with the Canadian FRAX tool to facilitate shared decision-making about pharmacotherapy. If pharmacotherapy is considered, it then recommends ordering DXA testing to reestimate fracture risk with BMD input. It recommended against screening men 40 years or older and women younger than 65 years.
-• American Association of Clinical Endocrinologists (AACE): Recommends evaluating all women 50 years or older for fracture risk and considering BMD measurement based on clinical fracture risk profile.
-• American College of Obstetricians and Gynecologists (ACOG): Recommends BMD screening with DXA beginning at age 65 years in all women and selective screening with BMD in women younger than 65 years who have an elevated risk based on a formal clinical risk assessment tool.
-• American Academy of Family Physicians (AAFP): Recommends against DXA screening in women younger than 65 years and in men younger than 70 years with no risk factors.
+The USPSTF found adequate direct evidence that screening for fracture risk in women 65 years or older provides a moderate benefit in preventing fractures.
+
+The USPSTF found convincing evidence that treatment of women 65 years or older with osteoporosis provides a moderate benefit in preventing fractures.
+
+For postmenopausal women younger than 65 years with risk factors for osteoporosis, the USPSTF found adequate evidence that screening can detect osteoporosis and fracture risk and convincing evidence that treatment provides a moderate benefit in preventing fractures.
+
+The USPSTF found inadequate evidence on the benefits of screening for and treatment of osteoporosis to reduce the risk of osteoporotic fractures in men.
+
+Harms of early detection and intervention and treatment
+
+Based on the nature of screening and the low likelihood of serious harms, the USPSTF found adequate evidence to bound the harms of screening for osteoporosis as no greater than small.
+
+The USPSTF found adequate evidence that the harms of treatment of osteoporosis are small in women. • The USPSTF found inadequate evidence on the harms of screening for or treatment of osteoporosis to prevent fractures in men.
+
+USPSTF assessment
+
+The USPSTF concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older has moderate net benefit.
+
+The USPSTF concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years at increased risk has moderate net benefit. • Due to a lack of available data, the USPSTF concludes that the evidence is insufficient, and the balance of benefits and harms for screening for osteoporosis to prevent osteoporotic fractures in men cannot be determined.
+
+Abbreviations: BMD, bone mineral density; DXA, dual-energy x-ray abs or pti ome try; USPSTF, US Preventive Services Task Force.
+
+hip, spine, wrist, or shoulder.
+
+Assessmentof Risk Although bone density is an important risk factor for fragility frac- tures ,advancingage isastrongerde terminant.9Ol deradultshave muc hhigherfract ureratesthany oungeradultsw iththesameBMD because of concurrent increasing risk from declining bone quality and an increasing risk of falling.10
+
+When deciding which post menopausal women younger than 65 years toscreen,theU SPSTFsuggests a2-stepapproa ch.Clinicians can first determine the presence of risk factors for osteoporosis and fracture. These include menopausal status, low body weight, pa- rental history of hip fracture cigarette smoking and excess alcohol consumption 11 12 For post menopausal women younger than 65 years with 1 or more risk factors (in addition to postmenopausal status), the USPSTFthenrec ommendsusinga clinicalriska ssessmenttool (ie,atoo ldesignedtoid entifyosteopo rosisorpredic tfracturerisk) to estimate risk and help decide whether screening is warranted. More details about risk assessment tools and increased risk are pro- vided in the Screening Tests and Screening Strategies section.
+
+Oth ermedicalcond itionsandmedi cations(eg,co rticosteroids ordia betestreatedw ithinsulin)ma yalsoincrease riskofosteopo- rosisand ,subsequently ,fragilityfrac tures.Theprev alenceofosteo- porosis and incidence of osteoporotic fractures differs among ra- cial and ethnic groups. Studies show lower fracture incidence in Asi an,Black,andH ispanicpopula tionscompared withWhitepopu- lat ionsamongbo thmenandwomen .13,14Differen cesinBMDalone are not sufficient to explain racial and ethnic differences in fracture incidence For example Asian women have been found to have lower BMD than White women but lower fracture risk.15-17 Although the underlying causes for the differences in fracture incidence among racial and ethnic groups remain uncertain they are likely due in part to social and environmental factors or differences in clinical risks.1
+
+Screening Testsand Screening Strategies Themostcommo nlyusedboneme asurementtest toscreenforos- teoporosis is dual-energy x-ray abs or pti ome try (DXA) at a central site (eg, total hip, femoral neck, or lumbar spine). Centrally mea- sured DXA correlates with bone strength and clinical fracture out- comes and uses low doses of radiation.18 Fracture risk at a specific site is best predicted if bone density is measured at that site.19
+
+Someevid encesuggestst hatBMDalonema ynotbethemost useful predictor of fracture risk especially in younger populations 20 Several risk assessment tools that incorporate age and sex with or without other risk factors, have been developed to either identify probability of osteoporosis or predict fracture risk. It is important to note that some of the risk assessment tools were developed on small cohorts of homogeneous populations or have limited pub- lished evidence.
+
+Risk assessment tools designed to estimate future fracture risk tha tcanbeusedwi thorwithoutBM Dasariskfacto rinputinclude FRAX,8 the Fracture Risk Calculator (FRC),21 and the Garvan Frac- ture Risk Calculator 22 23 Of note, the predictive accuracy of these tools often improves when BMD is included in the risk assessment calcula tion.1Riskass essmenttoolsd esignedtoiden tifyosteoporo- sis (eg, the Osteoporosis Risk Assessment Instrument [ORAI] and the Osteoporosis Self assessment Tool OST generally require fewer risk inputs than tools designed to predict fracture risk.1
+
+FRA Xisthemostst udiedfracture riskassessmen ttool.Country- specificv ersionsofFRAX areavailablet hathavebeenca libratedusing country specific fracture incidence and mortality data which are part of the FRAX risk calculation 24 As of 2016, FRAX was incorporated int o120guideline sworldwideand addedintoDXAs oftwarefollow- ingr egulatoryappr ovalbytheUSFo odandDrugAdmi nistrationand hasbeenin corporatedint oclinicaldeci sionsupportto olswithinelec- tronic healthrecords ystems.25FRAX predictsthe10 -yearprobabil- i tyofhipfractu reorMOFforper sonsaged40to9 0yearsbyusing demo graphicandcli nicalfactorsa loneorincombi nationwithBMD
+
+Figure Clinician Summary Screening for Osteoporosis to Prevent Fractures
+
+What does the USPSTF recommend?
+
+Women 65 years or older: Screen for osteoporosis to prevent osteoporotic fractures. Grade: B
+
+Postmenopausal women younger than 65 years with 1 or more risk factors for osteoporosis: Screen for osteoporosis to prevent osteoporotic fractures. Grade: B
+
+Men: The current evidence is insufficient to assess the balance of benefits and harms of screening for osteoporosis to prevent osteoporotic fractures in men. Grade: I statement
+
+To whom do these rec ommendations apply?
+
+These rec ommendations apply to adults 40 years or older without known osteoporosis or history of fragility fractures. They do not apply to persons with secondary osteoporosis due to an underlying medical condition (eg, cancer, metabolic bone diseases, or hyp erthyroidism) or chronic use of a medication (eg, glu cocorticoids) associated with bone loss.
+
+What’s new?
+
+For the current recommendation, the USPSTF has noted that screening includes dual energy x-ray abs or pti ome try (DXA) bone mineral density (BMD), with or without fracture risk assessment.
+
+This recommendation is otherwise consistent with the 2018 USPSTF recommendation on screening for osteoporosis.
+
+How to implement this recommendation?
+
+Screen women 65 years or older with DXA BMD, with or without fracture risk assessment. • For postmenopausal women younger than 65 years, the USPSTF suggests first assessing for the presence of 1 or more risk factors for osteoporosis. For women who have 1 or more risk factors, assess for increased risk using a clinical risk assessment tool. For women assessed to be at increased risk, screen for osteoporosis with DXA BMD, with or without fracture risk assessment.
+
+To achieve the benefit of screening to reduce morbidity and mortality from fractures, women found to have osteoporosis should be further evaluated, counseled, and, if appropriate, receive evidence based care management.
+
+There is insufficient evidence to recommend for or against screening for osteoporosis in men. • Clinicians should use their clinical judgment regarding whether to screen for osteoporosis in men.
+
+Why is this recommendation and topic important?
+
+Osteoporotic fractures are associated with psychological distress, subsequent fractures, loss of independence, reduced ability to perform activities of daily living, and death. Evidence shows that only 40% to 60% of persons experiencing a hip fracture recover their prefracture level of mobility and ability to perform activities of daily living.
+
+The age-adjusted prevalence of osteoporosis is 12.6% among community dwelling US residents 50 years or older. Prevalence of osteoporosis is higher among persons 65 years or older (27.1% in women and 5.7% in men) and in women compared with men.
+
+What are other relevant USPSTF rec ommendations?
+
+The USPSTF has issued rec ommendations on interventions to prevent falls in community dwelling older adults and on the use of vitamin D and calcium to prevent fractures and falls in community dwelling adults.
+
+What are additional tools and resources?
+
+The National Institutes of Health has information on osteoporosis (https://www .niams.nih.gov /health-topics /osteoporosis, https://ww w.niams.nih.g ov/health-top ics/osteoporo sis/diagnosis -treatment-and -steps-to-take, and https www nia nih gov health osteoporosis osteoporosis).
+
+Where to read the full recommendation statement?
+
+Visit the USPSTF website (https www us preventive services taskforce org/) or the JAMA website (https jama network com collections 44068 united states preventive services task force) to read the full recommendation statement. This includes more details on the rationale of the recommendation, including benefits and harms; supporting evidence; and rec ommendations of others
+
+The USPSTF recognizes that clinical decisions involve more con siderations than evidence alone. Clinicians should understand the evidence but individualize decision making to the specific patient or situation.
+
+USPSTF indicates US Preventive Services Task Force.
+
+measured at the femoral neck.24,26 Risks predicted by FRAX alone and by BMD alone are similar, but both are less accurate than risks predicted by FRAX plus BMD.27 In the US, 4 different versions of FRAXcalib ratedusingrac ial-andethnic -specificfrac tureincidence data are available, including unique versions for Hispanic, non- Hispanic Asian, non-Hispanic Black, and non-Hispanic White persons.25 Concernsexist regardingthev alidityofrace -specificFRAX calculators Because hip fracture incidence in the US is lower in most non-White racial and ethnic groups, predicted fracture risk esti- mates for Asian, Black, and Hispanic persons will always be lower tha nforWhitepers onsofthesamea ge,sex,weight ,BMD,andclini-
+
+calrisk factorsintheF RAXmodel,28,2 9whichcouldle adtoracialand ethni cdifferencesi nwhoisoffered treatmentamon gpersonsofoth- erwise identical age, BMD, and clinical risk profile. It is also unclear whi chversionofFR AXtouseforper sonswhoaremul tiracial,orim- migrants from other countries who are now living in the US 30 Other limitations of the FRAX instrument include use of binary exposure togl ucocorticoids andalcoholuse (yes/novsquant ifieddoseexpo- sure lack of use of lumbar spin eBM Dort rabe cul arb one score lack of information collected about history of falls or frailty, use of co- hort studies that are 30 to 40 years old to estimate race-specific fracture incidence, use of mortality estimates that have not been
+
+updated since 2004 and lack of inclusion of medical conditions such as diabetes that may portend an increased risk.25,31,32
+
+Table2.Chara cteristicsofS electedRiskAs sessmentTools for Osteoporosis or Fracture Risk a
+
+Scre eningforosteo porosistoprev entfracturesc onsistsofacen- tralDX ABMD,withorwi thoutfracture riskassessmen t.Becausemost fragilityf racturesoccur inpersonswith outosteoporos is(ie,withDXA Tscores >-2.5),somescr eeningstrateg iesfocusonide ntifyingthose at risk for fracture and not just those with osteoporosis 25 Results from randomized clinical trials (RCTs) are now available that evaluated scree ningstrategie susingsomecom binationofthe FRAXriskcalcu- lation and BMD; no published studies have been designed to evalu- ate a treatment strategy based on fracture risk (ie, FRAX) alone. Centrally measured DXA was the test used to determine eligibility for participants enrolled in nearly all trials of bone conserving pharma cotherapies.1 Thus,screenin gcanentailDXA withorwithout fracture risk assessment.
+
+Risk factors
+
+Scoring
+
+OST (<2 frequently used as threshold to define increased osteoporosis risk)
+
+(kg − y) × 0.2
+
+Age, y
+
+ORAI (≥9 frequently used as threshold to define increased osteoporosis risk)
+
+≥75
+
+15
+
+65-74
+
+9
+
+55-64
+
+5
+
+45-54
+
+0
+
+<60
+
+9
+
+Similarly, approaches to determining whom to screen among post menopausal women younger than 65 years who have 1 or more risk factors (ie, determining who is at increased risk) could reason- ably focus on assessment of fracture risk or risk of osteoporosis using 1 of several risk assessment tools Table 2 includes examples of risk assessment tools that have been reported to have reasonable ac- curacy for identifying osteoporosis OST or ORAI or predicting hip fra cture(FRAX)in womenyoungert han65years.1T heriskassess- ment tools for identifying osteoporosis OST or ORAI 34 35 have com- monly used thresholds for defining increased risk at which further scre eningwithDXAi ssuggested(Ta ble2).ForFRAX ,thereisnosuch threshold defined with respect to its use in screening However to provide context, a 65-year-old White female with a body mass in- dex BMI of 25 calculated as weight in kilograms divided by square ofhei ghtinmeters)a ndnoriskfacto rshasa10-year riskofhipfrac- tureof1.3%an da10-yearrisk ofMOFof9.3%ba sedonFRAXwith- out BMDinput.The USPSTFdoesnot intendthatthe se10-yearrisk levels in the example given be used as mechanistic thresholds for deter miningwhoshou ldreceivefurt herscreeningw ithDXA.Rather, it is suggested that the results of risk assessment be used to help inform decisions about further screening with DXA.
+
+60–69
+
+3
+
+≥70
+
+0
+
+2
+
+FRAX (no specific threshold to define increased osteoporosis risk)b
+
+Refer to websitec
+
+Secondary osteoporosis
+
+Alcohol consumption ≥3 U/d
+
+Abbreviations: BMI, body mass index; FRAX, Fracture Risk Assessment Tool; MOF, major osteoporotic fracture; OST, Osteoporosis Self Assessment Tool; ORAI, Osteoporosis Risk Assessment Instrument. a Table adapted from FRAX Fracture Risk Assessment Tool24 and Chen et al.33 bFRAX was designed to predict fracture risk. For context only: A 65-year-old White female with a BMI of 25 and no risk factors has a 10-year risk of hip fracture of 1.3% and 10-year risk of MOF of 9.3%.
+
+Screening Intervals Cohort studies evaluating screening intervals suggest that repeat- ing BMD testing at an interval of 4 to 8 years does not result in ad- ditional accuracy in predicting fractures.1 Other studies attempted to identify appropriate screening intervals based on the time in which it takes individuals to transition to osteoporosis or a certain frac- ture risk threshold The screening intervals varied across studies but generally, transition to osteoporosis occurred over shorter inter- vals for individuals with lower baseline T scores and older age (eg, almost 17 years for 10% of women with normal BMD at base- lin etodevelopost eoporosisvsab out5yearsforw omenwithabase- line T score in the −1.50 to −1.99 range).36
+
+Treatment The US Food and Drug A dministration has approved several drug therapies for the treatment or prevention of osteoporosis, includ- ing bisphosphonates, denosumab, romosozumab, parathyroid hormone, raloxifene, calcitonin, and estrogen (with or without progesterone).
+
+Clinicians should be aware that treatment rec ommendations that are based on risk assessment tools with race-specific calcula-
+
+c Refer to website (https://frax .shef.ac.uk/FR AX/index.aspx).
+
+tors (eg, FRAX) but that use fixed fracture risk treatment thresh- olds not specific to race and ethnicity may be less likely to identify Asian, Black, and Hispanic persons as high risk and, subsequently, maybe less likely to offer treatment compared with White persons of the same age, BMD, and clinical risk profile. Similarly, prediction models that do not include conditions that are associated with increased fracture risk and that dispr oportionately affect certain racial and ethnic groups (eg, diabetes) may result in biased under- estimates of risk. For these reasons, it may be reasonable to avoid strict application of risk assessment tool treatment thresholds at the individual level to account for additional risks (eg, fall risk) not considered in risk assessment tools like FRAX.37,38
+
+Suggestions for Practice Regarding the I Statement When deciding whether to screen for osteoporosis to prevent os- teoporotic fractures in men, clinicians should consider the follow- ing factors.
+
+Potential Preventable Burden Based on National Health and Nutrition Examination Survey data from 2017 to 2018 age adjusted prevalence of osteoporosis is 12 6% among US residents 50 years or older Prevalence is higher in women (19.6%) compared with men (4.4%) and among persons 65 years or older 27 1 in women and 5 7 in men compared with persons aged 50 to 64 years (13.1% in women and 3.3% in men).3
+
+Morbidity and mortality resulting from a fragility fracture are the primary concerns from having osteoporosis. Based on Medi- care data, approximately 1.8 million beneficiaries experienced a new osteoporotic fracture in 2016.39 Although osteoporosis and fragility fractures are more common in women than men, excess mortality related to osteoporosis and fragility fractures is greater in men.40,41
+
+Update of Previous USPSTF Recommendation
+
+Thisrecommen dationupdates the2018USPSTF recommendation ons creeningforo steoporosis.I n2018,theUSPS TFrecommended screening for osteoporosis with bone measurement testing to pre- ven tosteoporotic fracturesinwo men65yearsoro lderandinpost- menopausal women younger than 65 years who are at increased risk of osteoporosis as determined by a formal clinical risk assessment tool .45Forthecurr entrecommenda tion,theUSPST Fhasnotedthat screening can include DXA BMD, with or without fracture risk as- sess ment.Thecurre ntrecommendat ionisotherwis egenerallycon- sistent with the 2018 recommendation.
+
+Men have similar risk factors associated with fragility fractures as women, including increasing age, low BMI, excessive alcohol in- take, current smoking, chronic cor tico steroid use, history of prior fractures, history of falls within the past year, hypogonadism, his- tory of cerebro vascular accident, and history of diabetes.42
+
+Potential Harms Potential harms of screening in men may be similar to those in women. Evidence on harms of drug therapies in men is limited.1
+
+Current Practice Data on how frequently men are screened for osteoporosis are lim- ited. Guidelines developed by various organizations and specialty socie tiesvary.Some organizations recommendscre eningforosteo- porosis in men older than 70 years. Other organizations do not specify for or against screening in men or recommend against it.1
+
+Additional Toolsand Resources The National Institutes of Health has information on osteoporosis (https://www .niams.nih.gov /health-topics /osteoporosis, https:// www .niams.nih.g ov/health-top ics/osteoporo sis/diagnosis- treatment and steps to take and https www nia nih gov health/ osteoporosis osteoporosis).
+
+OtherRe latedUSPSTFRe commendations TheU SPSTFrecommen dsexerciseint erventionstop reventfallsin community dwelling adults 65 years or older at increased risk of falls and selectively offering multi factorial interventions based on cir- cumstances of prior falls, presence of comorbid medical condi- tions, and the patient’s values and preferences 43 In its 2018 rec- ommendation statement, the USPSTF recommended against supplementat ionwith400IUo rlessofvitami nDand1000mgor less of calcium in post menopausal women to prevent fractures The USPSTF foundinsuffic ientevidenceo nsupplementat ionwithhigher do sesofvitaminD andcalcium,al oneorcombined ,topreventfrac- tures in postmenopausal women, or at any dose in men and pre- menopausal women.44 This recommendation is in the process of being updated; in the current draft recommendation, the USPSTF rec ommendsagain stsupplementa tionwithvitam inDwithorwith- out calcium for the primary prevention of fractures in community- dwelling postmenopausal women and men 60 years or older, and against supplement ation with vitamin D for the prevention of falls in community dwelling post menopausal women and men 60 years or older.
+
+Supporting Evidence
+
+Scopeof Review The USPSTFcommis sionedasystem aticreviewtoe valuatetheben- efits and harms of screening for osteoporosis to prevent fractures in adults 40 years or older with no known diagnosis of osteoporo- sisorhisto ryoffragility fracture.1,46 Thisreviewpre sentsdatatoup- datetheUSPSTF ’s2018recommen dation.Thepre viousrecommen- dation evaluated multiple imaging modalities (eg, peripheral DXA and quantitative ultrasound however this review only reports evi- dence for central DXA—the bone measurement test most com- monly used to screen for osteoporosis.
+
+Accuracyof Screening Testsand Risk Assessment BMD Central DXA measures BMD at central bone sites (hip and lumbar spine )andistheesta blishedstanda rdforthediagn osisofosteopo- rosis .Additionally ,centrallymeas uredDXAwasthe testusedforde- terminin gTscoresandde terminingelig ibilityamongp articipantsen- rolledinnea rlyalltrialso fbone-conserv ingpharmacoth erapies.Still, given that screening trials enrolled participants based on fracture risk, and that the goal of treating osteoporosis is to prevent frac- ture, the USPSTF reviewed studies that reported on the accuracy of centrally measured BMD for predicting fracture. The USPSTF foun d13uniquecoho rtsthatreport edonthediscri minationofBMD alone (as a continuous variable) for predicting MOF. These studies reported areas under the receiver operating cha racteristic curve (AUCs) ranging from 0.60 to 0.80. Twelve cohorts reported AUCs for predicting hip fracture they were somewhat more accurate than MOF outcomes, with AUCs ranging from 0.64 to 0.86.1,46
+
+Fewer studies reported on the predictive accuracy of BMD in women younger than 65 years One study of women aged 45 to 54 years in the United Kingdom reported an AUC for predictive accu- racyofBMDatth efemoralnecko f0.64(95%CI,0 .63-0.66)overa follow-up of 3 to 12 years.47 One retrospective study exclusively in men65yearsoro lderreporteda nAUCforBMDove rafollow-upof 15.8 yearsof0.76(9 5%CI,0.71-0.8 0)forthepredi ctionofMOFand 0.76 (95% CI, 0.72-0.81) for the prediction of hip fracture.48
+
+Accuracyof Risk Assessment Instrumentsto Identify Osteoporosis Forty three unique cohorts reported on diagnostic accuracy of 15 risk assessment instruments for identifying osteoporosis More than one- half of the cohorts included populations with a mean age between
+
+60 and 69 years, and included women, men, or both. In women, AUCs ranged from 0.32 to 0.87 across 35 reports evaluating 11 in- struments. In men, AUCs ranged from 0.62 to 0.94 across 18 re- ports evaluating 12 instruments 1 46
+
+The most studied instruments were FRAX, OST, ORAI, and Simple Calculated Osteoporosis Risk Estimation (SCORE). For co- hor tsreportingA UCsbasedonFRA XMOFrisk,theA UCsrangedfrom 0.5 5to0.79,andfo rcohortsbased onFRAXhipfrac turerisk,AUCs ranged from 0 70 to 0 86 across both sexes For OST the reported A UCsforwomenac ross14cohorts rangedfrom0.6 4to0.81.Sixco- horts reported an AUC for OST of 0.63 to 0.83 in women younger tha n65years.Fo rORAI,therepo rtedAUCsforwo menacross19co- horts (excluding1ou tlier)rangedf rom0.32to0.84 .Fivecohortsre- por tedresultsinw omenyoungerth an65years,and theAUCsranged from 0.60 to 0.84. For SCORE, AUCs for women across 16 studies ranged from 0.58 to 0.87 (excluding 1 outlier). For all instruments evaluate d,variationin AUCwaspartlya ttributableto differentrisk or score thresholds used to evaluate accuracy across cohorts.1,46
+
+we renotreported in2ofthe3tria ls.TheUSPSTFf oundnostudies that included men. Two RCTs (SCOOP and ROSE) used a 2-step scree ningintervent ionconsisting ofaFRAXriskas sessment(with- out BMD input) on participants assigned to screening and then in- vited those with a high fracture risk score ((cid:3)15% risk for MOF in ROSE; at or above the age-based hip fracture risk threshold in SCOOP)forDXA .Themeanormedi an10-yearFRAX -estimatedrisk of MOF was 19% in SCOOP, 20% in ROSE, and 24.6% in SOS; the respective 10 year estimated hip fracture risks were 8 5 6 7 and 11.6%.5 5-57Testresul tsandtreatmen trecommendati onswereshared with participants’ primary care physicians, who made final deci- sions abouttreatmen t;thecomparis ongroupinall3 studieswasrou- tine care A pooled analysis of these studies found a statistically sig- nifican treductioninh ipfracturesan dMOF.Thepoole drelativerisk (RR) for the effect of screening on hip fractures was 0.83 (95% CI, 0 .73-0.93;3RCTs ;42009particip ants),andthep ooledRRforMOF was 0.94(95%CI,0 .88-0.99;3RCTs ;42009particip ants).Thiscor- res pondedtoanabs oluteriskdiff erence(ARD)of 5fewerhipfrac- tures(95%CI ,7to2fewer)and 6fewerMOFs(95 %CI,12to1fewer) per 1000 participants over 3.7 to 5 years.1,46
+
+Accuracyof Risk Assessment Instrumentsto Predict Fracture The USPSTF found 6 systematic reviews and 16 cohorts that re- ported on the accuracy of 11 risk assessment models (EPIC [Escala de Predicción de fracturas Implementable en historia Clínica elec- tronic a],FRAX,FRC,F REM[FractureR iskEvaluation Model],Garvan, ORAI ,OSIRIS[Osteo porosisIndexo fRisk],OST,QF racture,SCORE, andth eWomen’sHealt hInitiativePr edictionModel )topredictMOF, hip fracture, or both using primarily AUC. Findings were heteroge- neo us,spanning arangeofAUCsf rom0.52to0.93 ;however,most were between 0 60 and 0 80 For risk assessment instruments with the optiontoincl udeBMDasaninp ut(FRAX,FRC,a ndGarvan),the predictiveacc uracyoftenimp rovedwhenBMDw asincludedcom- pared with when it was not included. Further, some instruments (FRAX, FRC, Garvan, and QFracture) had better accuracy for pre- dicting hip fracture than for predicting MOF.1,46 For example, in 3 systematic reviews reviewed by the USPSTF, the AUCs for 10-year risk of MOF for FRAX in women ranged from 0.65 to 0.67 without BMD and from 0.67 to 0.71 when BMD was included, and the AUC sfor10-yearri skofhipfractu reforFRAXinwo menrangedfrom 0.74to0.77w ithoutBMDandr angedfrom0.76 to0.79whenBMD was included 49 51
+
+For studies reporting outcomes specifically for women younger than 65 years, reported AUCs ranged from 0.52 to 0.71 across in- struments. For example, for FRAX without BMD, the AUCs for 10- year riskofMOFrang edfrom0.56to0 .59across3stu dies,52-54and the AUCs for 10-year risk of hip fracture were 0.65 and 0.68 in 2 analyses reported in 1 study.53 For studies reporting outcomes for men, the AUCs ranged from 0.63 to 0.93.1,46
+
+The USPSTF also reviewed evidence on the benefits of treat- ing low bone density. Twenty-one RCTs compared bisphospho- nates with placebo. Most used T-score thresholds as a criterion to enrol lparticipants ,and6ofthe21tr ialsrequiredT scoresintheos- teoporotic range. Most trials were conducted among postmeno- pau sal women 1 trial was conducted in men and 3 trials included a very small proportion of men The mean age across trials ranged from 53to72ye ars.Studiesre portedclinica lfractures(eg ,hip,wrist,ver- tebral, and other sites), radiographic vertebral fractures, or both.
+
+The effectofbis phosphonateso nvertebralfra ctureoutcomes was reported in 10 trials Five trials compared a lend ron ate with pla- ceb o,2compared risedronatewi thplacebo,and 3comparedzole- dronic acid with placebo. The pooled RR was 0.51 (95% CI, 0.39- 0.66; 10 RCTs; 9015 participants), corresponding to an ARD of 18 fewerv ertebralfract uresper1000pa rticipantstre ated(95%CI,23 to13 fewer).1Theef fectofbisphos phonatesonhip fracturewasre- ported in 6 trials. Three studies compared alendronate with pla- cebo, 2 compared risedronate with placebo, and 1 compared zole- dronic acid with placebo. The pooled RR was 0.67 (95% CI, 0.45- 1.00; 6 trials; 12055 participants), corresponding to an ARD of 3 fewerh ipfracturespe r1000particip ants(95%CI,5t o0fewer).1,46 Onet rialreportedo ntheeffective nessofzoledro nicacidin1199 men with mean femoral neck T scores of −2.2. It found a reduced riskofm orphometricve rtebralfractu resinthetreat mentgroup(1.5% vs 4.6%; RR, 0.33 [95% CI, 0.16-0.70]) but no significant differ- ence in nonvertebral fractures (0.9% vs 1.3%; RR, 0.65 [95% CI, 0 21 1 97 58
+
+Effectiveness of Early Detection and Treatment The USPSTFfound3 RCTsthatrepor tedontheeffec tsofscreening on clinical fracture outcomes: the Screening in the Community to Reduce Fractures in Older Women (SCOOP) study (n = 12 483 randomized 55 the Risk stratified Osteoporosis Strategy Evalua- tion (ROSE) study (n = 34229 randomized population; n = 18605 [per protocol 1 analysis population 56 and the Stichting Artsen Laboratorium en Tro mbosedienst Osteoporosis Study (SOS) (n = 11 032 randomized 57 All 3 RCTs included older European women (medianage,71t o76years);rac ialorethnicch aracteristics
+
+Only 1 trial (the FREEDOM [Fracture Reduction Evaluation of Denosumab in Osteoporosis Every 6 Months] trial; n = 7808) was powered to look at the effect of den osu mabon fracture outcomes. It reported a statistically significant decrease in incident radio- graphic vertebral fractures (2.3% vs 7.2%; RR, 0.32 [95% CI, 0.26- 0.41]), incident clinical vertebral fractures (0.8% vs 2.5%; RR, 0.31 [95% CI, 0.20-0.47]), nonvertebral fractures (6.1% vs 7.5%; RR, 0.80 [95%CI,0.67-0 .95]),andhipfr actures(0.7%v s1.1%;RR,0.60 [95% CI, 0.37-0.97]) in women randomized to denosumab.59 One smallstudy(n = 242 )investigated theeffectsofd enosumabonBMD in men but was not powered to look at fracture outcomes.60
+
+Harms of Screening and Treatment Evidence on the harms of screening for osteoporosis is limited.1,46 The SCOOP trial reported no difference in anxiety between part ici- pants in the screening and control groups.55
+
+Several trials reported on the harms of treatment of bisphos- phonates. A pooled analysis of 21 RCTs found no significant differ- enceinse riousadversee vents.Onetria lreportedasta tisticallysig- nificanti ncreaseingast rointestinala dverseeventsi nthetreatment group compared with placebo61; however, a pooled analysis of 26 RCTs (representing 27 comparisons) found no significantly in- creased risk of gas trointestinal adverse events in participants tak- ing bisphosphonate scomparedwith thosetakingpl acebo.SixRCTs that reported on the incidence of atrial fibrillation found no statis- ticallysi gnificantincr easedrisk.Thr eeRCTsreporti ngonincidence ofmyo cardialinfarc tionhadveryim preciseRResti mateswithwide CIs because of small sample sizes and rare events.1,46
+
+Although 1 study of zoledronic acid in men reported a statisti- callysigni ficantincreas einincidentmy ocardialinfar ction(RR,4.68 [95%CI,1.0 2-21.5]),this outcomewasnot statistically significantin 2 other RCTs. Relative risk estimates were imprecise and CIs were widein allthesestudi es.1,46Onecoh ortstudyofzol edronicacidus- ers found no statistically significant differences in atrial fibrillation (adjust edhazardratio [aHR],1.18[95 %CI,0.99-1.40 ]),myocardial infarction (a HR, 0.92 [95% CI, 0.64-1.31]), or car diovascular mor- tality (a HR, 0.97 [95% CI, 0.81-1.15]) but did find a statistically significant increased risk for heart failure (a HR, 1.32 [95% CI, 1.08- 1 61 although it did not control for known con founders of heart fail- ure such as BMI smoking and alcohol exposure or hypertension 62 Ost eonecrosisof thejawandatyp icalfractures ofthefemurare potent ialrareharmso fbisphosphona tes.Fivetrial sofbisphospho- nate sreportednoca sesofosteonec rosisofthejaw ,andnotrialsre- ported on atypical femur fractures 1 46 A cohort study of new users ofzole dronicacidrep ortedanincrea sedriskofatyp icalfemurfrac- ture s(aHR,2.46[95 %CI,1.17-5.15 ]),62andacohort studyofnewbis- phosph onateusersrep ortedanincrea sedriskofatyp icalfemurfrac- ture swithbisphosp honateuse(aHR ,1.53[95%CI,1 .36-1.73])over a mean follow up of 1 year 63 although both studies may have been subject to residual confounding One systematic review that did not meet inclusion criteria for the current review because no com para- tor group of nonusers was included reported incidence estimates forosteo necrosisofthe jawinindividu alsusingbisph ophonatesrang- ing from 0.01% to 0.06%.64
+
+efits and harms of treatment is very limited. The USPSTF wants to clarify that the I statement is not a recommendation against screen- ing; it indicates that the evidence is insufficient to assess the bal- anc eofbenefitsan dharmsandisac allformoreres earch.Intheab- sence of evidence, clinicians and their patients should decide to getherwhethe rtobescreened .TheUSPSTFalso wantstoreiter- ateth atthisrecomme ndationdoesno tapplytoindiv iduals,includ- ing men, who have medical conditions or are taking medications associated with bone loss.
+
+Some comments requested that this recommendation state- me ntincludeothe rmodalitiesin additiontoDXA BMD.Thisrecom- mendation statement focuses on DXA for several reasons, includ- i ngthatDXAisth emostcommonly usedbonedensi tymeasurement test to screen for osteoporosis it correlates with bone strength and clinical fracture outcomes it uses a low dose of radiation and it was thetes tusedfordeter miningTscores andeligibilit yamongpartici- pantsinne arlyalltrials ofbone-conser vingpharmacot herapies.Some com mentsrequeste dthattheUSPST Fspecifyascre eninginterval. Inr esponse,theUS PSTFnotesthat theevidencere latedtoscreen- ing intervals for osteoporosis is limited what is known that could be helpful isdiscussedin thePracticeCo nsiderationss ection,andthe USP STFcallsformo reresearchtoh elpinformappr opriatescreen- ing intervals.
+
+In responsetopub liccomment,th eUSPSTFclarif iedthatscreen- ing can include DXA with or without fracture risk assessment, that it suggests using a 2-step approach for postmenopausal women younger than 65 years, and that Table 2 is intended to provide ex- amples of tools that can be used to predict fracture risk or identify osteoporosis but is not intended to be a comprehensive list. Last, the USPSTFagree swithcomments thatmoreresea rchisneededon bone density in transgender persons and has specified this as a re- search need (see the online version of Table 3 [https://www. us preventive services taskforce org home get file by token/ kHT3WGUaG 2wTz2pF_ke7bn]).
+
+Research Needs and Gaps
+
+See Table 3 for research needs and gaps related to screening for osteoporosis to prevent fractures.
+
+For denosumab,p ooledanalyses foundnosignif icantincrease inserio usadverseeven ts(5RCTs)orup pergastrointe stinaltractad- verse events (4 trials), although the CIs were wide for that out- come. Two trials reported no significant increase in car diovascular events although the estimate was imprecise in 1 of these trials Three trials reported no cases of osteonecrosis of the jaw, and 2 trials re- ported no cases of atypical femur fracture.1,46
+
+Responseto Public Comment A draft version of this recommendation statement was posted for pub liccommento ntheUSPSTFweb sitefromJune1 1toJuly8,2024. Some comments requested that the USPSTF recommend screen- ing for osteoporosis in men. The USPSTF agrees that osteoporosis can be a significant source of morbidity and mortality in men How- ever, there are no studies on the benefits and harms of screening for osteoporosis or fracture risk in men, and evidence on the ben-
+
+Rec ommendations of Others
+
+Several organizations have put forth osteoporosis and fracture risk screening guidelines that vary based on age, sex, menopausal sta- tus, and other cha racteristics. Some organizations recommend a combi nationoffract ureriskassess mentandDXAscr eening.In2023, the Canadian TaskForce on Preventive HealthCare recommended screening women 65 years or older for fracture risk with the Canadian FRAX tool to facilitate shared decision making about pharmaco- ther apy.Ifpharmac otherapyiscon sidered,itthe nrecommendsor- derin gDXAtestingto reestimatefra ctureriskwith BMDinputtothe FRA X.Itrecommen dedagainstscr eeningmen40ye arsorolderand women younger than 65 years.65 The 2020 American Association of Clinical Endo cri no logi sts guideline recommends evaluating all wom en50yearsoro lderforfractu reriskandcons ideringBMDmea- surement based on clinical fracture risk profile.66
+
+Table 3 Research Needs and Gaps in Screening for Osteoporosis to Prevent Fractures
+
+To fulfill its mission to improve health by making evidence based rec ommendations for preventive services, the USPSTF routinely highlights the most critical evidence gaps for creating actionable preventive services rec ommendations. The USPSTF often needs additional evidence to create the strongest rec ommendations for everyone, especially those with the greatest burden of disease. In some cases, clinical preventive services have been well studied, but there are important evidence gaps that prevent the USPSTF from making rec ommendations for specific populations. In this table, the USPSTF summarizes the gaps in the evidence for screening for osteoporosis to prevent fractures that need to be addressed to advance the health of the nation. For additional information and detail on research needed to address these evidence gaps, see the Research Gaps Taxonomy table on the USPSTF website (https://ww w.uspreventiv eservicestask force.org/hom e/getfilebyto ken/kHT3WGUaG 2wTz2pF_ke7bn).
+
+Screening for osteoporosis to prevent fractures
+
+More research is needed on the benefits and harms of screening, and of different screening strategies. • Studies are needed on the benefits and harms of screening for osteoporosis or fracture risk to prevent osteoporotic fractures and related morbidity and mortality
+
+in men.
+
+Research is needed on the benefits and harms of screening using BMD alone vs fracture risk assessment tools alone vs the combination of BMD and fracture risk assessment in postmenopausal women.
+
+Research is needed to develop and validate new primary care–feasible risk assessment tools that accurately predict risk of hip and nonhip major osteoporotic fractures in women and men. This research should include populations broadly rep resentative of the US population and sufficient numbers of postmenopausal women younger than 65 years and men to be able to report on accuracy in these groups.
+
+Research is needed to develop and validate new primary care–feasible risk assessment tools that accurately identify osteoporosis in women and men. This research should include populations broadly rep resentative of the US population and sufficient numbers of postmenopausal women younger than 65 years and men to be able to report on accuracy in these groups.
+
+Decision analysis studies are needed to help inform the optimal start and stop ages and screening interval in women. (KQ2d, CQ1)
+
+Research is needed on the benefits and harms of pha rmacotherapy to prevent fractures in men with primary osteoporosis and without a history of fragility fractures. (KQ4)
+
+Abbreviations: BMD, bone mineral density; CQ, contextual question; KQ, key question; USPSTF, US Preventive Services Task Force.
+
+Otherguidelin esfocusonoste oporosisscree ningviaDXAmea- surementofBMD inolderadults .The2021Americ anCollegeofOb- ste triciansandGy necologistsgu idelinesrecom mendBMDscreen- ing with DXA beginning at age 65 years in all women and selective screeningwi thBMDinwomeny oungerthan65y earswhohavean
+
+elevated risk of osteoporosis based on a formal clinical risk assess- ment tool 67 The American Academy of Family Physicians follows the USPSTF’s 2018 recommendation; however, it specifically recom- mendsagainstD XAscreeningin womenyoungert han65yearsand in men younger than 70 years with no risk factors.68,69
+
+Accepted for Publication: December 3, 2024.
+
+Published Online: January 14, 2025. 
+
+The USPreventive Services Task Force(USPSTF) Members: Wanda K. Nicholson, MD, MPH, MBA; Michael Silverstein, MD, MPH; John B. Wong, MD; David Chelmow, MD; Tumaini Rucker Coker, MD, MBA; Esa M. Davis, MD, MPH; Carlos Roberto Jaén, MD, PhD, MS; Marie Krousel-Wood, MD, MSPH; Sei Lee, MD, MAS; Li Li, MD, PhD, MPH; Carol M. Mangione, MD, MSPH; Gbenga Ogedegbe, MD, MPH; Goutham Rao, MD; John M. Ruiz, PhD; James Stevermer, MD, MSPH; Joel Tsevat, MD, MPH; Sandra Millon Underwood, PhD, RN; Sarah Wiehe, MD, MPH.
+
+Affiliations of The US Preventive Services Task Force(USPST F)Members:Geo rgeWashington University, Washington, DC (Nicholson); Brown University, Providence, Rhode Island (Silverstein); Tufts University School of Medicine, Boston, Massachusetts (Wong); Virginia Commonwealth University, Richmond (Chelmow); University of Washington, Seattle (Coker); University of Maryland School of Medicine, Baltimore (Davis); University of Texas Health Science Center, San Antonio (Jaén, Tsevat); Tulane University, New Orleans, Louisiana (Krousel-Wood); University of California, San Francisco (Lee); University of Virginia, Cha rlottesville (Li); University of California, Los Angeles (Mangione); New York University, New York, New York (Ogedegbe); Case Western Reserve University, Cleveland, Ohio (Rao); University of Arizona, Tucson (Ruiz); University of Missouri, Columbia (Stevermer); University of Wisconsin, Milwaukee (Underwood); Indiana University, Bloomington (Wiehe).
+
+Author Contributions: Dr Nicholson had full access to all of the data in the study and takes res ponsibility for the integrity of the data and the accuracy of the data analysis. The USPSTF members contributed equally to the recommendation statement.
+
+Conflict of Interest Disclosures Authors followed the policy regarding conflicts of interest described at https us preventive services taskforce org/ uspstf/abo ut-uspstf/con flict-interes t-disclosures. All members of the USPSTF receive travel reimbursement and an honorarium for participating in USPSTF meetings. Dr Chelmow reported serving as chair for the Women’s Preventive Services Initiative Mult idisciplinary Steering Committee and serving as chair on the American College of Obstetricians and Gynecologist Practice Advisory Committee. In these roles, he was involved in the development of practice guidelines related to osteoporosis. Dr Lee reported receiving grants from National Institute on Aging (K24 AG066998) and National Institute on Aging (R01 AG079982) outside the submitted work. No other disclosures were reported.
+
+Rol eoftheFunder /Sponsor:AHRQ staffassisted in the following: development and review of the research plan, commission of the systematic evidence review from an Evidence based Practice Center, coordination of expert review and public comment of the draft evidence report and draft recommendation statement, and the writing and preparation of the final recommendation statement and its submission for publication. AHRQ staff had
+
+no role in the approval of the final recommendation statement or the decision to submit for publication.
+
+Disclaimer: Rec ommendations made by the USPSTF are independent of the US government. They should not be construed as an official position of AHRQ or the US Department of Health and Human Services.
+
+Additional Contributions: We thank Howard Tracer, MD (AHRQ), who contributed to the writing of the manuscript, and Lisa Nicolella, MA (AHRQ), who assisted with coordination and editing.
+
+Additional Information: Published by JAMA®— Journal of the American Medical Association under arrangement with the Agency for Healthcare Research and Quality (AHRQ). ©2025 AMA and United States Government, as represented by the Secretary of the Department of Health and Human Services (HHS), by assignment from the members of the United States Preventive Services Task Force (USPSTF). 
+
+REFERENCES
+
+1. Kahwati LC, Kistler CE, Booth G, et al. Screening for Osteoporosis to Prevent Fractures: An Evidence Review for the US Preventive Services Task Force. Evidence Synthesis No. 238. Agency for Healthcare Research and Quality; 2025. AHRQ publication 23-05312-EF-1.
+
+2. Dyer SM, Crotty M, Fairhall N, et al; Fragility Fracture Network (FFN) Reh abilitation Research Special Interest Group. A critical review of the long-term disability outcomes following hip fracture. BMC Geriatr. 2016 16 1 158. doi:10.1186/ s128 77-016-0332-0
+
+3. Sarafrazi N, Wambogo EA, Shepherd JA. Osteoporosis or Low Bone Mass in Older Adults: United States, 2017–2018. NCHS Data Brief No. 45.
+
+National Center for Health Statistics; 2021. doi:10. 15620 cdc 103477 4. Quick Stats: percentage of adults aged (cid:3)50 years with osteoporosis, by race and Hispanic origin—United States, 2017–2018. MMWR Morb Mortal Wkly Rep. 2021 70 19 731. doi:10.15585/ mmwr.mm7019a5
+
+5. US Preventive Services TaskForce US Preventive Services TaskForce Procedure Manual Published 2021 Accessed November 18 2024 https www. uspreve ntiveservices taskforce.org /uspstf/about- uspst f/methods-and -processes/pro cedure-manual
+
+6. Assessment of fracture risk and its application to screening for postmenopausal osteoporosis. Report of a WHO Study Group. World Health Organ Tech Rep Ser. 1994 843 1 129.
+
+7. International Society for Clinical Densitometry. Indications for Bone Mineral Density (BMD) Testing. Accessed May 15, 2024. https://i scd.org/learn/ official positions adult positions
+
+8. Kanis JA; World Health Organization Scientific Group. Assessment of Osteoporosis at the Primary Health Care Level: Technical Report. World Health Organization Collaborating Centrefor Metabolic Bone Diseases; 2008.
+
+9. Kanis JA, Johnell O, Oden A, Dawson A, De Laet C, Jonsson B. Ten year probabilities of osteoporotic fractures according to BMD and diagnostic thresholds. Osteoporos Int. 2001 12 12 989 995. 
+
+10. Heaney RP. Bone mass, bone loss, and osteoporosis prophylaxis. Ann Intern Med. 1998;128 (4):313-314.  199802150 00014
+
+11. Richelson LS, Wahner HW, Melton LJ III, Riggs BL. Relative contributions of aging and estrogen deficiency to postmenopausal bone loss. N Engl J Med. 1984 311 20 1273 1275. doi:10.1056/ NEJM 198411153112002
+
+12. Cummings SR, Nevitt MC, Browner WS, et al; Study of Osteoporotic Fractures Research Group. Risk factors for hip fracture in white women. N Engl J Med. 1995 332 12 767 773. doi:10.1056/ NEJM 199503233321202
+
+13. Liu LH, Chandra M, Gonzalez JR, Lo JC. Racial and ethnic differences in hip fracture outcomes in men. Am J Manag Care. 2017 23 9 560 564.
+
+mineral density. J Am Coll Radiol. 2017;14(5 S):S189- S202. 
+
+19. Kanis JA. Diagnosis of osteoporosis and assessment of fracture risk. Lancet. 2002;359 (9321 1929 1936.  08761-5
+
+20. Sanders KM, Nicholson GC, Watts JJ, et al. Half the burden of fragility fractures in the community occur in women without osteoporosis. When is fracture prevention cost effective? Bone. 2006;38 (5):694-700. 
+
+21. Lo JC, Pressman AR, Chandra M, Ettinger B. Fracture risk tool validation in an integrated healthcare delivery system. Am J Manag Care. 2011; 17(3):188-194.
+
+22. Nguyen ND, Frost SA, Center JR, Eisman JA, Nguyen TV. Development of prognostic nomograms for in dividualizing 5-year and 10-year fracturer isks.Osteopor osInt.2008;19 (10):1431-1444. 
+
+23. Nguyen ND, Frost SA, Center JR, Eisman JA, Nguyen TV. Development of a nomogram for in dividualizing hip fracture risk in men and women. Osteoporos Int. 2007 18 8 1109 1117. doi:10.1007/ s001 98-007-0362-8
+
+24. FRAX Fracture Risk Assessment Tool. Charts to download. Accessed November 18, 2024. https:// www.sheffi eld.ac.uk/FRA X/charts.aspx
+
+25. Fuggle NR, Curtis EM, Ward KA, Harvey NC, Dennison EM, Cooper C. Fracture prediction, imaging and screening in osteoporosis. Nat Rev Endocrinol. 2019 15 9 535 547.  019-0220-8
+
+26. Kanis JA, Harvey NC, Johansson H, Odén A, Leslie WD, McCloskey EV. FRAX Update. J Clin Densitom. 2017 20 3 360 367.  2017.06.022
+
+27. Kanis JA, McCloskey E, Johansson H, Odén A, Leslie WD. FRAX(®) with and without bone mineral density. Calcif Tissue Int. 2012 90 1 1 13. doi:10. 1007/s002 23-011-9544-7
+
+28. Dawson-Hughes B, Tosteson AN, Melton LJ III, et al; National Osteoporosis Foundation Guide Committee. Implications of absolute fracture risk assessment for osteoporosis practice guidelines in the USA. Osteoporos Int. 2008 19 4 449 458. 
+
+(Baltimore). 2016 ;95(20):e3415.  0000000000003415
+
+34. Koh LK, Sedrine WB, Torralba TP, et al; Osteoporosis Self Assessment Tool for Asians (OSTA) Research Group. A simple tool to identify asian women at increased risk of osteoporosis. Osteoporos Int. 2001 12 8 699 705. doi:10.1007/ s001980170070
+
+35. Cadarette SM, Jaglal SB, Kreiger N, McIsaac WJ, Darlington GA, Tu JV. Development and validation of the Osteoporosis Risk Assessment Instrument to facilitate selection of women for bone densitometry. CMAJ. 2000 162 9 1289 1294.
+
+36. Gourlay ML, Fine JP, Preisser JS, et al; Study of Osteoporotic Fractures Research Group. Bone-density testing interval and transition to osteoporosis in older women. N Engl J Med. 2012; 366 3 225 233. 
+
+37. Kanis JA, Cooper C, Dawson-Hughes B, et al; International Osteoporosis Foundation. FRAX and ethnicity. Osteoporos Int. 2020 31 11 2063 2067. 
+
+38. Lewiecki EM, Wright NC, Singer AJ. Racial disparities, FRAX, and the care of patients with osteopor osis.Osteopor osInt.2020;31 (11):2069-2071. 
+
+39. Lewiecki EM, Chastek B, Sundquist K, et al. Osteoporotic fracture trends in a population of US managed care enrollees from 2007 to 2017. Osteoporos Int. 2020 31 7 1299 1304. doi:10.1007/ s0019 8-020-05334-y
+
+40. Bliuc D, Nguyen ND, Milch VE, Nguyen TV, Eisman JA, Center JR. Mortality risk associated with low-trauma osteoporotic fracture and subsequent fracture in men and women. JAMA. 2009;301(5): 513-521. 
+
+41. Kannegaard PN, van der Mark S, Eiken P, Abrahamsen B. Excess mortality in men compared with women following a hip fracture. National analysis of comedications, comorbidity and survival. Age Ageing. 2010 39 2 203 209. doi:10. 1093 ageing afp 221
+
+42. Drake MT, Murad MH, Mauck KF, et al. Clinical review. Risk factors for low bone mass-related fractures in men: a systematic review and meta-analysis. J Clin Endocrinol Metab. 2012;97(6): 1861-1870. 
+
+14. Lo JC, Zheng P, Grimsrud CD, et al. Racial/ethnic differences in hip and diaphyseal femur fractures. Osteoporos Int. 2014 25 9 2313 2318. doi:10.1007/ s001 98-014-2750-1
+
+15. Lo JC, Chandra M, Lee C, Darbinian JA, Ramaswamy M, Ettinger B. Bone mineral density in older U.S. Filipino, Chinese, Japanese, and White women. J Am Geriatr Soc. 2020 68 11 2656 2661. 
+
+16. Walker MD, Babbar R, Opotowsky AR, et al. A referent bone mineral density database for Chinese American women. Osteoporos Int. 2006;17 (6):878-887. 
+
+17. Lo JC, Kim S, Chandra M, Ettinger B. Applying ethnic specific bone mineral density T-scores to Chinese women in the USA. Osteoporos Int. 2016 27 12 3477 3484.  3673-9
+
+18. Ward RJ, Roberts CC, Bencardino JT, et al; Expert Panel on Mus culoskeletal Imaging. ACR App ropriateness Criteria® osteoporosis and bone
+
+29. Vyas DA, Eisenstein LG, Jones DS. Hidden in plain sight reconsidering the use of race correction in clinical algorithms. N Engl J Med. 2020;383(9): 874-882. 
+
+30. Lewiecki EM, Erb SF. Racial disparities and inequalities in the management of patients with osteoporosis. Orthop Nurs. 2022 41 2 125 134. 
+
+31. LeBoff MS, Greenspan SL, Insogna KL, et al. The clinician’s guide to prevention and treatment of osteoporosis. Osteoporos Int. 2022 33 10 2049- 2102. 
+
+32. Reid HW, Selvan B, Batch BC, Lee RH. The break in FRAX: Equity concerns in estimating fracture risk in racial and ethnic minorities. J Am Geriatr Soc. 2021 69 9 2692 2695.  17316
+
+33. Chen SJ, Chen YJ, Cheng CH, Hwang HF, Chen CY, Lin MR. Comparisons of different screening tools for identifying fracture osteoporosis risk among community dwelling older people. Medicine
+
+43. Nicholson WK, Silverstein M, Wong JB, et al; US Preventive Services Task Force. Interventions to prevent falls in community dwelling older adults: US Preventive Services Task Force recommendation statement. JAMA. 2024 332 1 51- 57. 
+
+44. Grossman DC, Curry SJ, Owens DK, et al; US Preventive Services Task Force. Vitamin D, calcium, or combined supplement ation for the primary prevention of fractures in community dwelling adults: US Preventive Services Task Force recommendation statement. JAMA. 2018 319 15 1592 1599.
+
+45. Curry SJ, Krist AH, Owens DK, et al; US Preventive Services Task Force. Screening for osteoporosis to prevent fractures: US Preventive Services Task Force recommendation statement. JAMA. 2018 319 24 2521 2531.  2018.7498
+
+46. Kahwati LC, Kistler CE, Booth G, et al. Screening for osteoporosis to prevent fractures: a systematic review for the US Preventive Services
+
+Task Force. JAMA. Published January 14, 2025. 
+
+47. Stewart A, Kumar V, Reid DM. Long-term fracture prediction by DXA and QUS: a 10-year prospective study. J Bone Miner Res. 2006;21(3): 413-418. 
+
+48. Gourlay ML, Ritter VS, Fine JP, et al; Osteoporotic Fractures in Men (MrOS) Study Group. Comparison of fracture risk assessment tools in older men without prior hip or spine fracture: the MrOS study. Arch Osteoporos. 2017;12 (1):91. 
+
+49. Marques A, Ferreira RJ, Santos E, Loza E, Carmona L, da Silva JA. The accuracy of osteoporotic fracture risk prediction tools: a systematic review and meta-analysis. Ann Rheum Dis. 2015 74 11 1958 1967. doi:10.1136/ annrheumdi s-2015-207907
+
+Health Initiative Study. JAMA Intern Med. 2023;183 (7):696-704.
+
+55. Shepstone L, Lenaghan E, Cooper C, et al; SCOOP Study Team. Screening in the community to reduce fractures in older women (SCOOP): a randomised controlled trial. Lancet. 2018; 391 10122 741 747.  32640-5
+
+56. Rubin KH, Rothmann MJ, Holmberg T, et al. Effectiveness of a two-step population based osteoporosis screening program using FRAX: the randomized Risk stratified Osteoporosis Strategy Evaluation (ROSE) study. Osteoporos Int. 2018;29 (3):567-578. 
+
+57. Merlijn T, Swart KM, van Schoor NM, et al. The effect of a screening and treatment program for the prevention of fractures in older women: a randomized pragmatic trial. J Bone Miner Res. 2019 34 11 1993 2000. 
+
+study using Danish and Swedish health registries. Bone. 2020 134 115296.  115296
+
+63. Lee YK,Byun DW,Jung SM,etal. Bispho sphonatesusea ndriskofsubtr ochantericand diaphys ealfemurfract uresinKorea:r esultsfromthe National ClaimRegistry .CalcifTissueI nt.2019;104(3): 313-319.
+
+64. Anastasilakis AD, Pepe J, Napoli N, et al. Osteonecrosis of the jaw and a ntiresorptive agents in benign and malignant diseases: a critical review organized by the ECTS. J Clin Endocrinol Metab. 2022 107 5 1441 1460.
+
+65. Thériault G, Limburg H, Klarenbach S, et al; Canadian Task Force on Preventive Health Care. Rec ommendations on screening for primary prevention of fragility fractures. CMAJ. 2023;195 (18):E639-E649. 
+
+50. Sun X, Chen Y, Gao Y, et al. Prediction models for osteoporotic fractures risk: a systematic review andcritical appraisal.Agi ngDis.2022;13 (4):1215-1238. 
+
+51. Adami G, Biffi A, Porcu G, et al. A systematic review on the performance of fracture risk assessment tools: FRAX, DeFRA, FRA-HS. J Endocrinol Invest. 2023 46 11 2287 2297. doi:10. 1007/s4061 8-023-02082-8
+
+52. Crandall CJ, Larson JC, Watts NB, et al. Comparison of fracture risk prediction by the US Preventive Services Task Force strategy and two alternative strategies in women 50-64 years old in the Women’s Health Initiative. J Clin Endocrinol Metab. 2014 99 12 4514 4522.  2332
+
+53. Crandall CJ, Larson J, LaCroix A, et al. Predicting fracture risk in younger postmenopausal women: comparison of the Garvan and FRAX risk calculators in the Women’s Health Initiative Study. J Gen Intern Med. 2019 34 2 235 242. doi:10.1007/ s116 06-018-4696-z
+
+54. Crandall CJ, Larson JC, Schousboe JT, et al. Race and ethnicity and fracture prediction among younger postmenopausal women in the Women’s
+
+58. Boonen S, Reginster JY, Kaufman JM, et al. Fracture risk and zoledronic acid therapy in men with osteoporosis. N Engl J Med. 2012 367 18 1714- 1723. 
+
+59. Cummings SR, San Martin J, McClung MR, et al; FREEDOM Trial. Denosumab for prevention of fractures in postmenopausal women with osteoporosis. N Engl J Med. 2009 361 8 756 765. 
+
+60. Orwoll E, Teglbjærg CS, Langdahl BL, et al. A randomized, placebo controlled study of the effects of denosumab for the treatment of men with low bone mineral density. J Clin Endocrinol Metab. 2012 97 9 3161 3169.  1569
+
+61. Grey A, Bolland M, Wong S, Horne A, Gamble G, Reid IR. Low-dose zoledronate in osteopenic postmenopausal women: a randomized controlled trial. J Clin Endocrinol Metab. 2012 97 1 286 292. 
+
+62. Rubin KH, Möller S, Choudhury A, et al. Car diovascular and skeletal safety of zoledronic acid in osteoporosis observational, matched cohort
+
+66. Camacho PM, Petak SM, Binkley N, et al. American Association of Clinical Endo cri no logi sts/ American College of Endocrinology clinical practice guidelines for the diagnosis and treatment of postmenopausal osteoporosis 2020 update. Endocr Pract. 2020;26(suppl 1):1-46. doi:10.4158/ GL-2020-0524 SUPPL
+
+67. American College of Obstetricians and Gynecologists. Osteoporosis prevention, screening, and diagnosis: ACOG Clinical Practice Guideline No. 1. Obstet Gynecol. 2021 138 3 494 506. doi:10. 1097 AOG 0000000000004514
+
+68. American Academy of Family Physicians. Osteoporosis Screening to Prevent Fractures. Accessed November 18, 2024. https www a afp. org family physician patient care clinical- recom mendations/al l-clinical-re commendations/ osteoporosis html
+
+69. American Academy of Family Physicians. Choosing Wisely: DEXA for Osteoporosis. Accessed November 18, 2024. https www a afp org family- physician patient care clinical- recom mendations/al l-clinical-re commendations/ cw-oste oporosis.html

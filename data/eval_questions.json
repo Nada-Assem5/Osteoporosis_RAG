@@ -1,0 +1,114 @@
+[
+  {
+    "query": "When should a DXA bone density scan be offered according to NICE guidelines?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_042"
+    ]
+  },
+  {
+    "query": "What is the USPSTF screening recommendation for osteoporosis in women aged 65 and older?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_005",
+      "osteoporosis-screening-final-recommendation_chk_010"
+    ]
+  },
+  {
+    "query": "Which clinical risk prediction tools are recommended for calculating 10-year fracture risk?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_030",
+      "osteoporosis-screening-final-recommendation_chk_022"
+    ]
+  },
+  {
+    "query": "What is the USPSTF recommendation regarding screening for osteoporosis in men?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_005",
+      "osteoporosis-screening-final-recommendation_chk_014"
+    ]
+  },
+  {
+    "query": "What clinical risk score threshold is used for screening postmenopausal women under 65?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_005",
+      "osteoporosis-screening-final-recommendation_chk_012"
+    ]
+  },
+  {
+    "query": "What are the indications for vertebral fracture assessment (VFA) and lateral spine imaging?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_062",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_063"
+    ]
+  },
+  {
+    "query": "What WHO T-score criteria define osteopenia and osteoporosis on a DXA scan?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_017",
+      "osteoporosis-screening-final-recommendation_chk_018"
+    ]
+  },
+  {
+    "query": "What lifestyle modifications and vitamin D or calcium intakes are recommended for bone health?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_075",
+      "osteoporosis-screening-final-recommendation_chk_025"
+    ]
+  },
+  {
+    "query": "Which first-line pharmacological treatments and bisphosphonates reduce fracture risk?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_068",
+      "osteoporosis-screening-final-recommendation_chk_028"
+    ]
+  },
+  {
+    "query": "When should fracture risk be assessed in women under 65 and men under 70?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_015",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_016"
+    ]
+  },
+  {
+    "query": "How is the Osteoporosis Self-Assessment Tool (OST) calculated and interpreted?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_022",
+      "osteoporosis-screening-final-recommendation_chk_023"
+    ]
+  },
+  {
+    "query": "What anatomical sites should be measured during a DXA bone density scan?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
+      "osteoporosis-screening-final-recommendation_chk_017"
+    ]
+  },
+  {
+    "query": "How does systemic glucocorticoid steroid therapy affect osteoporosis fracture risk?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_017",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_036"
+    ]
+  },
+  {
+    "query": "What are the clinical consequences and 1-year mortality associated with osteoporotic hip fractures?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_001",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_001"
+    ]
+  },
+  {
+    "query": "When should anabolic agents such as teriparatide and romosozumab be considered?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_028",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_068"
+    ]
+  },
+  {
+    "query": "How should intermediate fracture risk results from prediction tools be managed?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_033",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_041"
+    ]
+  }
+]

@@ -1,13 +1,20 @@
 """
-Main Entrypoint for the Medical Guideline RAG Pipeline CLI.
+Main CLI Entrypoint & Pipeline Dispatcher for Osteoporosis RAG.
+
+Dispatches commands to individual pipeline steps:
+  - clean    : Text cleaning & extraction (src.parsing -> src.clean)
+  - build    : Chunking & Indexing (src.chunking -> src.embedded)
+  - ask      : Retrieval & Clinical Evidence Synthesis (src.embedded)
+  - evaluate : Precision@K Benchmark Suite (src.evaluation)
+  - chat     : Interactive Clinical Q&A loop
 """
 
 import sys
-import re
+import json
 import argparse
-import logging
 from pathlib import Path
-from typing import Dict, Any, List, Tuple
+
+from typing import Optional, List, Dict, Any
 
 from src.config import (
     DEFAULT_GUIDELINES_DIR,
@@ -16,310 +23,255 @@ from src.config import (
     DEFAULT_CHUNK_SIZE_CHARS,
     DEFAULT_CHUNK_OVERLAP_CHARS,
     DEFAULT_RETRIEVAL_TOP_K,
+    DEFAULT_RETRIEVAL_MODE,
     DEFAULT_PARTITION_STRATEGY,
-    CLINICAL_KEYWORDS
+    DEFAULT_EVAL_QUESTIONS_PATH,
+    DEFAULT_GEMINI_MODEL
 )
-from src.ingestion import clean_all_guidelines
-from src.chunking import chunk_document
-from src.vector_store import VectorStore
-
-logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-logger = logging.getLogger(__name__)
-
-
-# =====================================================================
-# Build Command Execution Logic
-# =====================================================================
-
-def execute_build(
-    input_dir: str = str(DEFAULT_CLEANED_DIR),
-    index_path: str = str(DEFAULT_INDEX_PATH),
-    chunk_size: int = DEFAULT_CHUNK_SIZE_CHARS,
-    overlap: int = DEFAULT_CHUNK_OVERLAP_CHARS
-) -> Dict[str, Any]:
-    """Read cleaned guideline text files, chunk them, build the vector store, and persist to disk."""
-    input_path = Path(input_dir)
-    target_index_path = Path(index_path)
-
-    if not input_path.exists():
-        print(f"[!] Cleaned data directory '{input_path.resolve()}' not found. Run 'python main.py clean' first.")
-        return {}
-
-    txt_files = list(input_path.glob("*.txt"))
-    if not txt_files:
-        print(f"[!] No cleaned text files found in '{input_path.resolve()}'. Run 'python main.py clean' first.")
-        return {}
-
-    print("=" * 80)
-    print(f"  RAG PIPELINE: BUILDING VECTOR INDEX FROM '{input_path}'")
-    print("=" * 80)
-
-    store = VectorStore()
-    all_chunks = []
-    doc_stats = []
-
-    for file_path in txt_files:
-        doc_id = file_path.stem
-        try:
-            with open(file_path, "r", encoding="utf-8") as f:
-                content = f.read()
-        except IOError as exc:
-            logger.error(f"Failed to read file '{file_path}': {exc}")
-            continue
-
-        doc_chunks = chunk_document(
-            document_text=content,
-            document_id=doc_id,
-            target_chunk_size=chunk_size,
-            chunk_overlap=overlap
-        )
-        all_chunks.extend(doc_chunks)
-        doc_stats.append((doc_id, len(content), len(doc_chunks)))
-        print(f"  -> {doc_id:<45} | {len(content):>6} chars | {len(doc_chunks):>3} chunks")
-
-    store.add_chunks(all_chunks)
-    store.save(target_index_path)
-
-    total_chars = sum(s[1] for s in doc_stats)
-    print("-" * 80)
-    print(f"  Indexed {len(txt_files)} documents into {len(all_chunks)} semantic chunks ({len(store.vectors)} vectors).")
-    print(f"  Index saved to: '{target_index_path.resolve()}'")
-    print("=" * 80)
-    print("[OK] Vector index build complete.\n")
-
-    return {
-        "documents": len(txt_files),
-        "total_chars": total_chars,
-        "total_chunks": len(all_chunks),
-        "total_vectors": len(store.vectors),
-        "index_path": str(target_index_path)
-    }
+from src.clean import clean_all_guidelines
+from src.embedded import (
+    VectorStore,
+    build_vector_index,
+    check_scope_guardrail,
+    classify_query_risk
+)
+from src.synthesis import ClinicalSynthesizer
+from src.evaluation import run_full_evaluation
 
 
-# =====================================================================
-# Ask / Query Command Execution Logic
-# =====================================================================
-
-def check_scope_guardrail(query: str) -> Tuple[bool, str]:
-    """Evaluate whether a user query is clinically relevant to osteoporosis guidelines."""
-    tokens = set(re.findall(r'\b[a-zA-Z0-9_\-\.]{2,}\b', query.lower()))
-    matches = tokens.intersection(CLINICAL_KEYWORDS)
-    
-    if not matches:
-        return False, (
-            "[GUARDRAIL NOTICE] Query is OUT OF SCOPE. This clinical RAG system specializes in "
-            "osteoporosis risk assessment, screening, bone mineral density (DXA), and fracture prevention guidelines. "
-            "Please submit a clinical or bone health question."
-        )
-    return True, f"In-scope query matching keywords: {', '.join(sorted(matches)[:4])}"
+def handle_clean(input_dir: str, output_dir: str):
+    """Execute text cleaning pipeline."""
+    clean_all_guidelines(input_dir=input_dir, output_dir=output_dir)
 
 
-def execute_ask(
+def handle_build(input_dir: str, index_path: str, chunk_size: int, overlap: int):
+    """Execute index building pipeline."""
+    build_vector_index(input_dir=input_dir, index_path=index_path, chunk_size=chunk_size, overlap=overlap)
+
+
+def handle_ask(
     query: str,
-    index_path: str = str(DEFAULT_INDEX_PATH),
-    top_k: int = DEFAULT_RETRIEVAL_TOP_K
-) -> Dict[str, Any]:
-    """Retrieve guideline passages for a clinical query and format the Evidence Panel."""
+    index_path: str,
+    top_k: int,
+    mode: str,
+    output_json: bool,
+    provider: str = "gemini",
+    model: Optional[str] = None,
+    api_key: Optional[str] = None
+):
+    """Execute clinical query retrieval and evidence synthesis."""
     target_index = Path(index_path)
     if not target_index.exists():
         print(f"[!] Vector index not found at '{target_index.resolve()}'. Run 'python main.py build' first.")
-        return {"error": f"Index not found at {target_index}"}
+        return
 
-    is_in_scope, guardrail_msg = check_scope_guardrail(query)
-
-    print("=" * 80)
-    print(f"  CLINICAL RAG QUERY: \"{query}\"")
-    print("=" * 80)
-
-    if not is_in_scope:
-        print(f"\n[GUARDRAIL REJECTED]")
-        print(f"  {guardrail_msg}\n")
-        print("=" * 80)
-        return {
-            "query": query,
-            "in_scope": False,
-            "message": guardrail_msg,
-            "evidence": []
-        }
+    tier, guardrail_msg = classify_query_risk(query)
+    if tier == "refuse_redirect":
+        if output_json:
+            print(json.dumps({"query": query, "risk_tier": tier, "in_scope": False, "message": guardrail_msg}))
+        else:
+            print(f"\n[SAFETY & GUARDRAIL REFUSAL]\n  {guardrail_msg}\n")
+        return
 
     store = VectorStore.load(target_index)
-    results = store.search(query, top_k=top_k)
+    results = store.search(query=query, top_k=top_k, mode=mode)
+    synthesizer = ClinicalSynthesizer(api_key=api_key, provider=provider, model_name=model)
+    synthesis_resp = synthesizer.synthesize(query=query, retrieved_passages=results)
 
-    print(f"\n[GUARDRAIL APPROVED] ({guardrail_msg})")
-    print(f"[RETRIEVAL] Found {len(results)} relevant guideline passages\n")
+    # Append caution notice if patient-specific
+    if tier == "needs_caution" and guardrail_msg not in synthesis_resp.clinical_caveats:
+        synthesis_resp.clinical_caveats.insert(0, guardrail_msg)
 
-    print("-" * 80)
-    print("  EVIDENCE PANEL")
-    print("-" * 80)
+    if output_json:
+        evidence = [
+            {
+                "rank": i,
+                "chunk_id": c.chunk_id,
+                "document_name": c.document_name,
+                "section": c.section_title,
+                "page_number": c.page_number,
+                "source_url": c.source_url,
+                "score": round(s, 4),
+                "text": c.text
+            }
+            for i, (c, s) in enumerate(results, 1)
+        ]
+        print(json.dumps({
+            "query": query,
+            "risk_tier": tier,
+            "mode": mode,
+            "evidence": evidence,
+            "synthesis": synthesis_resp.to_dict()
+        }, indent=2))
+        return
 
-    evidence_records: List[Dict[str, Any]] = []
+    print("=" * 88)
+    print(f"  CLINICAL RAG QUERY: \"{query}\" [Mode: {mode.upper()}]")
+    print("=" * 88)
+    if tier == "needs_caution":
+        print(f"\n[PATIENT-SPECIFIC CAUTION ADVISORY]\n  {guardrail_msg}")
+    else:
+        print(f"\n[GUARDRAIL APPROVED] ({guardrail_msg})")
+    print(f"[{mode.upper()} RETRIEVAL] Found {len(results)} ranked guideline passages\n")
+    print("-" * 88 + "\n  EVIDENCE PANEL\n" + "-" * 88)
+
     for i, (chunk, score) in enumerate(results, start=1):
-        print(f"\n[Source #{i}] Document: {chunk.document_id}")
+        print(f"\n[Source #{i}] Document: {chunk.document_name}")
         print(f"           Section : {chunk.section_title}")
+        print(f"           Page    : {chunk.page_number}")
+        print(f"           Chunk ID: {chunk.chunk_id}")
+        if chunk.source_url:
+            print(f"           URL     : {chunk.source_url}")
         print(f"           Score   : {score:.4f}")
-        print(f"           Excerpt :")
-        for line in chunk.text.splitlines()[:6]:
+        for line in chunk.text.splitlines()[:5]:
             print(f"             {line}")
-        if len(chunk.text.splitlines()) > 6:
+        if len(chunk.text.splitlines()) > 5:
             print("             ...")
 
-        evidence_records.append({
-            "rank": i,
-            "document_id": chunk.document_id,
-            "section": chunk.section_title,
-            "score": round(score, 4),
-            "text": chunk.text
-        })
-
-    print("\n" + "=" * 80)
-    print("  CLINICAL GUIDELINE SYNTHESIS")
-    print("=" * 80)
-
-    if results:
-        top_chunk = results[0][0]
-        print(f"\nBased on {top_chunk.document_id} ({top_chunk.section_title}):\n")
-        print(top_chunk.text[:500] + ("..." if len(top_chunk.text) > 500 else ""))
-    else:
-        print("No matching clinical recommendations found.")
-
-    print("\n" + "=" * 80 + "\n")
-
-    return {
-        "query": query,
-        "in_scope": True,
-        "results_count": len(results),
-        "evidence": evidence_records
-    }
+    print("\n" + synthesis_resp.format_markdown() + "\n")
 
 
-# =====================================================================
-# CLI Parser & Main Dispatcher
-# =====================================================================
+def handle_chat(
+    index_path: str,
+    top_k: int,
+    mode: str,
+    provider: str = "gemini",
+    model: Optional[str] = None,
+    api_key: Optional[str] = None
+):
+    """Interactive clinical Q&A session."""
+    print("=" * 88)
+    print(f"  CLINICAL RAG ASSISTANT [Mode: {mode.upper()}] (Type 'exit' to quit)")
+    print("=" * 88)
+    while True:
+        try:
+            q = input("\nEnter clinical question > ").strip()
+            if not q:
+                continue
+            if q.lower() in ("exit", "quit", "q"):
+                print("Exiting session.")
+                break
+            tier, msg = classify_query_risk(q)
+            if tier == "refuse_redirect":
+                print(f"\n[SAFETY & GUARDRAIL REFUSAL]\n  {msg}\n")
+                continue
+            if tier == "needs_caution":
+                print(f"\n[PATIENT-SPECIFIC CAUTION ADVISORY]\n  {msg}")
+            handle_ask(
+                query=q,
+                index_path=index_path,
+                top_k=top_k,
+                mode=mode,
+                output_json=False,
+                provider=provider,
+                model=model,
+                api_key=api_key
+            )
+        except (KeyboardInterrupt, EOFError):
+            print("\nExiting session.")
+            break
+
 
 def build_parser() -> argparse.ArgumentParser:
-    """Build and configure the command-line argument parser."""
-    parser = argparse.ArgumentParser(
-        prog="python main.py",
-        description="Clinical Guidelines RAG Preprocessing, Indexing & Query Pipeline"
-    )
-    subparsers = parser.add_subparsers(dest="command", help="Available pipeline subcommands")
+    """Configure CLI subcommands."""
+    parser = argparse.ArgumentParser(prog="python main.py", description="Clinical Guidelines RAG Pipeline")
+    subparsers = parser.add_subparsers(dest="command", help="Available subcommands")
 
-    # 1. Clean sub-command
-    clean_parser = subparsers.add_parser("clean", help="Ingest guideline PDFs and clean text using layout parsing")
-    clean_parser.add_argument(
-        "--academic",
-        nargs="?",
-        const=True,
-        default=True,
-        help="Apply academic article cleaning rules. Optionally pass comma-separated filenames."
-    )
-    clean_parser.add_argument(
-        "--input-dir",
-        type=str,
-        default=str(DEFAULT_GUIDELINES_DIR),
-        help="Directory containing source PDF files (default: data/guidelines)"
-    )
-    clean_parser.add_argument(
-        "--output-dir",
-        type=str,
-        default=str(DEFAULT_CLEANED_DIR),
-        help="Directory where cleaned text files are saved (default: data/cleaned)"
-    )
-    clean_parser.add_argument(
-        "--strategy",
-        type=str,
-        default=DEFAULT_PARTITION_STRATEGY,
-        choices=["fast", "hi_res"],
-        help="Unstructured partitioning strategy: 'fast' or 'hi_res' (default: fast)"
-    )
+    # 1. Clean
+    clean_p = subparsers.add_parser("clean", help="Ingest guideline PDFs & clean layout artifacts")
+    clean_p.add_argument("--academic", nargs="?", const=True, default=True, help="Apply academic cleaning rules")
+    clean_p.add_argument("--input-dir", default=str(DEFAULT_GUIDELINES_DIR), help="Input guidelines directory")
+    clean_p.add_argument("--output-dir", default=str(DEFAULT_CLEANED_DIR), help="Output cleaned directory")
+    clean_p.add_argument("--strategy", default=DEFAULT_PARTITION_STRATEGY, choices=["fast", "hi_res"])
 
-    # 2. Build sub-command (Vector index builder)
-    build_parser = subparsers.add_parser("build", help="Build vector embeddings index from cleaned guidelines")
-    build_parser.add_argument(
-        "--input-dir",
-        type=str,
-        default=str(DEFAULT_CLEANED_DIR),
-        help="Directory containing cleaned text files (default: data/cleaned)"
-    )
-    build_parser.add_argument(
-        "--index-path",
-        type=str,
-        default=str(DEFAULT_INDEX_PATH),
-        help="Target index storage path (default: data/vector_store/index.json)"
-    )
-    build_parser.add_argument(
-        "--chunk-size",
-        type=int,
-        default=DEFAULT_CHUNK_SIZE_CHARS,
-        help=f"Target chunk size in characters (default: {DEFAULT_CHUNK_SIZE_CHARS})"
-    )
-    build_parser.add_argument(
-        "--overlap",
-        type=int,
-        default=DEFAULT_CHUNK_OVERLAP_CHARS,
-        help=f"Chunk overlap size (default: {DEFAULT_CHUNK_OVERLAP_CHARS})"
-    )
+    # 2. Build
+    build_p = subparsers.add_parser("build", help="Chunk guidelines & build vector index")
+    build_p.add_argument("--input-dir", default=str(DEFAULT_CLEANED_DIR), help="Cleaned text directory")
+    build_p.add_argument("--index-path", default=str(DEFAULT_INDEX_PATH), help="Target index JSON path")
+    build_p.add_argument("--chunk-size", type=int, default=DEFAULT_CHUNK_SIZE_CHARS, help="Target chunk size")
+    build_p.add_argument("--overlap", type=int, default=DEFAULT_CHUNK_OVERLAP_CHARS, help="Chunk overlap size")
 
-    # 3. Ask sub-command (RAG Query Agent)
-    ask_parser = subparsers.add_parser("ask", help="Ask clinical questions against the guideline vector store")
-    ask_parser.add_argument(
-        "query",
-        type=str,
-        help="The clinical question to evaluate"
-    )
-    ask_parser.add_argument(
-        "--index-path",
-        type=str,
-        default=str(DEFAULT_INDEX_PATH),
-        help="Path to the vector index (default: data/vector_store/index.json)"
-    )
-    ask_parser.add_argument(
-        "--top-k",
-        type=int,
-        default=DEFAULT_RETRIEVAL_TOP_K,
-        help=f"Number of evidence passages to retrieve (default: {DEFAULT_RETRIEVAL_TOP_K})"
-    )
+    # 3. Ask
+    ask_p = subparsers.add_parser("ask", help="Ask clinical questions against indexed guidelines")
+    ask_p.add_argument("query", type=str, help="Clinical question")
+    ask_p.add_argument("--mode", choices=["keyword", "semantic", "hybrid"], default=DEFAULT_RETRIEVAL_MODE, help="Retrieval mode")
+    ask_p.add_argument("--provider", choices=["gemini", "auto", "openai", "anthropic", "ollama", "fallback"], default="gemini", help="LLM synthesis provider (default: gemini)")
+    ask_p.add_argument("--model", type=str, default=None, help="Gemini or LLM model identifier (default: gemini-1.5-flash)")
+    ask_p.add_argument("--api-key", "--gemini-api-key", dest="api_key", type=str, default=None, help="Google Gemini API key (or set GEMINI_API_KEY)")
+    ask_p.add_argument("--index-path", default=str(DEFAULT_INDEX_PATH), help="Path to vector index")
+    ask_p.add_argument("--top-k", type=int, default=DEFAULT_RETRIEVAL_TOP_K, help="Number of passages to retrieve")
+    ask_p.add_argument("--json", action="store_true", help="Output results in JSON format")
+
+    # 4. Evaluate
+    eval_p = subparsers.add_parser("evaluate", aliases=["eval"], help="Run Precision@K benchmark across retrieval modes")
+    eval_p.add_argument("--index-path", default=str(DEFAULT_INDEX_PATH), help="Path to vector index")
+    eval_p.add_argument("--questions", default=str(DEFAULT_EVAL_QUESTIONS_PATH), help="Evaluation questions JSON")
+    eval_p.add_argument("--cleaned-dir", default=str(DEFAULT_CLEANED_DIR), help="Cleaned text directory for ablation")
+
+    # 5. Chat
+    chat_p = subparsers.add_parser("chat", help="Start interactive assistant terminal session")
+    chat_p.add_argument("--mode", choices=["keyword", "semantic", "hybrid"], default=DEFAULT_RETRIEVAL_MODE)
+    chat_p.add_argument("--provider", choices=["gemini", "auto", "openai", "anthropic", "ollama", "fallback"], default="gemini", help="LLM synthesis provider")
+    chat_p.add_argument("--model", type=str, default=None, help="Gemini model identifier (default: gemini-1.5-flash)")
+    chat_p.add_argument("--api-key", "--gemini-api-key", dest="api_key", type=str, default=None, help="Google Gemini API key")
+    chat_p.add_argument("--index-path", default=str(DEFAULT_INDEX_PATH))
+    chat_p.add_argument("--top-k", type=int, default=DEFAULT_RETRIEVAL_TOP_K)
+
+    # 6. Full Pipeline (Clean -> Chunk -> Embed)
+    pipe_p = subparsers.add_parser("pipeline", aliases=["run-all"], help="Run full pipeline: Clean PDFs -> Chunk -> Build Vector Index")
+    pipe_p.add_argument("--academic", nargs="?", const=True, default=True, help="Apply academic cleaning rules")
+    pipe_p.add_argument("--strategy", default=DEFAULT_PARTITION_STRATEGY, choices=["fast", "hi_res"])
+    pipe_p.add_argument("--chunk-size", type=int, default=DEFAULT_CHUNK_SIZE_CHARS, help="Target chunk size")
+    pipe_p.add_argument("--overlap", type=int, default=DEFAULT_CHUNK_OVERLAP_CHARS, help="Chunk overlap size")
 
     return parser
 
 
 def main():
     parser = build_parser()
-
     if len(sys.argv) == 1:
-        print("\n[i] No subcommand provided. Showing help:\n")
         parser.print_help()
-        print("\nQuickstart:")
-        print("  python main.py clean             # Ingest and clean all guidelines")
-        print("  python main.py build             # Chunk guidelines & build vector index")
-        print("  python main.py ask \"<question>\"   # Query guidelines with evidence panel\n")
         sys.exit(0)
 
     args = parser.parse_args()
-
     if args.command == "clean":
-        clean_all_guidelines(
-            academic=args.academic,
-            input_dir=args.input_dir,
-            output_dir=args.output_dir,
-            strategy=args.strategy
-        )
+        clean_all_guidelines(academic=args.academic, input_dir=args.input_dir, output_dir=args.output_dir, strategy=args.strategy)
     elif args.command == "build":
-        execute_build(
-            input_dir=args.input_dir,
-            index_path=args.index_path,
-            chunk_size=args.chunk_size,
-            overlap=args.overlap
-        )
+        build_vector_index(input_dir=args.input_dir, index_path=args.index_path, chunk_size=args.chunk_size, overlap=args.overlap)
+    elif args.command in ("pipeline", "run-all"):
+        print("\n" + "=" * 84)
+        print("  STEP 1 & 2: PDF PARSING & SMART TEXT CLEANING")
+        print("=" * 84)
+        clean_all_guidelines(academic=args.academic, strategy=args.strategy)
+        print("\n" + "=" * 84)
+        print("  STEP 3 & 4: SEMANTIC CHUNKING & VECTOR STORE EMBEDDING")
+        print("=" * 84)
+        build_vector_index(chunk_size=args.chunk_size, overlap=args.overlap)
+        print("\n[OK] Complete end-to-end pipeline finished successfully!\n")
     elif args.command == "ask":
-        execute_ask(
+        handle_ask(
             query=args.query,
             index_path=args.index_path,
-            top_k=args.top_k
+            top_k=args.top_k,
+            mode=args.mode,
+            output_json=args.json,
+            provider=args.provider,
+            model=args.model,
+            api_key=args.api_key
+        )
+    elif args.command in ("evaluate", "eval"):
+        run_full_evaluation(index_path=args.index_path, questions_path=args.questions, cleaned_dir=args.cleaned_dir)
+    elif args.command == "chat":
+        handle_chat(
+            index_path=args.index_path,
+            top_k=args.top_k,
+            mode=args.mode,
+            provider=args.provider,
+            model=args.model,
+            api_key=args.api_key
         )
     else:
         parser.print_help()
-        sys.exit(0)
 
 
 if __name__ == "__main__":

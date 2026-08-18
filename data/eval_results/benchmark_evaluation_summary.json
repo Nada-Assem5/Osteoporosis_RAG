@@ -1,0 +1,89 @@
+{
+  "total_benchmark_queries": 6,
+  "hit_rate_at_1": 100.0,
+  "hit_rate_at_3": 100.0,
+  "mean_reciprocal_rank_mrr": 1.0,
+  "avg_context_precision": 100.0,
+  "avg_faithfulness": 100.0,
+  "avg_latency_ms": 1.45,
+  "records": [
+    {
+      "query_id": "BM-01",
+      "category": "Diagnosis & Imaging",
+      "query": "When should a DXA bone density scan be offered?",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "mrr": 1.0,
+      "precision": 1.0,
+      "faithfulness": 1.0,
+      "latency_ms": 1.52,
+      "top_source": "osteoporosis-risk-assessment-pdf",
+      "top_section": "1.4 Bone Density Assessment"
+    },
+    {
+      "query_id": "BM-02",
+      "category": "Screening Guidelines",
+      "query": "What are the osteoporosis screening recommendations for women aged 65 and older?",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "mrr": 1.0,
+      "precision": 1.0,
+      "faithfulness": 1.0,
+      "latency_ms": 1.38,
+      "top_source": "osteoporosis-screening-final-rec",
+      "top_section": "2.1 Screening in Women Aged 65"
+    },
+    {
+      "query_id": "BM-03",
+      "category": "Risk Assessment",
+      "query": "Which risk assessment tools are recommended for assessing fracture risk?",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "mrr": 1.0,
+      "precision": 1.0,
+      "faithfulness": 1.0,
+      "latency_ms": 1.41,
+      "top_source": "osteoporosis-risk-assessment-pdf",
+      "top_section": "1.2 Risk Prediction Tools"
+    },
+    {
+      "query_id": "BM-04",
+      "category": "Target Populations",
+      "query": "What is the screening recommendation for osteoporosis in men?",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "mrr": 1.0,
+      "precision": 1.0,
+      "faithfulness": 1.0,
+      "latency_ms": 1.44,
+      "top_source": "osteoporosis-screening-final-rec",
+      "top_section": "2.3 Screening in Men (Grade I)"
+    },
+    {
+      "query_id": "BM-05",
+      "category": "Secondary Causes",
+      "query": "How should glucocorticoid or steroid use be evaluated for bone fracture risk?",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "mrr": 1.0,
+      "precision": 1.0,
+      "faithfulness": 1.0,
+      "latency_ms": 1.48,
+      "top_source": "osteoporosis-risk-assessment-pdf",
+      "top_section": "1.1 Assessing Risk of Fragility"
+    },
+    {
+      "query_id": "BM-06",
+      "category": "Diagnosis & Imaging",
+      "query": "When should vertebral fracture assessment (VFA) or spinal imaging be considered?",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "mrr": 1.0,
+      "precision": 1.0,
+      "faithfulness": 1.0,
+      "latency_ms": 1.47,
+      "top_source": "osteoporosis-risk-assessment-pdf",
+      "top_section": "1.5 Vertebral Fracture Assessment"
+    }
+  ]
+}

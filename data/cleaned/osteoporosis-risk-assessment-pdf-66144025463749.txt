@@ -1,19 +1,132 @@
 Osteoporosis: risk assessment
-NICE guideline NG259 (Published: July 2026)
+
+Your res ponsibility
+
+The rec ommendations in this guideline represent the view of NICE, arrived at after careful
+
+consideration of the evidence available. When exercising their judgement, professionals
+
+and practitioners are expected to take this guideline fully into account, alongside the
+
+individual needs, preferences and values of their patients or the people using their service.
+
+It is not mandatory to apply the rec ommendations, and the guideline does not override the
+
+res ponsibility to make decisions appropriate to the circumstances of the individual, in
+
+consultation with them and their families and carers or guardian.
+
+All problems (adverse events) related to a medicine or medical device used for treatment
+
+or in a procedure should be reported to the Medicines and Healthcare products Regulatory
+
+Agency using the Yellow Card Scheme.
+
+Local commissioners and providers of healthcare have a res ponsibility to enable the
+
+guideline to be applied when individual professionals and people using services wish to
+
+use it. They should do so in the context of local and national priorities for funding and
+
+developing services, and in light of their duties to have due regard to the need to eliminate
+
+unlawful dis crimination, to advance equality of opportunity and to reduce health
+
+inequalities. Nothing in this guideline should be interpreted in a way that would be
+
+inconsistent with complying with those duties.
+
+Commissioners and providers have a res ponsibility to promote an env ironmentally
+
+sustainable health and care system and should assess and reduce the environmental
+
+impact of implementing NICE rec ommendations wherever possible.
+
+Contents
+
+Using this guideline ..................................................................................................................... 4
+
+Fragility fracture risk assessment .............................................................................................. 5
+
+1.1 Risk factors for fragility fractures ................................................................................................... 5
+
+1.2 Electronic health records ................................................................................................................ 11
+
+1.3 Risk prediction tools ........................................................................................................................ 11
+
+1.4 Bone density assessment ............................................................................................................... 15
+
+Identifying vertebral fragility fractures ......................................................................................20
+
+1.5 DXA-based vertebral fracture assessment (VFA) scan ............................................................... 20
+
+1.6 Using artificial intelligence to identify vertebral fractures .......................................................... 24
+
+Deciding whether pha rmacological treatment is appropriate .................................................25
+
+1.7 Criteria for pha rmacological treatment ......................................................................................... 25
+
+Follow-up for people not having treatment ..............................................................................32
+
+1.8 People who have declined or delayed treatment ......................................................................... 32
+
+1.9 People whose condition did not meet the criteria for treatment ................................................ 32
+
+1.10 Timing of follow-up DXA scans ..................................................................................................... 33
+
+Terms used in this guideline .......................................................................................................37
+
+First-degree relative ............................................................................................................................. 37
+
+Fragility fracture .................................................................................................................................... 37
+
+Major osteoporotic fractures ............................................................................................................... 37
+
+Rec ommendations for research .................................................................................................38
+
+Key rec ommendations for research .................................................................................................... 38
+
+Other rec ommendations for research ................................................................................................. 40
+
+Finding more information and committee details .....................................................................42
+
+Update information .....................................................................................................................43
+
+This guideline replaces CG146.
+
+This guideline is the basis of QS149.
 
 Using this guideline
-This guideline replaces CG146. This guideline is the basis of QS149.
-People have the right to be involved in discussions and make informed decisions about their care, as described in NICE's information about shared decision making.
-Health and social care practitioners should follow our general guidelines for people delivering care:
-• Decision-making and mental capacity
-• Medicines adherence
-• Medicines optimisation
-• Multimorbidity
-• Patient experience in adult NHS services
-• People's experience in adult social care services
-• Shared decision making
 
-Making decisions using NICE guidelines explains how we use words to show the strength (or certainty) of our recommendations, and has information about prescribing medicines (including off-label use), professional guidelines, standards and laws (including on consent and mental capacity), and safeguarding.
+People have the right to be involved in discussions and make informed decisions about
+
+their care, as described in NICE's information about shared decision making.
+
+Health and social care practitioners should follow our general guidelines for people
+
+delivering care:
+
+Decision making and mental capacity
+
+Medicines adherence
+
+Medicines optimisation
+
+Multi morbidity
+
+Patient experience in adult NHS services
+
+People's experience in adult social care services
+
+Shared decision making
+
+Making decisions using NICE guidelines explains how we use words to show the strength
+
+(or certainty) of our rec ommendations, and has information about prescribing medicines
+
+(including off-label use), professional guidelines, standards and laws (including on consent
+
+and mental capacity), and safeguarding.
 
 Fragility fracture risk assessment
 
@@ -21,215 +134,1570 @@ Fragility fracture risk assessment
 
 All people aged 50 and over and women who have experienced menopause
 
-1.1.1 Assess fragility fracture risk in all people aged 50 and over and women who have experienced menopause with either of the following risk factors:
-• a previous fragility fracture
-• current or frequent use of systemic glucocorticoids (for example, 5 mg or more prednisolone daily or equivalent for over 3 months, or intermittent use of higher doses) unless this is a replacement dose for adrenal insufficiency (see table 2 in NICE's guideline on adrenal insufficiency).
+1.1.1
 
-1.1.2 Consider assessing fragility fracture risk in:
-• all men aged 75 and over
-• all women aged 65 and over
-• all people aged 50 to 74 and women aged under 65 who have experienced menopause with any of the following risk factors:
-  - history of 2 or more falls in the last year (see also NICE's guideline on falls)
-  - history of hip fracture in a first-degree relative (particularly if the first-degree relative was aged under 80 at the time of hip fracture)
-  - low body mass index (BMI; less than 18.5 kg/m²)
-  - current smoker
-  - alcohol intake of more than 14 units per week
-  - any other factor associated with increased risk of fragility fracture (see examples in table 1).
+Assess fragility fracture risk in all people aged 50 and over and women who have
+
+experienced menopause with either of the following risk factors:
+
+a previous fragility fracture
+
+current or frequent use of systemic glu cocorticoids (for example, 5 mg or
+
+more prednisolone daily or equivalent for over 3 months, or intermittent use
+
+of higher doses) unless this is a replacement dose for adrenal insufficiency
+
+(see table 2 in NICE's guideline on adrenal insufficiency).
+
+1.1.2
+
+Consider assessing fragility fracture risk in:
+
+all men aged 75 and over
+
+all women aged 65 and over
+
+all people aged 50 to 74 and women aged under 65 who have experienced
+
+menopause with any of the following risk factors:
+
+－ history of 2 or more falls in the last year (see also NICE's guideline on
+
+falls)
+
+－ history of hip fracture in a first-degree relative (particularly if the first-
+
+degree relative was aged under 80 at the time of hip fracture)
+
+－ any other factor associated with increased risk of fragility fracture (see
+
+examples in table 1).
 
 Table 1 Examples of other factors associated with increased risk of fragility fracture
-Category: Endocrine
-• Hypogonadism in either men or women (including untreated early menopause or premature ovarian insufficiency [see also NICE's guideline on menopause], and treatment with aromatase inhibitors or androgen deprivation therapy)
-• Hyperthyroidism
-• Hyperparathyroidism (see also NICE's guideline on primary hyperparathyroidism)
-• Hyperprolactinaemia
-• Cushing's disease
-• Diabetes (type 1 and 2)
 
-Category: Gastrointestinal
-• Coeliac disease (see also NICE's guideline on coeliac disease)
-• Crohn's disease and other inflammatory bowel diseases
-• Chronic liver disease
-• Chronic pancreatitis (see also NICE's guideline on pancreatitis)
-• Other causes of malabsorption
+Examples
 
-Category: Haematological
-• Multiple myeloma
-• Haemoglobinopathies
-• Systemic mastocytosis
+Hypogonadism in either men or women (including untreated early
 
-Category: Neurological
-• Parkinson's disease and parkinsonism
-• Disease or injury that causes prolonged immobility, such as stroke or multiple sclerosis (see also NICE's guideline on multiple sclerosis in adults)
+menopause or premature ovarian insufficiency [see also NICE's
 
-Category: Respiratory
-• Cystic fibrosis (see also NICE's guideline on cystic fibrosis)
-• Chronic obstructive pulmonary disease (COPD; see also NICE's guideline on COPD in over 16s)
+Hyp erthyroidism
 
-Category: Rheumatological
-• Rheumatoid arthritis
-• Other inflammatory arthropathies, such as systemic lupus erythematosus or spondyloarthritis (see also NICE's guideline on spondyloarthritis in over 16s)
+Endocrine
 
-Category: Other
-• Inherited metabolic diseases known to be associated with osteoporosis such as homocystinuria
-• Eating disorders related to low BMI such as anorexia nervosa (see also the section on low bone mineral density in people with anorexia nervosa in NICE's guideline on eating disorders)
-• Chronic kidney disease stage 4 and 5 (see also NICE's guideline on chronic kidney disease)
-• Prolonged immobility
-• Taking other medicines associated with increased fracture risk (for example, anticonvulsants, selective serotonin reuptake inhibitors, thiazolidinediones, proton pump inhibitors and antiretroviral medicines)
+Hyperp arathyroidism (see also NICE's guideline on primary
+
+Hyper pro lac tina emi a
+
+Cushing's disease
+
+Diabetes (type 1 and 2)
+
+Coeliac disease (see also NICE's guideline on coeliac disease)
+
+Crohn's disease and other inflammatory bowel diseases
+
+Chronic liver disease
+
+Chronic pancreatitis (see also NICE's guideline on pancreatitis)
+
+Other causes of malabsorption
+
+Multiple myeloma
+
+Haemog lobinopathies
+
+Systemic mastocytosis
+
+Parkinson's disease and parkinsonism
+
+Neurological
+
+Disease or injury that causes prolonged immobility, such as stroke
+
+or multiple sclerosis (see also NICE's guideline on multiple sclerosis
+
+in adults)
+
+Cystic fibrosis (see also NICE's guideline on cystic fibrosis)
+
+Respiratory
+
+Chronic obstructive pulmonary disease (COPD; see also NICE's
+
+Rheumatoid arthritis
+
+Rheum a to logical
+
+Other inflammatory arthropathies, such as systemic lupus
+
+erythematosus or spon dyloarthritis (see also NICE's guideline on
+
+spon dyloarthritis in over 16s)
+
+Inherited metabolic diseases known to be associated with
+
+osteoporosis such as homo cyst in uri a
+
+Eating disorders related to low BMI such as anorexia nervosa (see
+
+also the section on low bone mineral density in people with
+
+anorexia nervosa in NICE's guideline on eating disorders)
+
+Other
+
+Chronic kidney disease stage 4 and 5 (see also NICE's guideline on
+
+Prolonged immobility
+
+Taking other medicines associated with increased fracture risk (for
+
+example, an ticonvulsants, selective serotonin reuptake inhibitors,
 
 Men aged under 50 and women aged under 50 who have not experienced menopause
 
-1.1.3 Assess fragility fracture risk in men aged under 50 and women aged under 50 who have not experienced menopause if they have had either:
-• a previous hip or vertebral fragility fracture or
-• 2 or more major osteoporotic fractures.
+1.1.3
 
-1.1.4 Consider assessing fragility fracture risk in men aged under 50 and women aged under 50 who have not experienced menopause who do not meet the criteria in recommendation 1.1.3 if they have a different major risk factor, such as:
-• a previous non-hip, non-vertebral fragility fracture
-• current or frequent use of systemic glucocorticoids (for example, 5 mg or more prednisolone daily or equivalent for over 3 months, or intermittent use of higher doses) unless this is a replacement dose for adrenal insufficiency (see table 2 in NICE's guideline on adrenal insufficiency)
-• untreated early menopause or premature ovarian insufficiency.
+Assess fragility fracture risk in men aged under 50 and women aged under 50
+
+who have not experienced menopause if they have had either:
+
+a previous hip or vertebral fragility fracture or
+
+2 or more major osteoporotic fractures.
+
+1.1.4
+
+Consider assessing fragility fracture risk in men aged under 50 and women aged
+
+under 50 who have not experienced menopause who do not meet the criteria in
+
+recommendation 1.1.3 if they have a different major risk factor, such as:
+
+a previous non-hip, non-vertebral fragility fracture
+
+current or frequent use of systemic glu cocorticoids (for example, 5 mg or
+
+more prednisolone daily or equivalent for over 3 months, or intermittent use
+
+of higher doses) unless this is a replacement dose for adrenal insufficiency
+
+(see table 2 in NICE's guideline on adrenal insufficiency)
+
+untreated early menopause or premature ovarian insufficiency.
+
+1.1.5
+
+When assessing fracture risk in trans or non-binary people, carry out an
+
+i ndividualised risk assessment that also takes into account all of the following:
+
+sex registered at birth
+
+hormonal history (for example, puberty suppression, gender affirming
+
+hormone therapy or menopause)
+
+current hormone treatment, if clinically relevant.
+
+Why the committee made the rec ommendations
+
+The committee agreed the risk factors for fragility fractures included in the 2012 NICE
+
+guideline on osteoporosis were still relevant to current practice and agreed to keep
+
+these in the rec ommendations.
+
+All people aged 50 and over and women who have experienced menopause
+
+The committee agreed that all people aged 50 and over and women who have
+
+experienced menopause are most at risk of fragility fractures. There was also
+
+evidence to support doing a risk assessment if they have had a previous fragility
+
+fracture or they are currently using, or frequently use, systemic glu cocorticoids.
+
+The committee agreed that there is likely to be significantly higher risk of further
+
+fragility fracture in people who have previously had one. They also noted fracture
+
+liaison services should sys tematically identify people aged 50 and over who have had
+
+a fragility fracture with the aim of reducing further fractures. People will only have
+
+been assessed for future fracture risk at the time of the injury if it was diagnosed as a
+
+fragility fracture.
+
+Ongoing or high-dosage use of systemic glu cocorticoids leads to weaker bones and
+
+may cause glucocort icoid-induced osteoporosis. The committee agreed that people
+
+who use these are likely to be at significantly higher risk of fragility fracture. So, they
+
+should have a risk assessment. FRAX includes glucocorticoid exposure as a risk
+
+factor, defined as current or prior use of oral glu cocorticoids at a dose equivalent to
+
+prednisolone 5 mg or more daily used for at least 3 months. The committee agreed to
+
+use this as a starting point for risk and acknowledged that risk increases with higher
+
+doses. The committee also agreed that people who take higher doses i ntermittently,
+
+for example using 3 or more rescue packs of glu cocorticoids for respiratory or other
+
+inflammatory conditions, are also at risk of fragility fracture. They also noted that
+
+NICE's guideline on chronic obstructive pulmonary disease in over 16s recommends
+
+monitoring for osteoporosis when using these medicines. The committee also agreed
+
+an exception for physiological equivalent doses of glu cocorticoids taken for adrenal
+
+insufficiency. This condition causes low levels of endogenous cor ticosteroids, so a
+
+replacement dose is needed. As long as the physiological equivalent dose is not
+
+exceeded then this does not increase the person's risk of fragility fracture.
+
+Recent evidence suggests that, for family history as a risk factor, risk is greater if a
+
+relative was under 80 at the time of hip fracture. So, the committee agreed to modify
+
+the recommendation to reflect this. The term 'family history' was also changed to
+
+'first-degree relative' to avoid any mis understanding about a link with other relatives.
+
+For all other risk factors the committee agreed that there was no evidence to change
+
+the 2012 recommendation. So, the committee agreed that risk assessment should still
+
+be considered for the groups listed in recommendation 1.1.2. But the committee also
+
+agreed that the list of factors included in table 1 is not an exhaustive list.
+
+Men aged under 50 and women aged under 50 who have not experienced
+
+menopause
+
+The committee agreed osteoporosis is uncommon in men aged under 50 and women
+
+aged under 50 who have not experienced menopause, so this group should not be
+
+routinely assessed. But as with the older age group they also agreed that if someone
+
+was known to have had a hip or vertebral fragility fracture, or 2 or more major
+
+osteoporotic fractures that happen separately or at the same time, then they should
+
+be assessed for the risk of further fracture. This is because these fractures have a
+
+significant impact on a person's quality of life and may mean they are at risk of having
+
+another fracture. Similarly, people who currently, or frequently, use systemic
+
+glu cocorticoids and those with untreated early menopause or premature ovarian
+
+insufficiency could be at increased risk of fracture despite being younger.
 
 Trans or non-binary people
 
-1.1.5 When assessing fracture risk in trans or non-binary people, carry out an individualised risk assessment that also takes into account all of the following:
-• sex registered at birth
-• hormonal history (for example, puberty suppression, gender-affirming hormone therapy or menopause)
-• current hormone treatment, if clinically relevant.
+The committee agreed that a trans or non-binary person's specific circumstances
+
+would need to be taken into account when deciding how to assess fracture risk.
+
+Full details of the evidence and the committee's discussion are in evidence review A:
+
+risk factors for fragility fracture.
+
+How the rec ommendations might affect practice
+
+The rec ommendations remain largely unchanged from the 2012 NICE guideline on
+
+osteoporosis but risk assessment rates vary, particularly for people who have not had
+
+a fragility fracture. These rec ommendations may raise awareness and increase the
+
+number of people being assessed for fracture risk. If this is the case there may be increased resource use related to risk assessment, dual-energy X‑ray abs or pti ome try (DXA) scans, and treatment, but savings because of reduced fragility fractures in the
 
 1.2 Electronic health records
 
-NICE has made a recommendation for research on using electronic health records to help identify adults who should have a fragility fracture risk assessment.
+NICE has made a recommendation for research on using electronic health records to help
+
+identify adults who should have a fragility fracture risk assessment.
+
+Why the committee made no rec ommendations
+
+No evidence was identified for electronic health records so the committee made this
+
+recommendation for research. The committee agreed that electronic health records
+
+have the potential to help make it easier to identify people at risk of fragility fracture
+
+who may benefit from treatment.
 
 1.3 Risk prediction tools
 
-1.3.1 Complete a full clinical risk assessment alongside a risk prediction tool to determine the 10-year risk of major osteoporotic fracture using:
-• either FRAX or QFracture for people aged between 40 and 90
-• QFracture for people aged between 30 and 39.
+1.3.1
 
-1.3.2 If using risk prediction tools to assess fragility fracture risk for people aged over 90, be aware that:
-• FRAX calculates the risk assuming the person is aged 90
-• QFracture calculates a risk score for the number of years up to the age of 100.
+Complete a full clinical risk assessment alongside a risk prediction tool to
+
+determine the 10-year risk of major osteoporotic fracture using:
+
+either FRAX or QFracture for people aged between 40 and 90
+
+QFracture for people aged between 30 and 39.
+
+1.3.2
+
+If using risk prediction tools to assess fragility fracture risk for people aged
+
+over 90, be aware that:
+
+FRAX calculates the risk assuming the person is aged 90
+
+QFracture calculates a risk score for the number of years up to the age of
+
+100.
 
 1.3.3 Use the same risk prediction tool throughout a person's care.
 
-1.3.4 When assessing risk, take into account that fragility fracture risk is decreased while taking systemic hormone replacement therapy (HRT). Use the discussion aid on HRT for the incidence of fragility fractures in women taking HRT in NICE's guideline on menopause.
+1.3.4
 
-1.3.5 Seek advice from a specialist when assessing fragility fracture risk in people:
-• aged under 30 or
-• with rare forms of osteoporosis such as suspected idiopathic osteoporosis (in men aged under 50 or women aged under 50 who have not experienced menopause) or suspected pregnancy associated osteoporosis or
-• with another suspected rare bone disease associated with fragility fractures, such as osteogenesis imperfecta, osteomalacia or hypophosphatasia.
+When assessing risk, take into account that fragility fracture risk is decreased
+
+while taking systemic hormone replacement therapy (HRT). Use the discussion
+
+aid on HRT for the incidence of fragility fractures in women taking HRT in NICE's
+
+1.3.5
+
+Seek advice from a specialist when assessing fragility fracture risk in people:
+
+aged under 30 or
+
+with rare forms of osteoporosis such as suspected idiopathic osteoporosis (in
+
+men aged under 50 or women aged under 50 who have not experienced
+
+menopause) or suspected pregnancy associated osteoporosis or
+
+with another suspected rare bone disease associated with fragility fractures,
+
+Why the committee made the rec ommendations
+
+When assessing risk in people aged 30 and over, the committee agreed that either
+
+FRAX or QFracture should be used. This is similar to the recommendation made in the
+
+2012 NICE guideline on osteoporosis because recent evidence has not shown an
+
+advantage of using 1 tool over the other. For people who have not had a previous hip
+
+or vertebral fragility fracture, a single major osteoporotic fragility fracture in the last
+
+2 years, or 2 or more fragility fractures, the committee agreed that it is best to use a
+
+risk prediction tool first because it helps avoid unnecessary DXA scans. FRAX only
+
+applies to people over the age of 40, so the committee recommended using QFracture for people between the ages of 30 and 39. A 10‑year risk of major osteoporotic fracture is generally used when calculating risk from FRAX or QFracture, so the
+
+committee recommended this.
+
+Risk prediction tools may not provide an accurate assessment of risk in people
+
+over 90. So, the committee agreed healthcare professionals would need to take this
+
+into account when using risk tools for this age group. In this group, FRAX calculates
+
+risk by assuming the person is aged 90. While QFracture can provide a risk score for
+
+people up to the age of 99, it covers fewer years. For example, it will estimate an 8‑year risk score for people aged 92 or a 7‑year risk score for people aged 93. But the committee agreed that this would still provide useful information when assessing a
+
+person's risk.
+
+The committee emphasised the importance of doing a full clinical risk assessment
+
+because neither tool includes all factors associated with an increased risk of fracture
+
+(for example, if a person is taking medicines associated with accelerated bone loss
+
+such as aromatase inhibitors or androgen deprivation therapy). They also noted that
+
+the same risk prediction tool should be used throughout a person's care. This is
+
+because FRAX and QFracture assess risk differently, for example, quantity dependent
+
+risk factors may not be treated as continuous variables. Alcohol intake is measured in
+
+FRAX as either over or under 3 units per day, whereas in QFracture there are several
+
+levels of alcohol intake. FRAX also has fewer criteria than QFracture so is less
+
+detailed. In contrast, FRAX gives a risk score adjusted for mortality whereas QFracture
+
+does not. QFracture also includes oes trogen-only hormone replacement therapy
+
+(HRT) use in its assessment. The committee agreed that when doing the risk
+
+assessment, it is important to take into account that systemic HRT can reduce the risk
+
+of fracture.
+
+When assessing fragility fractures for some groups the committee agreed that advice
+
+from a specialist should be sought to understand the impact of potential causes or
+
+risk factors on the person's fracture risk. For people under the age of 30 they agreed
+
+it is important to treat the underlying cause before any osteoporosis treatments are
+
+considered. Advice from a specialist is also needed when the person is suspected of
+
+having a rare form of osteoporosis or another rare bone disease because the person
+
+is likely to need different management to most people with osteoporosis.
+
+A single study was found on the risk prediction tool CFracture (developed in 2023)
+
+that uses the same risk factors as QFracture. A recommendation for research to
+
+validate the CFracture tool was made because there is limited evidence and the
+
+calculator is not currently available. There was 1 study (limited to women aged 65 and
+
+over) on the vertebral fracture clinical decision tool (Vfrac) that was developed to
+
+identify people with a suspected vertebral fracture. The committee made a
+
+recommendation for research on identifying vertebral fractures because there is
+
+limited evidence.
+
+Full details of the evidence and the committee's discussion are in evidence review C:
+
+validity of fragility fracture risk prediction tools and the cost effectiveness section in
+
+evidence review E: effectiveness of fragility fracture risk prediction tools.
+
+How the rec ommendations might affect practice
+
+The recommendation about choice of risk prediction tool reflects current practice and
+
+rec ommendations from the 2012 NICE guideline on osteoporosis. The costs of using
+
+FRAX and QFracture are similar because they take a similar amount of time to
+
+complete, and both have freely available online calculators. Seeking advice for rare
+
+bone diseases from a specialist is likely to be current practice and unlikely to have a
 
 1.4 Bone density assessment
 
-Bone mineral density (BMD) measurement with a dual-energy X-ray absorptiometry (DXA) scan
+Bone mineral density (BMD) measurement with a dual-energy X- ray abs or pti ome try (DXA) scan
 
-1.4.1 Offer a DXA scan to measure BMD (with or without completing a risk prediction tool) when assessing fragility fracture risk in people aged 30 and over who have had:
-• a previous hip or vertebral fragility fracture or
-• a single major osteoporotic fragility fracture in the last 2 years or
-• 2 or more fragility fractures.
-If a DXA scan is not tolerated, not technically feasible, or not needed for treatment or monitoring decisions, see recommendation 1.7.4.
+1.4.1
 
-1.4.2 Consider BMD measurement with a DXA scan to help guide treatment decisions for people with a 10-year risk of major osteoporotic fracture of 10% or more.
+Offer a DXA scan to measure BMD (with or without completing a risk prediction
 
-1.4.3 Seek advice from a specialist for people with, or suspected of, primary hyperparathyroidism and follow recommendations in NICE's guideline on primary hyperparathyroidism.
+tool) when assessing fragility fracture risk in people aged 30 and over who have
+
+had:
+
+a previous hip or vertebral fragility fracture or
+
+a single major osteoporotic fragility fracture in the last 2 years or
+
+2 or more fragility fractures.
+
+If a DXA scan is not tolerated, not technically feasible, or not needed for
+
+treatment or monitoring decisions, see recommendation 1.7.4.
+
+1.4.2
+
+Consider BMD measurement with a DXA scan to help guide treatment decisions for people with a 10‑year risk of major osteoporotic fracture of 10% or more.
+
+1.4.3
+
+Seek advice from a specialist for people with, or suspected of, primary
+
+hyperp arathyroidism and follow rec ommendations 1.1.1, 1.3.1 and 1.6.1 in NICE's
 
 DXA scans when starting treatment
 
-1.4.4 Do a baseline BMD measurement with a DXA scan when starting treatment, unless it is not tolerated, not technically feasible, or not needed for treatment or monitoring decisions (see recommendation 1.7.4).
+1.4.4
 
-1.4.5 If there is likely to be a significant delay in doing a DXA scan before treatment, consider either:
-• fast-tracking people for a DXA scan within 6 weeks if they are likely to need anabolic (bone-forming) treatment
-• starting antiresorptive treatment (to slow the rate of bone breakdown) if the person is unlikely to need anabolic treatment.
+Do a baseline BMD measurement with a DXA scan when starting treatment,
+
+unless it is not tolerated, not technically feasible, or not needed for treatment or
+
+monitoring decisions (see recommendation 1.7.4).
+
+1.4.5
+
+If there is likely to be a significant delay in doing a DXA scan before treatment,
+
+consider either:
+
+fast-tracking people for a DXA scan within 6 weeks if they are likely to need
+
+anabolic (bone-forming) treatment
+
+starting a ntiresorptive treatment (to slow the rate of bone breakdown) if the
+
+person is unlikely to need anabolic treatment.
+
+Why the committee made the rec ommendations
+
+Most of the evidence to assess fracture risk was on DXA scans, and this is the
+
+method used in current practice. The evidence for other bone density assessment
+
+techniques was limited and did not support a change to current practice. Two studies
+
+found possible utility using quantitative computed tomography (QCT) while a single
+
+study found possible utility using radio frequency echographic multi spectrometry
+
+(REMS), an ultrasound based bone density assessment technique, and the committee
+
+made rec ommendations for research on REMS, DXA with trabecular bone score (TBS)
+
+BMD measurement with a DXA scan
+
+People aged 30 and over who have had a previous hip or vertebral fragility fracture, a
+
+single major osteoporotic fragility fracture in the last 2 years, or 2 or more fragility
+
+fractures, are likely to have a risk score above the threshold for a DXA scan, or an
+
+underlying condition that needs their bone density assessed. So, the committee
+
+agreed that bone mineral density (BMD) should be measured with a DXA scan to help
+
+guide treatment decisions without the need for completing a risk prediction tool. Risk
+
+may still be calculated with risk prediction tools for some people in this group if it is
+
+useful for clinical decision making or communicating risk to the person. There may be
+
+some people, particularly older people, where it may be clear their condition needs
+
+treatment and a DXA scan is not needed to decide whether to treat, which treatment
+
+to offer or for monitoring.
+
+A 10‑year major osteoporotic fracture risk of 10% or more was used to decide who should have a DXA scan (if they did not meet the criteria for recommendation 1.4.1 in
+
+the section on bone density assessment). This threshold was decided by committee
+
+consensus after considering various risk thresholds and their impact. The committee
+
+agreed that a 5% threshold could lead to over investigation with DXA scans and
+
+increased burden on the healthcare system, while a 20% threshold could lead to
+
+missed opportunities for early treatment and prevention of fragility fractures. There
+
+was also uncertainty about treatment benefits at lower risk levels because people
+
+included in treatment trials were not likely to have a risk score below 10%. A single
+
+threshold was considered to have advantages over age-dependent thresholds
+
+because it was simpler to implement for non specialists, and this may improve the
+
+i mplementation of risk assessment.
+
+DXA scans when starting treatment
+
+BMD measurement can inform decisions about whether treatment is appropriate,
+
+inform discussions with people about the need for treatment, impact treatment choice
+
+and provide a baseline for future treatment monitoring.
+
+A baseline BMD measurement is usually needed to determine treatment eligibility
+
+before an anabolic treatment can be started. The committee noted that it is not
+
+advisable to start an a ntiresorptive treatment then stop and switch to an anabolic
+
+treatment. So, the committee recommended that people who are likely to need
+
+anabolic treatment could be fast-tracked for a DXA scan, if the wait is likely to be
+
+more than 6 weeks (in line with the NHS England 6-week diagnostic target), to
+
+prevent a delay to starting treatment. For example, someone who has had 1 or more
+
+at least 1 anabolic
+
+follow-on treatment with a ntiresorptive after completion of anabolic.
+
+If it is unlikely that anabolic treatment will be needed, then the committee agreed that
+
+the person can start a ntiresorptive treatment while waiting for a DXA scan. They
+
+recommended this because BMD is unlikely to change much within 2 years, and they
+
+agreed it is important that treatment is not delayed if a DXA scan is not available. A
+
+DXA scan would still be needed as a baseline to compare with future measurements
+
+of BMD when assessing the effectiveness of treatment.
+
+Full details of the evidence and the committee's discussion are in evidence review D:
+
+accuracy of bone assessment methods and evidence review E: effectiveness of
+
+fragility fracture risk prediction tools.
+
+How the rec ommendations might affect practice
+
+Using a DXA scan to assess BMD reflects current practice.
+
+The recommendation to go straight to a DXA scan for people with a hip or vertebral
+
+fragility fracture or 2 or more fragility fractures without needing a risk assessment
+
+first may be a change in practice in some areas. But it is unlikely to result in a
+
+substantial resource impact to the NHS because an appointment would still be
+
+needed to discuss referral for a DXA scan and DXA scan referral numbers are likely to
+
+be similar.
+
+The recommendation to use a 10‑year major osteoporotic fracture risk estimate threshold of 10% to determine eligibility for DXA scans for people with a single non-
+
+hip, non-vertebral fragility fracture, or no prior fracture but other clinical risk factors,
+
+is a change from the recommendation in the 2012 NICE guideline on osteoporosis and
+
+common current practice. Many areas will currently be using the National
+
+Osteoporosis Guideline Group (NOGG) age-dependent criteria for BMD assessment.
+
+This updated guidance is likely to result in lower DXA-related resource use if risk
+
+assessment rates remain the same.
 
 Identifying vertebral fragility fractures
 
 1.5 DXA-based vertebral fracture assessment (VFA) scan
 
 1.5.1 Consider doing a VFA when doing a DXA scan for:
-• men aged 70 and over
-• women aged 60 and over.
 
-1.5.2 Consider doing a VFA when doing a DXA scan for men aged under 70 and women aged under 60 with any of the following:
-• a previous major osteoporotic fracture
-• signs or symptoms of vertebral fracture, for example:
-  - history of back pain or radiating rib pain with no identified cause
-  - change in body shape (for example, height loss over 4 cm or changes suggestive of spinal deformity such as rounded shoulders or exaggerated kyphosis)
-  - suspicion of vertebral fracture from the DXA scan
-• current or frequent use of systemic glucocorticoids (for example, 5 mg or more prednisolone daily or equivalent for over 3 months, or intermittent use of higher doses) unless this is a replacement dose for adrenal insufficiency
-• exceptionally low BMD for their age (for example, a Z-score of less than -2).
+men aged 70 and over
 
-1.5.3 Do not do a VFA when doing a DXA scan if any of the following apply:
-• the person has had spinal imaging in the past 3 months and has no symptoms of vertebral fracture
-• scoliosis may affect the interpretation
-• the person's body mass exceeds the threshold for reliable reading as per local guidelines.
+women aged 60 and over.
 
-1.5.4 Do not routinely do spinal imaging after VFA has identified a fracture unless there is either:
-• uncertainty whether a fracture is present or
-• concern about a differential diagnosis.
+1.5.2
+
+Consider doing a VFA when doing a DXA scan for men aged under 70 and women aged under 60 with any of the following:
+
+a previous major osteoporotic fracture
+
+signs or symptoms of vertebral fracture, for example:
+
+－ history of back pain or radiating rib pain with no identified cause
+
+－ change in body shape (for example, height loss over 4 cm or changes
+
+exaggerated kyphosis)
+
+－ suspicion of vertebral fracture from the DXA scan
+
+current or frequent use of systemic glu cocorticoids (for example, 5 mg or
+
+more prednisolone daily or equivalent for over 3 months, or intermittent use
+
+of higher doses) unless this is a replacement dose for adrenal insufficiency
+
+(see table 2 in NICE's guideline on adrenal insufficiency)
+
+exceptionally low BMD for their age (for example, a Z-score of less than -2).
+
+1.5.3
+
+Do not do a VFA when doing a DXA scan if any of the following apply:
+
+the person has had spinal imaging in the past 3 months and has no
+
+scoliosis may affect the i nterpretation
+
+the person's body mass exceeds the threshold for reliable reading as per
+
+1.5.4
+
+Do not routinely do spinal imaging after VFA has identified a fracture unless there
+
+is either:
+
+uncertainty whether a fracture is present or
+
+concern about a differential diagnosis.
+
+Why the committee made the rec ommendations
+
+The committee discussed that vertebral fractures are the most common type of
+
+osteoporotic fracture but people often have no symptoms and so they can go
+
+undiagnosed. Identifying a vertebral fracture is important because it may mean
+
+someone's condition is eligible for treatment that would not be otherwise or that a
+
+different treatment is needed. Vertebral fracture assessment (VFA) adds some
+
+additional time to a DXA scan and for reviewing and reporting but will lead to
+
+reductions in fractures through improved treatment. It could reduce reliance on
+
+conventional radiography to identify vertebral fractures and exposure to higher doses
+
+of ionising radiation. People would also benefit from having all relevant scans on the
+
+same visit rather than having a DXA scan and then needing to return for further
+
+radiography in a separate visit.
+
+Cost effectiveness evidence was available in people 50 years and over with a fracture
+
+having a DXA scan and people aged 65 to 80 years at high risk of vertebral fracture
+
+having a DXA scan. But the committee agreed that because of current low
+
+i dentification rates of vertebral fractures, wider rec ommendations to consider VFA
+
+when doing DXA scans were likely to be cost effective. They prioritised
+
+rec ommendations for groups where risk of vertebral fracture was higher.
+
+The committee was aware of evidence suggesting a higher incidence of vertebral
+
+fractures in men aged 70 and over and women aged 60 and over. So, they agreed that
+
+people in this age range who are having a DXA scan should also be considered for a
+
+VFA at the same visit.
+
+This evidence also suggested men aged under 70 and women aged under 60 are less
+
+likely to have a vertebral fracture. So, the committee agreed that DXA-based VFA
+
+should only be for people at high risk of having a vertebral fracture in this age group.
+
+The committee agreed that DXA-based VFA should not be done if the person has had
+
+recent spinal imaging and no symptoms because it is unlikely to identify a fracture.
+
+They also agreed that it should not be done if the person has scoliosis that is likely to
+
+affect the i nterpretation (for example, severe scoliosis can make it difficult to interpret
+
+the results) or their body mass exceeds local guidelines because the scan results
+
+would not be easy to interpret accurately.
+
+Several studies suggested that doing a VFA when doing a DXA scan had a low risk of
+
+misdiagnosing vertebral fractures with high specificity reported in the per-vertebral
+
+analysis from low-quality evidence. This means that if DXA-based VFA positively
+
+identifies a person as having a fracture, it is highly likely to be accurate. So, the
+
+committee recommended that if a person's VFA is positive, then there is no need to do
+
+further spinal imaging unless there are specific concerns. These could include an
+
+uncertainty from a borderline VFA scan, or the fracture could be caused by a different
+
+condition to osteoporosis, such as a pathological fracture in a person with a history of
+
+breast cancer.
+
+Most evidence on accuracy of DXA-based VFA scans uses older scanners and shows
+
+low specificity. Recent scanners have increased image quality and resolution, which
+
+should result in better accuracy (for both sensitivity and specificity) for detecting
+
+vertebral fractures. So, the committee made a recommendation for research on the
+
+accuracy of DXA-based VFA.
+
+Full details of the evidence and the committee's discussion are in evidence review G:
+
+diagnosing vertebral fractures with DXA-based VFA.
+
+How the rec ommendations might affect practice
+
+Incorporating VFA scans into DXA scan appointments for men aged 70 and over and
+
+women aged 60 and over will be a change in practice. Currently, VFA is limited to
+
+some groups of people or not used at all. Additional staff time will also be needed to
+
+carry out, review and report VFAs. In most cases, additional scanning time should be
+
+able to be accommodated within existing DXA slots but appropriate scheduling of
+
+less mobile patients may be needed. DXA capacity should therefore not be impacted.
+
+Ensuring sufficient reporting capacity is available will be important for
+
+i mplementation. There may also be additional staff training costs to enable expanded
+
+access. Increased capital investment is not anticipated because most current DXA
+
+scanners have the capacity to do VFA.
+
+In some areas, it is common to do spinal imaging to confirm a vertebral fracture
+
+identified on VFA. Where VFA is currently used, it will displace spinal imaging to look
+
+for vertebral fracture at lower cost in some people. But the population recommended
+
+for VFA will be broader than that currently having spinal radiograph and a small
+
+proportion of VFA results may need a subsequent spinal image when there is
+
+uncertainty. Overall, a net reduction in spinal images is anticipated.
+
+Increased use of VFA in the NHS is expected to increase i dentification of vertebral
+
+fractures, which are often missed in current practice. This is expected to result in
+
+increased and better targeted treatment that will reduce fractures.
+
+The committee concluded that the overall financial impact of the new
+
+rec ommendations on the NHS is not likely to be significant over the long term.
 
 1.6 Using artificial intelligence to identify vertebral fractures
-NICE has published HealthTech guidance on artificial intelligence (AI) technologies to aid opportunistic detection of vertebral fragility fractures that can be used in the NHS, while more evidence is generated.
 
-Deciding whether pharmacological treatment is appropriate
+NICE has published Health Tech guidance on artificial intelligence (AI) technologies to aid
 
-1.7 Criteria for pharmacological treatment
+opportunistic detection of vertebral fragility fractures that can be used in the NHS, while
 
-1.7.1 Make a shared decision with the person about whether to start pharmacological treatment based on the following:
-• 10-year risk of major osteoporotic fracture obtained from FRAX or QFracture (if available)
-• BMD from a DXA scan (if available)
-• the number, timing and skeletal sites of previous fragility fractures (especially hip or vertebral fractures)
-• a clinical assessment of risk factors (see the section on risk factors for fragility fractures), including those not specifically included in the risk prediction tools.
+more evidence is generated.
 
-1.7.2 Make a shared decision with trans or non-binary people about whether to start pharmacological treatment that also takes into account all of the following:
-• sex registered at birth
-• hormonal history (for example, puberty suppression, gender-affirming hormone therapy or menopause)
-• current hormone treatment, if clinically relevant.
+Deciding whether pha rmacological treatment is appropriate
 
-1.7.3 Consider pharmacological treatment for all people aged 50 and over and women who have experienced menopause if they have any of the following:
-• a previous hip or vertebral fragility fracture
-• very high-dose systemic glucocorticoids (for example, 15 mg or more prednisolone daily or equivalent) taken for 3 months or more
-• BMD T-score of -2.5 or less
-• BMD T-score of -1.5 or less with any of the following:
-  - a previous fragility fracture
-  - current or frequent use of systemic glucocorticoids (for example, 5 mg or more prednisolone daily or equivalent for over 3 months, or intermittent use of higher doses) unless this is a replacement dose for adrenal insufficiency
-  - taking medicines or having other factors known to be associated with accelerated bone loss (for example, aromatase inhibitors or androgen deprivation therapy, or having primary hyperparathyroidism not treated with surgery).
+1.7 Criteria for pha rmacological treatment
 
-1.7.4 Make a shared decision with the person about whether to start pharmacological treatment without a DXA scan if their condition meets the criteria but for whom a DXA scan is either:
-• not tolerated or technically feasible, or
-• not needed to inform a decision to start treatment or to provide a baseline for long-term monitoring (for example, for older people living with frailty).
+1.7.1
 
-1.7.5 Seek advice from a specialist about treatment options for:
-• men aged under 50 and women aged under 50 who have not experienced menopause who have any of the following:
-  - a previous major osteoporotic fracture or
-  - significant decrease in BMD on serial measurements or
-  - suspected or confirmed idiopathic osteoporosis
-• women, trans men and non-binary people with a suspected or confirmed rare form of osteoporosis such as pregnancy associated osteoporosis or
-• people with another suspected or confirmed rare bone disease associated with fragility fractures, such as osteogenesis imperfecta, osteomalacia or hypophosphatasia.
+Make a shared decision with the person about whether to start pha rmacological
+
+treatment based on the following:
+
+10‑year risk of major osteoporotic fracture obtained from FRAX or QFracture
+
+BMD from a DXA scan (if available)
+
+the number, timing and skeletal sites of previous fragility fractures (especially
+
+hip or vertebral fractures)
+
+a clinical assessment of risk factors (see the section on risk factors for
+
+fragility fractures), including those not specifically included in the risk
+
+1.7.2
+
+Make a shared decision with trans or non-binary people about whether to start
+
+pha rmacological treatment (see rec ommendations 1.7.1 and 1.7.3) that also takes
+
+sex registered at birth
+
+hormonal history (for example, puberty suppression, gender affirming
+
+hormone therapy or menopause)
+
+current hormone treatment, if clinically relevant.
+
+1.7.3
+
+Consider pha rmacological treatment for all people aged 50 and over and women
+
+who have experienced menopause (see rec ommendations 1.4.1 and 1.4.2) if they
+
+have any of the following:
+
+a previous hip or vertebral fragility fracture
+
+very high-dose systemic glu cocorticoids (for example, 15 mg or more
+
+prednisolone daily or equivalent) taken for 3 months or more
+
+BMD T-score of -2.5 or less
+
+BMD T-score of -1.5 or less with any of the following:
+
+－ a previous fragility fracture
+
+－ current or frequent use of systemic glu cocorticoids (for example, 5 mg or more prednisolone daily or equivalent for over 3 months, or intermittent
+
+use of higher doses) unless this is a replacement dose for adrenal
+
+insufficiency (see table 2 in NICE's guideline on adrenal insufficiency)
+
+－ taking medicines or having other factors known to be associated with accelerated bone loss (for example, aromatase inhibitors or androgen
+
+deprivation therapy, or having primary hyperp arathyroidism not treated
+
+1.7.4
+
+Make a shared decision with the person about whether to start pha rmacological
+
+treatment (see recommendation 1.7.1) without a DXA scan if their condition meets
+
+the criteria (see rec ommendations 1.4.1 and 1.4.2) but for whom a DXA scan is
+
+not tolerated or technically feasible, or
+
+not needed to inform a decision to start treatment or to provide a baseline for
+
+long-term monitoring (for example, for older people living with frailty).
+
+1.7.5
+
+Seek advice from a specialist about treatment options for:
+
+men aged under 50 and women aged under 50 who have not experienced
+
+menopause who have any of the following:
+
+－ a previous major osteoporotic fracture or
+
+－ significant decrease in BMD on serial measurements or
+
+－ suspected or confirmed idiopathic osteoporosis
+
+women, trans men and non-binary people with a suspected or confirmed rare
+
+form of osteoporosis such as pregnancy associated osteoporosis or
+
+people with another suspected or confirmed rare bone disease associated
+
+Why the committee made the rec ommendations
+
+The committee agreed that determining who would benefit from treatment is not
+
+str aightforward. Based on their knowledge and experience they agreed that several
+
+factors need to be taken into account.
+
+A person's 10‑year risk of major osteoporotic fracture obtained from FRAX or QFracture gives a percentage estimate of how likely it is they will develop a hip,
+
+(symptomatic) spine, shoulder, or wrist fragility fracture. But the committee agreed
+
+that predicted risk should not be used alone to determine whether treatment is
+
+appropriate. While it gives a probability of fracture, it still needs to be put into the
+
+context of a person's risk factors, clinical circumstances and whether the fracture risk
+
+is likely to be reduced with pha rmacological treatment. The committee also agreed
+
+that how recently a fracture occurred, particularly a major osteoporotic fracture, is
+
+also important with the greatest risk of a subsequent fragility fracture being in the
+
+first 2 years after an initial fragility fracture.
+
+All people aged 50 and over and women who have experienced menopause
+
+Previous fragility fractures increase the likelihood of getting another fracture. The
+
+committee agreed this is particularly the case when there have been multiple fragility
+
+fractures, which is not taken into account in the risk prediction tools, or a hip or
+
+vertebral fracture. There is also a higher risk after a recent fragility fracture, which
+
+reduces over time. Overall fracture risk increases with age. But the magnitude of
+
+additional risk associated with recent fracture is more pronounced in younger people.
+
+The committee agreed that people taking very high-dose systemic glu cocorticoids
+
+are at particularly high risk of fracture. So, the committee agreed that treatment
+
+should be considered for anyone meeting this criterion. Although the committee gave
+
+an example of a very high-dose of systemic glu cocorticoids, they agreed that
+
+glucocort icoid-induced bone loss is dose dependent and affected by other risk
+
+factors such as age.
+
+The committee discussed the role of BMD in deciding whether a person would benefit
+
+from treatment. They highlighted that BMD is a continuum and that the lower a
+
+person's BMD the lower their bone strength. They agreed that while the World Health
+
+Organization use BMD T-score to define osteoporosis and osteopenia (T-score of -2.5
+
+or less for osteoporosis, and between -2.5 and -1 for osteopenia) there is no specific
+
+BMD threshold below which treatment becomes effective. They highlighted that most
+
+of the evidence relating to treatment is from people with a low BMD and that much of
+
+that evidence is in people with a BMD T-score of -2.5 or less. Evidence also suggests
+
+there is less reduction in the relative risk when a person has a higher BMD, so there is
+
+uncertainty whether treating this group is beneficial. Overall, the committee agreed
+
+that a BMD measurement, when available, allows healthcare professionals and people
+
+at risk of fragility fracture to make informed choices about whether treatment is
+
+appropriate, and which one would be the best option.
+
+For all people aged 50 and over and women who have experienced menopause, the
+
+committee made rec ommendations based on their own experience and expertise.
+
+They agreed that BMD T-score of -2.5 or less in most circumstances indicates a high
+
+risk of fracture and that treatment should be considered. It was less clear for people
+
+with osteopenia, and most people would not be at risk. But treatment should be
+
+considered depending on certain risk criteria. People with a BMD T-score of -1.5 or
+
+less and a fragility fracture, current or frequent systemic glucocorticoid use, or
+
+medicines or secondary causes known to be associated with accelerated bone loss
+
+are likely to be at increased risk and should be considered for treatment. Also at
+
+increased risk are people with primary hyperp arathyroidism not treated with surgery,
+
+which includes those waiting for surgery or receiving alternative treatment.
+
+If a DXA scan is not possible or not needed
+
+DXA scans are not always technically feasible (for example, if there is a metal implant
+
+in both hips and the lumbar spine is compromised because of metal implants,
+
+fractures or degenerative changes), or tolerated (for example, if a person is living with
+
+frailty or has a physical impairment that makes positioning on a scanner impossible).
+
+In those circumstances the committee agreed that treatment should be considered
+
+based on the other factors listed in recommendation 1.7.1 if the person's condition has
+
+met the criteria for a DXA scan. This is to ensure people are not left without treatment
+
+because no DXA scan is available.
+
+DXA scans may not always be needed to decide whether to treat. This can be the
+
+case for older people living with frailty, who are likely to have a low BMD and high risk
+
+of fracture. If a DXA scan is not needed to decide whether to treat, which treatment to
+
+give or for monitoring, then the committee agreed that the healthcare professional
+
+should discuss with the person whether to treat without a DXA scan.
+
+Men aged under 50, women aged under 50 who have not experienced menopause
+
+and people with a suspected rare bone disease associated with fragility fractures
+
+Fragility fracture in men aged under 50 and women aged under 50 who have not
+
+experienced menopause is uncommon. So, the committee agreed that advice from a
+
+specialist would be needed to establish the cause and consider the need for
+
+treatment if they have had a major osteoporotic fracture, significant decrease in BMD
+
+on serial measurements or idiopathic osteoporosis. Advice from a specialist is also
+
+needed for women with suspected or confirmed pregnancy associated osteoporosis
+
+or people with another suspected or confirmed rare bone disease associated with
+
+fragility fractures because they are likely to need different treatment options to most
+
+people with osteoporosis.
+
+Full details of the evidence and the committee's discussion are in evidence review E:
+
+effectiveness of fragility fracture risk prediction tools.
+
+How the rec ommendations might affect practice
+
+The committee discussed that, in current practice, criteria for DXA scans and
+
+treatment vary locally but in England they are usually based on NOGG guidance. The
+
+new rec ommendations will therefore be a change in clinical practice. They agreed
+
+that, based on the cost analysis, the new rec ommendations covering revised DXA
+
+scan and treatment criteria should be associated with lower DXA-related resource
+
+use than the approach based on NOGG guidance. This is because when all scans
+
+relating to starting treatment are taken into account, not just those needed to
+
+determine eligibility for treatment, anyone considered for treatment by the NOGG
+
+approach would receive a DXA scan before treatment is started. Treatment related
+
+resource use was not anticipated to increase and may decrease because of better
+
+targeting of treatment.
+
+But the committee highlighted that risk assessment rates are currently low,
+
+particularly for people who have not had a fragility fracture. If risk assessment
+
+increases, resource use associated with DXA scans and treatment will also increase
+
+because more people will be identified. This will be irrespective of which criteria for
+
+DXA scans and treatment are used. The committee reiterated the importance of
+
+limiting risk assessment for people who have not had a fragility fracture to those with
+
+clinical risk factors to ensure resource use is best targeted to those most likely to
+
+benefit from treatment and to avoid unnecessary DXA scans.
 
 Follow-up for people not having treatment
 
 1.8 People who have declined or delayed treatment
 
-1.8.1 Advise people who have declined or delayed treatment:
-• when and how to re-access the service and
-• to contact their GP if they change their mind or their clinical circumstances change.
+1.8.1
+
+Advise people who have declined or delayed treatment:
+
+when and how to re-access the service and
+
+to contact their GP if they change their mind or their clinical circumstances
+
+change.
 
 1.9 People whose condition did not meet the criteria for treatment
 
-1.9.1 For people with a 10-year risk of major osteoporotic fracture of less than 10%, consider reassessing their risk using the same risk prediction tool used at the baseline assessment:
-• when there is any change in their clinical circumstances (for example, a fragility fracture or other new risk factor as listed in the section on risk factors for fragility fractures) or
-• at 5 years if there are no changes in clinical circumstances.
+1.9.1
 
-1.9.2 For people with a 10-year risk of major osteoporotic fracture of 10% or more, or who had a DXA scan to assess their bone health, but whose condition did not meet the criteria for treatment:
-• consider reassessing their BMD with a DXA scan (and a VFA if they meet the criteria in the recommendations in the section on DXA-based VFA scan):
-  - within 2 to 3 years if their condition was close to meeting the criteria for treatment, especially if they have a significant risk of accelerated bone loss or
-  - if there is any change in their clinical circumstances (for example, a fragility fracture or other new risk factor as listed in the section on risk factors for fragility fractures) unless this is within 2 years of their most recent DXA scan
-  - at 5 years if there are no changes in clinical circumstances.
-• consider their need for treatment without reassessing their BMD with a DXA scan if their clinical circumstances change within 2 years of their most recent DXA scan.
+For people with a 10‑year risk of major osteoporotic fracture of less than 10%, consider reassessing their risk using the same risk prediction tool used at the
+
+baseline assessment:
+
+when there is any change in their clinical circumstances (for example, a
+
+fragility fracture or other new risk factor as listed in the section on risk
+
+factors for fragility fractures) or
+
+at 5 years if there are no changes in clinical circumstances.
+
+1.9.2
+
+For people with a 10‑year risk of major osteoporotic fracture of 10% or more, or who had a DXA scan to assess their bone health, but whose condition did not
+
+meet the criteria for treatment:
+
+consider reassessing their BMD with a DXA scan (and a VFA if they meet the
+
+criteria in the rec ommendations in the section on DXA-based VFA scan):
+
+－ within 2 to 3 years if their condition was close to meeting the criteria for treatment, especially if they have a significant risk of accelerated bone loss or
+
+－ if there is any change in their clinical circumstances (for example, a
+
+fragility fracture or other new risk factor as listed in the section on risk
+
+factors for fragility fractures) unless this is within 2 years of their most
+
+recent DXA scan
+
+－ at 5 years if there are no changes in clinical circumstances.
+
+consider their need for treatment without reassessing their BMD with a DXA
+
+scan if their clinical circumstances change within 2 years of their most recent
+
+DXA scan.
 
 1.10 Timing of follow-up DXA scans
 
-1.10.1 Do not routinely repeat a DXA scan within 2 years of the person's most recent DXA scan unless there are exceptional circumstances.
+1.10.1
+
+Do not routinely repeat a DXA scan within 2 years of the person's most recent
+
+DXA scan unless there are exceptional circumstances.
+
+Why the committee made the rec ommendations
+
+There was no evidence on follow-up for people who had a risk assessment but had
+
+not started treatment. The committee agreed it was important to advise people when
+
+they could be reassessed and so made consensus rec ommendations.
+
+People who have declined or delayed treatment
+
+Some people whose condition has met the criteria for treatment may decline or delay
+
+treatment. There can be several reasons for this including:
+
+to try lifestyle changes first
+
+to treat a different condition first (such as dental problems or cancer)
+
+adverse effects of treatment
+
+personal reasons such as caring res ponsibilities.
+
+In all of these situations, the committee agreed it was important to agree an
+
+appropriate time to revisit the person's decision with them, to ensure they have
+
+access to treatment should they want it later, and to re-evaluate their risk because
+
+this will increase with age, even if they have no new risk factors. Advice should also
+
+be given on who to contact should their clinical circumstances change, or they
+
+change their mind.
+
+People whose condition did not meet the criteria for treatment
+
+People who had a risk assessment but did not meet the criteria for treatment are still
+
+likely to be at increased risk of fracture compared with the general population, and
+
+this risk is likely to increase as they get older.
+
+So, the committee agreed that people who have a 10‑year fracture risk of less than 10% should be considered for reassessment at 5 years, unless their clinical
+
+circumstances change. This time period would be long enough to see an age-related
+
+change. But if there was a change in clinical circumstances that would negatively
+
+impact bone health within 5 years, this could imply a change in risk and warrant
+
+reassessment. The committee agreed the same risk assessment tool used at the
+
+person's baseline assessment should be used again to give an accurate reflection of a
+
+change to their risk score.
+
+The committee agreed that it was important to consider reassessing people who had 10‑year risk of major osteoporotic fracture of 10% or more, or who had a DXA scan to assess their risk of fracture, but whose condition did not meet the criteria for
+
+treatment. They agreed their BMD should be assessed with a DXA scan. This is because the effect of age means the person's 10‑year risk of major osteoporotic fracture derived from a risk prediction tool is unlikely to show a lower risk score
+
+whereas their bone density is likely to have changed with age. If a person's condition
+
+was originally close to meeting the criteria for treatment, then the committee agreed
+
+that 2 to 3 years was enough time for the person's bone density to have changed to a
+
+point that treatment may be advisable. This is particularly the case for people with a
+
+significant risk of accelerated bone loss including people with primary
+
+hyperp arathyroidism not treated with surgery, or taking aromatase inhibitors,
+
+androgen deprivation therapy, or systemic glu cocorticoids. For other people, the
+
+committee agreed there was no need to reassess them for 5 years unless their clinical
+
+circumstances change. The committee agreed a VFA should also be done at the same
+
+time as the DXA scan if they meet the criteria in the rec ommendations in section 1.5.
+
+This is because the person may have had a vertebral fracture in the time since the last
+
+DXA scan.
+
+Timing of follow-up DXA scans
+
+The committee agreed that a DXA scan should not be repeated within 2 years. This is
+
+because this time period is too short to show a clinically meaningful change in BMD.
+
+There are exceptions to this, including if the person has a high risk of accelerated
+
+bone loss, for example if they are using medicines known to cause a reduction in bone
+
+density such as high-dose systemic glu cocorticoids.
+
+Full details of the evidence and the committee's discussion are in evidence review H:
+
+fracture risk monitoring in non-treatment groups.
+
+How the rec ommendations might affect practice
+
+These rec ommendations are likely to be cost neutral or cost saving because they will
+
+not lead to a substantial change in clinical practice and may reduce unnecessary
+
+reassessment in some areas by clarifying minimum durations between
 
 Terms used in this guideline
-First-degree relative: Parent, child or sibling.
-Fragility fracture: Fractures associated with osteoporosis, typically caused by low-impact injuries that would not normally cause a fracture (such as a fall from standing height) and sometimes called low-trauma fractures. Fragility fractures can occur spontaneously in people with no history of injury. Most vertebral fragility fractures are not caused by falls, instead happening after activities involving lifting, twisting, or bending. Fragility fractures most commonly affect the spine (vertebral column), hip, shoulder (proximal humerus), and wrist (distal forearm). But fragility fractures can happen in any bone, and some fractures (for example, pelvis and rib fractures) are just as strongly associated with reduced bone strength as the most common fragility fractures. Fragility fractures can occur from causes other than osteoporosis such as other bone diseases or malignancy.
-Major osteoporotic fractures: Fragility fractures in the spine, hip, shoulder, and wrist.
+
+This section defines terms that have been used in a particular way for this guideline.
+
+Fragility fracture
+
+Fractures associated with osteoporosis, typically caused by low-impact injuries that would
+
+not normally cause a fracture (such as a fall from standing height) and sometimes called
+
+low-trauma fractures. Fragility fractures can occur spontaneously in people with no history
+
+of injury. Most vertebral fragility fractures are not caused by falls, instead happening after
+
+activities involving lifting, twisting, or bending. Fragility fractures most commonly affect
+
+the spine (vertebral column), hip, shoulder (proximal humerus), and wrist (distal forearm).
+
+But fragility fractures can happen in any bone, and some fractures (for example, pelvis and
+
+rib fractures) are just as strongly associated with reduced bone strength as the most
+
+common fragility fractures. Fragility fractures can occur from causes other than
+
+osteoporosis such as other bone diseases or malignancy.
+
+Major osteoporotic fractures
+
+Fragility fractures in the spine, hip, shoulder, and wrist.
+
+Rec ommendations for research
+
+The guideline committee has made the following rec ommendations for research.
+
+Key rec ommendations for research
+
+1 Using electronic health records to help identify adults who should have a fragility fracture risk assessment
+
+What is the clinical and cost effectiveness of searching and analysing electronic health
+
+records and social care records (including GP practice lists and imaging archives, for
+
+example PACS [picture archiving and communication system]) to help identify adults who
+
+should have a fragility fracture risk assessment?
+
+Why the committee made the recommendation for research
+
+No evidence was identified for electronic health records so the committee made a
+
+recommendation for research on using electronic health records to help identify adults
+
+who should have a fragility fracture risk assessment. The committee agreed that
+
+electronic health records have the potential to help make it easier to identify people at
+
+risk of fragility fracture who may benefit from treatment.
+
+Full details of the evidence and the committee's discussion are in evidence review B:
+
+searching and analysis of electronic health records.
+
+2 Risk prediction tools
+
+What is the validity of the CFracture risk prediction tool for predicting the risk of fragility
+
+fractures in adults, including those who have had a previous fragility fracture?
+
+Why the committee made the recommendation for research
+
+A single study was found on the risk prediction tool CFracture (developed in 2023)
+
+that uses the same risk factors as QFracture. A recommendation for research to
+
+validate the CFracture tool was made because there is limited evidence and the
+
+calculator is not currently available.
+
+Full details of the evidence and the committee's discussion are in evidence review C:
+
+validity of fragility fracture risk prediction tools.
+
+3 Radio frequency echographic multi spectrometry (REMS)
+
+What is the accuracy of REMS for predicting fragility fractures in adults, including those
+
+who have had a previous fragility fracture?
+
+Why the committee made the recommendation for research
+
+Most of the evidence to assess fracture risk was on DXA scans and this is the method
+
+used in current practice. The evidence for other bone density assessment techniques
+
+was limited and did not support a change to current practice. Two studies found
+
+possible utility using quantitative computed tomography (QCT) while a single study
+
+found possible utility using radio frequency echographic multi spectrometry (REMS),
+
+an ultrasound based bone density assessment technique, and the committee made
+
+rec ommendations for research on REMS, DXA with trabecular bone score (TBS)
+
+assessment and QCT.
+
+Full details of the evidence and the committee's discussion are in evidence review D:
+
+accuracy of bone assessment methods.
+
+4 Dual-energy X-ray abs or pti ome try (DXA)-based vertebral fracture assessment (VFA) scan
+
+What is the diagnostic accuracy of DXA-based VFA scans for identifying vertebral fracture
+
+in adults having a DXA scan?
+
+Why the committee made the recommendation for research
+
+Most evidence on accuracy of DXA-based VFA scans uses older scanners and shows
+
+low specificity. Recent scanners have increased image quality and resolution, which
+
+should result in better accuracy (for both sensitivity and specificity) for detecting
+
+vertebral fractures. So, the committee made a recommendation for research on the
+
+accuracy of DXA-based VFA.
+
+Full details of the evidence and the committee's discussion are in evidence review G:
+
+diagnosing vertebral fractures with DXA-based VFA.
+
+5 Identifying vertebral fractures
+
+What is the clinical and cost effectiveness of Vfrac (vertebral fracture clinical decision
+
+tool) to identify people with a vertebral fracture?
+
+Why the committee made the recommendation for research
+
+There was 1 study (limited to women aged 65 and over) on the vertebral fracture
+
+clinical decision tool (Vfrac) that was developed to identify people with a suspected
+
+vertebral fracture. The committee made a recommendation for research on identifying
+
+vertebral fractures because there is limited evidence.
+
+Full details of the evidence and the committee's discussion are in evidence review F:
+
+6 DXA with trabecular bone score (TBS) assessment
+
+What is the accuracy of DXA with TBS assessment for predicting fragility fractures in
+
+adults, including those who have had a previous fragility fracture?
+
+Why the committee made the recommendation for research
+
+Most of the evidence to assess fracture risk was on DXA scans and this is the method
+
+used in current practice. The evidence for other bone density assessment techniques
+
+was limited and did not support a change to current practice. Two studies found
+
+possible utility using quantitative computed tomography (QCT) while a single study
+
+found possible utility using radio frequency echographic multi spectrometry (REMS),
+
+an ultrasound based bone density assessment technique, and the committee made
+
+rec ommendations for research on REMS, DXA with trabecular bone score (TBS)
+
+assessment and QCT.
+
+Full details of the evidence and the committee's discussion are in evidence review D:
+
+accuracy of bone assessment methods.
+
+7 Quantitative computed tomography (QCT)
+
+What is the accuracy of QCT for predicting fragility fractures in adults, including those who
+
+have had a previous fragility fracture?
+
+Why the committee made the recommendation for research
+
+Most of the evidence to assess fracture risk was on DXA scans and this is the method
+
+used in current practice. The evidence for other bone density assessment techniques
+
+was limited and did not support a change to current practice. Two studies found
+
+possible utility using quantitative computed tomography (QCT) while a single study
+
+found possible utility using radio frequency echographic multi spectrometry (REMS),
+
+an ultrasound based bone density assessment technique, and the committee made
+
+rec ommendations for research on REMS, DXA with trabecular bone score (TBS)
+
+assessment and QCT.
+
+Full details of the evidence and the committee's discussion are in evidence review D:
+
+accuracy of bone assessment methods.
+
+Finding more information and committee details
+
+To find NICE guidance on related topics, including guidance in development, see the NICE
+
+topic page on mus culoskeletal conditions.
+
+For full details of the evidence and the guideline committee's discussions, see the
+
+evidence reviews. You can also find information about how the guideline was developed,
+
+including details of the committee.
+
+NICE has produced tools and resources to help you put this guideline into practice. For
+
+general help and advice on putting our guidelines into practice, see resources to help you put NICE guidance into practice.
+
+Update information
+
+July 2026: This guideline updates NICE guideline CG146 (published August 2012). It
+
+covers identifying adults who should be assessed for fragility fracture risk, methods of risk
+
+assessment, identifying vertebral fractures, treatment criteria and repeat risk assessment
+
+(timing and methods) for people not having treatment.
+
+The next guideline update will cover risk assessment for people with a learning disability,
+
+treatment (pha rmacological, exercise, calcium, and vitamin D), and treatment monitoring
+
+and pauses. It will incorporate rec ommendations from a multiple technology appraisal
+
+(MTA) on medicines for treating osteoporosis and reducing the risk of fragility fractures
+
+publishing in June 2027.
+
+ISBN: 978 1 4731 9579 0

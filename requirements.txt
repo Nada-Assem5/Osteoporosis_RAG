@@ -1,5 +1,18 @@
 # PDF Ingestion & Layout-Aware Cleaning
 unstructured[pdf]>=0.14.0
+wordfreq>=3.0.0
+wordninja>=2.0.0
+
+# Dense Semantic Embeddings & Retrieval
+sentence-transformers>=2.2.0
+
+# Generative Clinical Synthesis (Google Gemini)
+google-generativeai>=0.7.0
+requests>=2.28.0
+
+# Optional Multi-Provider Support
+openai>=1.0.0
+anthropic>=0.20.0
 
 # Testing & Quality
 pytest>=8.0.0
