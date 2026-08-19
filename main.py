@@ -61,8 +61,16 @@ def run_full_pipeline(
 
     # 5. Retrieval & Evidence Panel
     print(f"\n>>> STAGE 5: RETRIEVAL & EVIDENCE PANEL (Query: \"{sample_query}\")")
-    results, panel = retrieval.retrieve_evidence(sample_query, top_k=top_k, mode=mode)
+    # FIX: retrieve_evidence() returns a 3-tuple (results, evidence_panel,
+    # confidence_assessment), not 2 - unpacking into only (results, panel)
+    # raised "ValueError: too many values to unpack" and crashed the full
+    # pipeline before Stage 6 ever ran. Also surface the Retrieval Confidence
+    # Thresholds guardrail (Safety Workflow step 2) here instead of silently
+    # dropping it, since it decides whether generation should be trusted.
+    results, panel, confidence = retrieval.retrieve_evidence(sample_query, top_k=top_k, mode=mode)
     print(panel)
+    if confidence.blocked:
+        print(f"\n  [GUARDRAIL] Retrieval confidence check blocked generation: {confidence.block_reason}\n")
 
     # 6. Day 3 Grounded Generation
     print("\n>>> STAGE 6: GROUNDED CLINICAL GENERATION & CLAIM VERIFICATION")

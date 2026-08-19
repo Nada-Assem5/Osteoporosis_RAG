@@ -1,5 +1,6 @@
 # PDF Ingestion & Layout-Aware Cleaning
 unstructured[pdf]>=0.14.0
+pypdf>=4.0.0
 wordfreq>=3.0.0
 wordninja>=2.0.0
 
@@ -10,6 +11,9 @@ tiktoken>=0.7.0
 sentence-transformers>=2.2.0
 chromadb>=0.4.0
 python-dotenv>=1.0.0
+
+# LLM Generation Provider (Stage 6: Grounded Generation via Gemini)
+google-generativeai>=0.5.0
 
 # Optional Multi-Provider Support
 openai>=1.0.0
