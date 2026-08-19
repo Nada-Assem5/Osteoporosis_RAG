@@ -3,8 +3,13 @@ unstructured[pdf]>=0.14.0
 wordfreq>=3.0.0
 wordninja>=2.0.0
 
-# Dense Semantic Embeddings & Retrieval
+# Token-Based Sizing & LLM Tokenization (cl100k_base standard)
+tiktoken>=0.7.0
+
+# Dense Semantic Embeddings & Vector Store
 sentence-transformers>=2.2.0
+chromadb>=0.4.0
+python-dotenv>=1.0.0
 
 # Generative Clinical Synthesis (Google Gemini)
 google-generativeai>=0.7.0

@@ -1,0 +1,15 @@
+config_id,chunk_size_tokens,chunk_overlap_tokens,embedding_model,search_type,hybrid_alpha,top_k,precision,recall,hit_rate,mrr,map,ndcg,avg_top1_similarity,latency_ms,composite_score
+sz400_ov50_all-MiniLM-L6-v2_hybrid_a0.5_k3,400,50,all-MiniLM-L6-v2,hybrid,0.5,3,0.8750,0.8924,0.9583,0.9167,0.8958,0.8942,0.8245,3.45,0.8850
+sz256_ov50_bge-small-en-v1.5_hybrid_a0.5_k3,256,50,BAAI/bge-small-en-v1.5,hybrid,0.5,3,0.8611,0.8819,0.9583,0.9097,0.8885,0.8875,0.8310,3.60,0.8774
+sz400_ov50_all-MiniLM-L6-v2_hybrid_a0.7_k3,400,50,all-MiniLM-L6-v2,hybrid,0.7,3,0.8472,0.8750,0.9583,0.9028,0.8785,0.8812,0.8190,3.51,0.8686
+sz400_ov100_all-MiniLM-L6-v2_hybrid_a0.5_k3,400,100,all-MiniLM-L6-v2,hybrid,0.5,3,0.8472,0.8889,0.9583,0.8958,0.8745,0.8784,0.8210,3.70,0.8651
+sz256_ov50_all-MiniLM-L6-v2_hybrid_a0.5_k3,256,50,all-MiniLM-L6-v2,hybrid,0.5,3,0.8472,0.8681,0.9583,0.8958,0.8710,0.8760,0.8150,3.40,0.8643
+sz400_ov50_all-MiniLM-L6-v2_hybrid_a0.3_k3,400,50,all-MiniLM-L6-v2,hybrid,0.3,3,0.8333,0.8611,0.9167,0.8889,0.8646,0.8705,0.8050,3.38,0.8558
+sz400_ov50_all-MiniLM-L6-v2_hybrid_a0.5_k5,400,50,all-MiniLM-L6-v2,hybrid,0.5,5,0.7250,0.9583,1.0000,0.9167,0.8824,0.9015,0.8245,3.82,0.8538
+sz512_ov50_all-MiniLM-L6-v2_hybrid_a0.5_k3,512,50,all-MiniLM-L6-v2,hybrid,0.5,3,0.8194,0.8472,0.9167,0.8819,0.8550,0.8624,0.7980,3.60,0.8471
+sz400_ov50_bge-small-en-v1.5_semantic_k3,400,50,BAAI/bge-small-en-v1.5,semantic,,3,0.8194,0.8403,0.9167,0.8819,0.8520,0.8590,0.8340,2.90,0.8459
+sz400_ov50_all-MiniLM-L6-v2_semantic_k3,400,50,all-MiniLM-L6-v2,semantic,,3,0.8056,0.8333,0.9167,0.8750,0.8438,0.8540,0.8120,2.84,0.8368
+sz400_ov50_all-MiniLM-L6-v2_keyword_k3,400,50,all-MiniLM-L6-v2,keyword,,3,0.7778,0.7917,0.8750,0.8472,0.8125,0.8295,0.7500,1.95,0.8102
+sz128_ov20_all-MiniLM-L6-v2_hybrid_a0.5_k3,128,20,all-MiniLM-L6-v2,hybrid,0.5,3,0.7639,0.7778,0.8750,0.8333,0.7980,0.8150,0.7750,3.10,0.7961
+sz400_ov50_all-MiniLM-L6-v2_hybrid_a0.5_k1,400,50,all-MiniLM-L6-v2,hybrid,0.5,1,0.8750,0.5694,0.8750,0.8750,0.8750,0.8750,0.8245,2.95,0.8750
+sz400_ov50_all-MiniLM-L6-v2_hybrid_a0.5_k10,400,50,all-MiniLM-L6-v2,hybrid,0.5,10,0.4750,0.9850,1.0000,0.9167,0.8710,0.8920,0.8245,4.50,0.7984

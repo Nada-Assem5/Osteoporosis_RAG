@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#ffffff"/>
+  <text x="320.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1e293b">Chunk Size (Tokens) vs Recall@3</text>
+  <!-- Axes -->
+  <line x1="50" y1="310" x2="590" y2="310" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="50" y1="50" x2="50" y2="310" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="50" y1="258.0" x2="590" y2="258.0" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="262.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#64748b">0.2</text>
+  <line x1="50" y1="206.0" x2="590" y2="206.0" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="210.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#64748b">0.4</text>
+  <line x1="50" y1="154.0" x2="590" y2="154.0" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="158.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#64748b">0.6</text>
+  <line x1="50" y1="102.0" x2="590" y2="102.0" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="106.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#64748b">0.8</text>
+  <line x1="50" y1="50.0" x2="590" y2="50.0" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="40" y="54.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#64748b">1.0</text>
+  <polyline fill="none" stroke="#2563eb" stroke-width="3" points="50.0,107.7 230.0,80.7 432.0,78.0 590.0,89.7"/>
+  <circle cx="50.0" cy="107.7" r="5" fill="#1d4ed8" stroke="#ffffff" stroke-width="2"/>
+  <text x="50.0" y="97.7" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">0.778</text>
+  <text x="50.0" y="330" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">128t</text>
+  <circle cx="230.0" cy="80.7" r="5" fill="#1d4ed8" stroke="#ffffff" stroke-width="2"/>
+  <text x="230.0" y="70.7" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">0.882</text>
+  <text x="230.0" y="330" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">256t</text>
+  <circle cx="432.0" cy="78.0" r="5" fill="#1d4ed8" stroke="#ffffff" stroke-width="2"/>
+  <text x="432.0" y="68.0" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">0.892</text>
+  <text x="432.0" y="330" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">400t</text>
+  <circle cx="590.0" cy="89.7" r="5" fill="#1d4ed8" stroke="#ffffff" stroke-width="2"/>
+  <text x="590.0" y="79.7" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">0.847</text>
+  <text x="590.0" y="330" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">512t</text>
+</svg>

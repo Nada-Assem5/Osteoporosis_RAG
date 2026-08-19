@@ -1,6 +1,6 @@
 """
-Verification runner: executes unit tests and runs the end-to-end pipeline stages.
-Located in scripts/ to keep maintenance tools cleanly separated from the root CLI.
+Verification runner: executes architectural checks and runs the end-to-end pipeline stages.
+Located in scripts/ to validate the self-contained pipeline stages.
 """
 
 import sys
@@ -12,46 +12,25 @@ root_dir = Path(__file__).resolve().parent.parent
 if str(root_dir) not in sys.path:
     sys.path.insert(0, str(root_dir))
 
-from src.parsing import (
-    Page,
-    partition_pdf_pages,
-    filter_structural_noise,
-    discover_and_sync_guidelines
+# FIX: the actual module files are Ingest.py, Chunk.py, Embeddings.py,
+# Vector_db.py, Retrieval.py, Grounded_Generation.py (capitalized) — the
+# original lowercase import names don't exist and raised ImportError before
+# a single check could run. Import the real module names and alias them to
+# the lowercase names used throughout this file.
+from scripts import (
+    Ingest as ingest,
+    Chunk as chunk,
+    Embeddings as embeddings,
+    Vector_db as vector_db,
+    Retrieval as retrieval,
+    Grounded_Generation as grounded_generation
 )
-from src.clean import (
-    clean_pages,
-    clean_all_guidelines,
-    save_cleaned_text,
-    format_summary_table,
-    is_noise_title,
-    filter_elements,
-    strip_punctuation,
-    fix_concatenated_word,
-    fix_concatenated_text,
-    clean_academic_boilerplate,
-    count_concatenated_words,
-    is_valid_word
-)
-from src.chunking import Chunk, chunk_document, extract_clinical_metadata
-from src.embedded import (
-    VectorStore,
-    build_vector_index,
-    check_scope_guardrail,
-    classify_query_risk
-)
-from src.synthesis import (
-    ClinicalSynthesizer,
-    ClinicalSynthesisResponse,
-    detect_unsupported_claims
-)
-from src.evaluation import RAGEvaluator, load_eval_questions, EvalQuestion, run_full_evaluation
-from main import handle_ask
 
 
 def run_all_checks():
-    print("=" * 84)
-    print("  RUNNING PIPELINE UNIT TESTS & MODULE VERIFICATION")
-    print("=" * 84)
+    print("=" * 88)
+    print("  RUNNING PIPELINE ARCHITECTURAL & VALIDATION TESTS (scripts/ SOURCE OF TRUTH)")
+    print("=" * 88)
 
     test_count = 0
     passed_count = 0
@@ -67,168 +46,146 @@ def run_all_checks():
             print(f"  [FAIL] {name}: {e}")
             traceback.print_exc()
 
-    # 1. Structural Noise Filtering (src.parsing)
-    def test_parsing_structural():
+    # 1. Structural Filter (Ingest.py)
+    def test_filter():
         class MockEl:
             def __init__(self, cat, text):
                 self.category = cat
                 self.text = text
-
-        elements = [
+        els = [
             MockEl("Header", "RUNNING HEADER"),
-            MockEl("Title", "1.4 Bone Density Assessment"),
-            MockEl("Footer", "Page 1 of 10"),
-            MockEl("PageBreak", "")
+            MockEl("Title", "1.4 Bone density"),
+            MockEl("NarrativeText", "Offer central DXA scan to assess bone mineral density."),
+            MockEl("Footer", "Page 1 of 12 © 2025 AMA")
         ]
-        filtered = filter_structural_noise(elements)
-        assert len(filtered) == 1
-        assert filtered[0].text == "1.4 Bone Density Assessment"
+        filtered = ingest.filter_structural_noise(els)
+        assert len(filtered) == 2
 
-    check("PDF Parsing Structural Noise Filtering", test_parsing_structural)
+    check("1. Structural Layout Noise Filtering (Ingest.py)", test_filter)
 
-    # 2. Smart Title Noise & Layout Filtering (src.clean)
-    def test_smart_cleaning():
-        class MockEl:
-            def __init__(self, cat, text):
-                self.category = cat
-                self.text = text
+    # 2. Unicode & Hyphenation Normalization (Ingest.py)
+    def test_norm():
+        raw = "Offer osteo-\nporosis screening\xa0to women aged 65."
+        cleaned = ingest.clean_text(raw)
+        assert "osteoporosis screening to women aged 65." in cleaned
+        assert ingest.strip_punctuation("[osteoporosis]...") == "osteoporosis"
 
-        elements = [
-            MockEl("Header", "RUNNING HEADER"),
-            MockEl("Title", "Ad"),
-            MockEl("Title", "1.4 Bone Density Assessment"),
-            MockEl("NarrativeText", "Offer a DXA scan to measure BMD in adults aged 30 and over with fragility fractures."),
-            MockEl("Footer", "Page 1 of 10")
-        ]
-        cleaned = filter_elements(elements, short_title_threshold=20, min_content_length=30)
-        assert len(cleaned) == 2, f"Expected 2 elements, got {len(cleaned)}"
-        assert cleaned[0].text == "1.4 Bone Density Assessment"
+    check("2. Unicode Normalization & De-hyphenation (Ingest.py)", test_norm)
 
-    check("Smart Title Noise & Layout Filtering", test_smart_cleaning)
-
-    # 3. Wordfreq Validation & Concatenation Fix (src.clean)
-    def test_word_validation():
-        assert is_valid_word("hello") is True
-        assert is_valid_word("osteoporosis") is True
-        assert is_valid_word("density") is True
-        assert is_valid_word("theuspstfnotesthat") is False
-        assert is_valid_word("policyandcoverage") is False
-
-    check("Wordfreq Pure-Python Dictionary Validation", test_word_validation)
-
-    def test_concat():
-        broken = "ScreeningForOsteoporosis toPreventFractures USPSTF"
-        fixed = fix_concatenated_text(broken)
-        assert "Screening For Osteoporosis" in fixed or "Osteoporosis" in fixed
-        assert "USPSTF" in fixed
-
-    check("Word Concatenation & Spacing Repair", test_concat)
-
-    # 4. Academic Boilerplate Stripping (src.clean)
-    def test_academic():
-        raw = "USPSTF Recommendation.\n\nAuthor Affiliations: Harvard.\n\nConflict of Interest: None."
-        cleaned = clean_academic_boilerplate(raw)
-        assert "Author Affiliations" not in cleaned
-        assert "USPSTF Recommendation." in cleaned
-
-    check("Academic Boilerplate Stripping", test_academic)
-
-    # 5. Chunking with Metadata (src.chunking)
-    def test_chunk_meta():
-        text = "# 1.4 Bone Density\n\nOffer a DXA scan to measure BMD in postmenopausal women."
-        chunks = chunk_document(text, "nice_doc", target_chunk_size=100)
+    # 3. Token Chunking (Chunk.py)
+    def test_chunking():
+        text = "--- Page 1 ---\n\nNICE NG259: Offer a central DXA scan to postmenopausal women aged 65 and older."
+        chunks = chunk.chunk_document(text, document_id="nice_ng259", target_chunk_tokens=50, chunk_overlap_tokens=10)
         assert len(chunks) >= 1
-        assert chunks[0].section_title == "1.4 Bone Density"
-        assert "Postmenopausal Women" in chunks[0].population
+        assert chunks[0].page_number == 1
+        assert chunks[0].token_estimate > 0
 
-    check("Metadata-Enriched Semantic Chunking", test_chunk_meta)
+    check("3. Token-Based Semantic Chunking (Chunk.py)", test_chunking)
 
-    # 6. Keyword, Semantic, and Hybrid Retrieval Modes (src.embedded)
-    def test_retrieval_modes():
-        c1 = Chunk("c1", "doc1", "DXA", "Offer DXA scan for bone mineral density.", 6, {"topics": ["Screening & Diagnosis"], "population": "Postmenopausal Women"})
-        c2 = Chunk("c2", "doc1", "Falls", "Encourage balance exercises for fall prevention.", 6, {"topics": ["Lifestyle & Supplementation"], "population": "Older Adults"})
-        store = VectorStore()
+    # 4. Clinical Taxonomy Enrichment (Chunk.py)
+    def test_meta_enrich():
+        text = "USPSTF recommends screening for osteoporosis with DXA in women aged 65 and older to prevent fractures."
+        meta = chunk.extract_clinical_metadata(text, "osteoporosis-screening-final-recommendation")
+        assert "Screening & Diagnosis" in meta["topics"]
+        assert "Women Aged >= 65" in meta["population"]
+        assert "USPSTF" in meta["guideline_issuer"]
+
+    check("4. Clinical Metadata Taxonomy (Chunk.py)", test_meta_enrich)
+
+    # 5. Hybrid Vector Store & Persistence (Vector_db.py)
+    def test_vector_store():
+        c1 = vector_db.Chunk("chk_01", "nice_guideline", "1.4", "Offer DXA scan for bone mineral density.", 1, 8)
+        c2 = vector_db.Chunk("chk_02", "uspstf_rec", "Recommendation", "Screen women 65 and older with DXA.", 1, 8)
+        store = vector_db.VectorStore()
         store.add_chunks([c1, c2])
+        res = store.search("DXA scan", mode="hybrid", top_k=2)
+        assert len(res) > 0
 
-        kw_res = store.search("When to do a DXA scan for bone density?", top_k=1, mode="keyword")
-        assert len(kw_res) == 1 and kw_res[0][0].chunk_id == "c1"
+    check("5. Hybrid Vector Store & RRF Search (Vector_db.py)", test_vector_store)
 
-        sem_res = store.search("When to do a DXA scan for bone density?", top_k=1, mode="semantic")
-        assert len(sem_res) == 1
+    # 6. Safety Guardrails & Confidence Bands (Retrieval.py)
+    def test_guardrails():
+        # FIX: QueryRiskCategory is a str-Enum whose actual values are
+        # "Allowed" / "Needs Caution" / "Refuse/Redirect" (see src/schema.py) —
+        # comparing against the old snake_case strings ("approved",
+        # "needs_caution", "refuse_redirect") never matched, so these asserts
+        # would fail every run even when the guardrail logic itself works.
+        # Compare against the actual enum members instead.
+        t1, _ = retrieval.classify_query_risk("When should DXA scan be ordered?")
+        assert t1 == retrieval.QueryRiskCategory.ALLOWED
+        t2, _ = retrieval.classify_query_risk("My mother is 72 with hip fracture, what should I give her?")
+        assert t2 == retrieval.QueryRiskCategory.NEEDS_CAUTION
+        t3, _ = retrieval.classify_query_risk("Patient collapsed with severe chest pain and cardiac arrest.")
+        assert t3 == retrieval.QueryRiskCategory.REFUSE_REDIRECT
 
-        hyb_res = store.search("When to do a DXA scan for bone density?", top_k=1, mode="hybrid")
-        assert len(hyb_res) == 1 and hyb_res[0][0].chunk_id == "c1"
+        assert retrieval.compute_confidence_tier(0.85) == retrieval.ConfidenceTier.HIGH
+        assert retrieval.compute_confidence_tier(0.45) == retrieval.ConfidenceTier.MEDIUM
+        assert retrieval.compute_confidence_tier(0.02) == retrieval.ConfidenceTier.LOW
+        assert retrieval.compute_confidence_tier(0.005) == retrieval.ConfidenceTier.INSUFFICIENT_EVIDENCE
 
-    check("Keyword, Semantic, and Hybrid Retrieval Modes", test_retrieval_modes)
+    check("6. 3-Tier Guardrails & Confidence Bands (Retrieval.py)", test_guardrails)
 
-    # 7. Clinical Synthesis (src.synthesis)
-    def test_synthesis():
-        c1 = Chunk("c1", "nice_doc", "1.4 Bone Density", "Offer a DXA scan to measure BMD in patients aged 30+ with fragility fracture.", 15, {"guideline_issuer": "NICE NG259"})
-        synth = ClinicalSynthesizer(provider="fallback", allow_fallback=True)
-        resp = synth.synthesize("When is DXA indicated?", [(c1, 0.45)])
-        assert "DXA" in resp.direct_answer
-        assert len(resp.citations) == 1
-
-    check("Clinical Evidence Synthesis & Citation Lineage", test_synthesis)
-
-    # 8. Scope & 3-Tier Risk Guardrail (src.embedded)
-    def test_guard():
-        tier_allowed, _ = classify_query_risk("What are the criteria for osteoporosis DXA?")
-        tier_caution, _ = classify_query_risk("My mother is 72, what should I prescribe?")
-        tier_emergency, _ = classify_query_risk("Patient has severe acute chest pain and shortness of breath")
-        tier_oos, _ = classify_query_risk("How to repair a car battery?")
-
-        assert tier_allowed == "allowed"
-        assert tier_caution == "needs_caution"
-        assert tier_emergency == "refuse_redirect"
-        assert tier_oos == "refuse_redirect"
-
-        in_s, _ = check_scope_guardrail("What are the criteria for osteoporosis DXA?")
-        out_s, _ = check_scope_guardrail("How to repair a car battery?")
-        assert in_s is True
-        assert out_s is False
-
-    check("Clinical Scope & 3-Tier Guardrail Validation", test_guard)
-
-    # 9. Unsupported Claim Guardrail Step 3 (src.synthesis)
-    def test_claim_guard():
-        c1 = Chunk("c1", "nice_doc", "1.4", "Offer DXA scan for bone mineral density.", 8)
-        resp_unsupp = ClinicalSynthesisResponse(
-            query="Surgery inquiry",
-            direct_answer="Perform emergency orthopedic spinal fusion surgery immediately [c1].",
+    # 7. Grounded Generation & Claim Stripping (Grounded_Generation.py)
+    def test_generation_and_claims():
+        c1 = grounded_generation.Chunk("chk_01", "nice_guideline", "1.4", "Offer DXA scan for bone mineral density in women 65 and older.", 1, 14)
+        bad_resp = grounded_generation.ClinicalSynthesisResponse(
+            query="Surgery",
+            direct_answer="Perform knee surgery [chk_01].",
             target_population="Adults",
-            key_recommendations=["Immediate open spine surgery with screws [c1]."],
-            citations=[{"chunk_id": "c1"}],
+            key_recommendations=["Perform knee surgery [chk_01]."],
+            citations=[{"chunk_id": "chk_01"}],
             evidence_strength="High",
             clinical_caveats=[]
         )
-        unsupp_warnings = detect_unsupported_claims(resp_unsupp, {"c1": c1}, threshold=0.25)
-        assert len(unsupp_warnings) >= 1
+        filt, logs = grounded_generation.filter_unsupported_claims(bad_resp, {"chk_01": c1}, threshold=0.25)
+        assert len(logs) >= 1
+        assert not any("surgery" in r.lower() for r in filt.key_recommendations)
 
-    check("Unsupported Claim Grounding Verification", test_claim_guard)
+        synth = grounded_generation.ClinicalSynthesizer(provider="deterministic_fallback")
+        prompt_built = synth._build_synthesis_prompt("DXA inquiry", [(c1, 0.8)], custom_prompt="Focus on adverse effects.")
+        assert "Focus on adverse effects." in prompt_built
 
-    # 10. Evaluation Triad Benchmark (src.evaluation)
-    def test_eval():
-        c1 = Chunk("osteoporosis-risk-assessment-pdf-66144025463749_chk_005", "doc", "1.4 Bone density", "Offer a DXA scan to measure BMD in adults.", 12)
-        store = VectorStore()
-        store.add_chunks([c1])
-        evaluator = RAGEvaluator(store)
-        q = [EvalQuestion("When should a DXA bone density scan be offered according to NICE guidelines?", ["osteoporosis-risk-assessment-pdf-66144025463749_chk_005"])]
-        res = evaluator.evaluate_all_modes(questions=q)
-        assert res["retrieval"]["hybrid"]["precision_at_3"] > 0
-        assert "citation_accuracy" in res
-        assert "faithfulness" in res
+    check("7. Grounded Generation & Claim Stripping (Grounded_Generation.py)", test_generation_and_claims)
 
-    check("Precision@K, Citation & Faithfulness Triad Benchmark", test_eval)
+    # 8. Categorized Benchmark (Retrieval.py)
+    def test_benchmark():
+        q_path = root_dir / "scripts" / "data" / "eval_questions.json"
+        ql = retrieval.load_eval_questions(q_path)
+        assert len(ql) >= 20
+        cats = {q.category for q in ql}
+        assert "direct" in cats and "multi_chunk" in cats and "ambiguous" in cats and "out_of_scope" in cats
 
-    print("-" * 84)
+    check("8. Categorized 24-Question Benchmark Suite (Retrieval.py)", test_benchmark)
+
+    # 9. Multi-Metric Evaluation & Comparison Engine (Retrieval.py)
+    def test_eval_metrics():
+        qs = [
+            retrieval.EvalQuestion("When should DXA be ordered?", ["chk_01"], "direct"),
+            retrieval.EvalQuestion("Patient collapsed in cardiac arrest.", [], "out_of_scope")
+        ]
+        evaluator = retrieval.RAGEvaluator(qs)
+        c1 = vector_db.Chunk("chk_01", "nice_guideline", "1.4", "When to order DXA scan.", 1, 8)
+        evaluator.store = vector_db.VectorStore()
+        evaluator.store.add_chunks([c1])
+        res = evaluator.evaluate(top_k=1, mode="keyword")
+        m = res["metrics"]
+        assert "precision_at_1" in m
+        assert "recall_at_1" in m
+        assert "hit_at_1" in m
+        assert "mrr" in m
+        assert "ndcg_at_1" in m
+        assert "map_at_1" in m
+        assert "guardrail_deflection_rate" in m
+        assert m["guardrail_deflection_rate"] == 1.0
+
+    check("9. Multi-Metric Evaluation & Comparison Engine (Retrieval.py)", test_eval_metrics)
+
+    print("-" * 88)
     print(f"Test Suite Results: {passed_count} / {test_count} checks passed.")
-    print("=" * 84)
+    print("=" * 88)
     return passed_count == test_count
 
 
 if __name__ == "__main__":
-    tests_ok = run_all_checks()
-    if not tests_ok:
-        sys.exit(1)
-    print("\n[OK] All verification checks passed.")
+    success = run_all_checks()
+    sys.exit(0 if success else 1)

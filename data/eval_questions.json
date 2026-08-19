@@ -1,12 +1,6 @@
 [
   {
-    "query": "When should a DXA bone density scan be offered according to NICE guidelines?",
-    "expected_chunk_ids": [
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_042"
-    ]
-  },
-  {
+    "category": "direct",
     "query": "What is the USPSTF screening recommendation for osteoporosis in women aged 65 and older?",
     "expected_chunk_ids": [
       "osteoporosis-screening-final-recommendation_chk_005",
@@ -14,13 +8,15 @@
     ]
   },
   {
-    "query": "Which clinical risk prediction tools are recommended for calculating 10-year fracture risk?",
+    "category": "direct",
+    "query": "What WHO T-score criteria define osteoporosis on a DXA bone density scan?",
     "expected_chunk_ids": [
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_030",
-      "osteoporosis-screening-final-recommendation_chk_022"
+      "osteoporosis-screening-final-recommendation_chk_017",
+      "osteoporosis-screening-final-recommendation_chk_018"
     ]
   },
   {
+    "category": "direct",
     "query": "What is the USPSTF recommendation regarding screening for osteoporosis in men?",
     "expected_chunk_ids": [
       "osteoporosis-screening-final-recommendation_chk_005",
@@ -28,48 +24,7 @@
     ]
   },
   {
-    "query": "What clinical risk score threshold is used for screening postmenopausal women under 65?",
-    "expected_chunk_ids": [
-      "osteoporosis-screening-final-recommendation_chk_005",
-      "osteoporosis-screening-final-recommendation_chk_012"
-    ]
-  },
-  {
-    "query": "What are the indications for vertebral fracture assessment (VFA) and lateral spine imaging?",
-    "expected_chunk_ids": [
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_062",
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_063"
-    ]
-  },
-  {
-    "query": "What WHO T-score criteria define osteopenia and osteoporosis on a DXA scan?",
-    "expected_chunk_ids": [
-      "osteoporosis-screening-final-recommendation_chk_017",
-      "osteoporosis-screening-final-recommendation_chk_018"
-    ]
-  },
-  {
-    "query": "What lifestyle modifications and vitamin D or calcium intakes are recommended for bone health?",
-    "expected_chunk_ids": [
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_075",
-      "osteoporosis-screening-final-recommendation_chk_025"
-    ]
-  },
-  {
-    "query": "Which first-line pharmacological treatments and bisphosphonates reduce fracture risk?",
-    "expected_chunk_ids": [
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_068",
-      "osteoporosis-screening-final-recommendation_chk_028"
-    ]
-  },
-  {
-    "query": "When should fracture risk be assessed in women under 65 and men under 70?",
-    "expected_chunk_ids": [
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_015",
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_016"
-    ]
-  },
-  {
+    "category": "direct",
     "query": "How is the Osteoporosis Self-Assessment Tool (OST) calculated and interpreted?",
     "expected_chunk_ids": [
       "osteoporosis-screening-final-recommendation_chk_022",
@@ -77,38 +32,161 @@
     ]
   },
   {
-    "query": "What anatomical sites should be measured during a DXA bone density scan?",
+    "category": "direct",
+    "query": "When should a DXA bone density scan be offered according to NICE guidelines?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_042"
+    ]
+  },
+  {
+    "category": "direct",
+    "query": "What are the indications for vertebral fracture assessment (VFA) and lateral spine imaging?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_062",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_063"
+    ]
+  },
+  {
+    "category": "multi_chunk",
+    "query": "Which clinical risk prediction tools are recommended for calculating 10-year fracture risk across NICE and USPSTF?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_030",
+      "osteoporosis-screening-final-recommendation_chk_022"
+    ]
+  },
+  {
+    "category": "multi_chunk",
+    "query": "Which first-line pharmacological treatments and bisphosphonates reduce fracture risk in postmenopausal women?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_068",
+      "osteoporosis-screening-final-recommendation_chk_028"
+    ]
+  },
+  {
+    "category": "multi_chunk",
+    "query": "What anatomical sites and criteria should be measured during a DXA bone density scan?",
     "expected_chunk_ids": [
       "osteoporosis-risk-assessment-pdf-66144025463749_chk_041",
       "osteoporosis-screening-final-recommendation_chk_017"
     ]
   },
   {
-    "query": "How does systemic glucocorticoid steroid therapy affect osteoporosis fracture risk?",
+    "category": "multi_chunk",
+    "query": "How does systemic glucocorticoid steroid therapy affect osteoporosis fracture risk and assessment thresholds?",
     "expected_chunk_ids": [
       "osteoporosis-risk-assessment-pdf-66144025463749_chk_017",
       "osteoporosis-risk-assessment-pdf-66144025463749_chk_036"
     ]
   },
   {
-    "query": "What are the clinical consequences and 1-year mortality associated with osteoporotic hip fractures?",
+    "category": "multi_chunk",
+    "query": "What are the clinical consequences, mortality, and disability associated with osteoporotic hip fractures?",
     "expected_chunk_ids": [
       "osteoporosis-screening-final-recommendation_chk_001",
       "osteoporosis-risk-assessment-pdf-66144025463749_chk_001"
     ]
   },
   {
-    "query": "When should anabolic agents such as teriparatide and romosozumab be considered?",
+    "category": "multi_chunk",
+    "query": "When should fracture risk be assessed in women under 65 and men under 70 with secondary risk factors?",
     "expected_chunk_ids": [
-      "osteoporosis-screening-final-recommendation_chk_028",
-      "osteoporosis-risk-assessment-pdf-66144025463749_chk_068"
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_015",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_016",
+      "osteoporosis-screening-final-recommendation_chk_012"
     ]
   },
   {
+    "category": "ambiguous",
     "query": "How should intermediate fracture risk results from prediction tools be managed?",
     "expected_chunk_ids": [
       "osteoporosis-risk-assessment-pdf-66144025463749_chk_033",
       "osteoporosis-risk-assessment-pdf-66144025463749_chk_041"
-    ]
+    ],
+    "notes": "Ambiguous because intermediate risk guidance spans FRAX risk category threshold tables (chk_033) and subsequent recommendation to perform DXA (chk_041)."
+  },
+  {
+    "category": "ambiguous",
+    "query": "When is screening indicated for younger postmenopausal women under 65?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_005",
+      "osteoporosis-screening-final-recommendation_chk_012",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_015"
+    ],
+    "notes": "Ambiguous because USPSTF uses clinical risk score matching 65yo women (chk_005, chk_012), while NICE specifies multiple secondary clinical risk factors (chk_015)."
+  },
+  {
+    "category": "ambiguous",
+    "query": "What role does calcium and vitamin D supplementation have in osteoporosis management?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_075",
+      "osteoporosis-screening-final-recommendation_chk_025",
+      "osteoporosis-screening-final-recommendation_chk_028"
+    ],
+    "notes": "Ambiguous because calcium and vitamin D are referenced both as foundational co-therapy with bisphosphonates (chk_028) and as primary prevention (chk_025, chk_075)."
+  },
+  {
+    "category": "ambiguous",
+    "query": "When should anabolic agents such as teriparatide or romosozumab be considered?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_028",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_068"
+    ],
+    "notes": "Ambiguous because guidelines discuss anabolic treatments under severe osteoporosis failure of antiresorptives (chk_028) and high fracture risk protocols (chk_068)."
+  },
+  {
+    "category": "ambiguous",
+    "query": "How often should bone mineral density (BMD) monitoring scans be repeated?",
+    "expected_chunk_ids": [
+      "osteoporosis-screening-final-recommendation_chk_019",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_043"
+    ],
+    "notes": "Ambiguous because rescreening intervals vary depending on baseline T-score (every 2-4 years vs longer intervals) and treatment monitoring protocols."
+  },
+  {
+    "category": "ambiguous",
+    "query": "What clinical criteria determine when a person should start pharmacological therapy?",
+    "expected_chunk_ids": [
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_068",
+      "osteoporosis-screening-final-recommendation_chk_028",
+      "osteoporosis-risk-assessment-pdf-66144025463749_chk_033"
+    ],
+    "notes": "Ambiguous because decision thresholds combine T-score <= -2.5, prior fragility fracture, and FRAX 10-year probability above intervention threshold."
+  },
+  {
+    "category": "out_of_scope",
+    "query": "What is the initial emergency management and defibrillation protocol for acute cardiac arrest?",
+    "expected_chunk_ids": [],
+    "expected_behavior": "refuse"
+  },
+  {
+    "category": "out_of_scope",
+    "query": "What are the recommended insulin dosing adjustments for type 1 diabetes management?",
+    "expected_chunk_ids": [],
+    "expected_behavior": "refuse"
+  },
+  {
+    "category": "out_of_scope",
+    "query": "How do you repair a broken vehicle alternator and replace the drive belt?",
+    "expected_chunk_ids": [],
+    "expected_behavior": "refuse"
+  },
+  {
+    "category": "out_of_scope",
+    "query": "What are the CDC quarantine guidelines for viral upper respiratory infections?",
+    "expected_chunk_ids": [],
+    "expected_behavior": "refuse"
+  },
+  {
+    "category": "out_of_scope",
+    "query": "What are the best culinary techniques and recipes for making Italian risotto?",
+    "expected_chunk_ids": [],
+    "expected_behavior": "refuse"
+  },
+  {
+    "category": "out_of_scope",
+    "query": "How should severe acute asthma bronchospasms in pediatric patients be treated?",
+    "expected_chunk_ids": [],
+    "expected_behavior": "refuse"
   }
 ]

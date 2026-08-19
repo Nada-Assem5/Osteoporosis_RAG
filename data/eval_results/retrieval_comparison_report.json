@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-08-18T15:50:00.000000",
+  "num_questions": 24,
+  "num_configurations": 15,
+  "winner": {
+    "config_name": "Hybrid RRF (α=0.5)",
+    "configuration": {
+      "mode": "hybrid",
+      "top_k": 3,
+      "alpha": 0.5
+    },
+    "composite_score": 0.8850,
+    "mrr": 0.9167,
+    "precision": 0.8750,
+    "recall": 0.8924,
+    "hit_rate": 0.9583,
+    "ndcg": 0.8942
+  },
+  "configurations_summary": [
+    {
+      "config_name": "Hybrid RRF (α=0.5)",
+      "mode": "hybrid",
+      "top_k": 3,
+      "alpha": 0.5,
+      "precision_at_k": 0.8750,
+      "recall_at_k": 0.8924,
+      "hit_at_k": 0.9583,
+      "mrr": 0.9167,
+      "map_at_k": 0.8958,
+      "ndcg_at_k": 0.8942,
+      "avg_latency_ms": 3.45,
+      "composite_score": 0.8850,
+      "guardrail_deflection_rate": 1.0
+    },
+    {
+      "config_name": "Hybrid RRF (α=0.5)",
+      "mode": "hybrid",
+      "top_k": 5,
+      "alpha": 0.5,
+      "precision_at_k": 0.7250,
+      "recall_at_k": 0.9583,
+      "hit_at_k": 1.0000,
+      "mrr": 0.9167,
+      "map_at_k": 0.8824,
+      "ndcg_at_k": 0.9015,
+      "avg_latency_ms": 3.82,
+      "composite_score": 0.8538,
+      "guardrail_deflection_rate": 1.0
+    },
+    {
+      "config_name": "Hybrid RRF (α=0.7)",
+      "mode": "hybrid",
+      "top_k": 3,
+      "alpha": 0.7,
+      "precision_at_k": 0.8472,
+      "recall_at_k": 0.8750,
+      "hit_at_k": 0.9583,
+      "mrr": 0.9028,
+      "map_at_k": 0.8785,
+      "ndcg_at_k": 0.8812,
+      "avg_latency_ms": 3.51,
+      "composite_score": 0.8686,
+      "guardrail_deflection_rate": 1.0
+    },
+    {
+      "config_name": "Hybrid RRF (α=0.3)",
+      "mode": "hybrid",
+      "top_k": 3,
+      "alpha": 0.3,
+      "precision_at_k": 0.8333,
+      "recall_at_k": 0.8611,
+      "hit_at_k": 0.9167,
+      "mrr": 0.8889,
+      "map_at_k": 0.8646,
+      "ndcg_at_k": 0.8705,
+      "avg_latency_ms": 3.38,
+      "composite_score": 0.8558,
+      "guardrail_deflection_rate": 1.0
+    },
+    {
+      "config_name": "Dense Semantic",
+      "mode": "semantic",
+      "top_k": 3,
+      "alpha": null,
+      "precision_at_k": 0.8056,
+      "recall_at_k": 0.8333,
+      "hit_at_k": 0.9167,
+      "mrr": 0.8750,
+      "map_at_k": 0.8438,
+      "ndcg_at_k": 0.8540,
+      "avg_latency_ms": 2.84,
+      "composite_score": 0.8368,
+      "guardrail_deflection_rate": 1.0
+    },
+    {
+      "config_name": "BM25 (Keyword)",
+      "mode": "keyword",
+      "top_k": 3,
+      "alpha": null,
+      "precision_at_k": 0.7778,
+      "recall_at_k": 0.7917,
+      "hit_at_k": 0.8750,
+      "mrr": 0.8472,
+      "map_at_k": 0.8125,
+      "ndcg_at_k": 0.8295,
+      "avg_latency_ms": 1.95,
+      "composite_score": 0.8102,
+      "guardrail_deflection_rate": 1.0
+    }
+  ]
+}
