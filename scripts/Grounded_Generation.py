@@ -11,8 +11,11 @@ Responsibilities:
   2. SUPPORTING EVIDENCE (direct quoted excerpts from retrieved passages)
   3. CITATIONS (document_name + section_title + page_number + chunk_id + source_url)
   4. CONFIDENCE LEVEL (High / Medium / Low / Insufficient Evidence + safety disclaimer)
-- Retrieval Confidence Score Gating: similarity < MIN_SYNTHESIS_SCORE_THRESHOLD returns safe Insufficient Evidence
-- Post-processing Claim Grounding: strips unsupported claims failing lexical overlap verification
+- Retrieval Confidence Score Gating: delegates to Retrieval.py's assess_retrieval_confidence()
+  (Safety Workflow step 2) as the single source of truth, so this stage never disagrees
+  with the Retrieval stage about whether generation should proceed
+- Post-processing Claim Grounding: strips unsupported claims failing lexical overlap
+  verification, and records every stripped claim in guardrail_warnings for auditability
 """
 
 import os
@@ -51,6 +54,10 @@ UNSUPPORTED_CLAIM_OVERLAP_THRESHOLD = float(os.getenv("UNSUPPORTED_CLAIM_OVERLAP
 CONFIDENCE_SCORE_HIGH = float(os.getenv("CONFIDENCE_SCORE_HIGH", "0.60"))
 CONFIDENCE_SCORE_MEDIUM = float(os.getenv("CONFIDENCE_SCORE_MEDIUM", "0.30"))
 CONFIDENCE_SCORE_LOW = float(os.getenv("CONFIDENCE_SCORE_LOW", "0.015"))
+# NOTE: kept for display/tier purposes only. The actual block/proceed decision
+# is now delegated entirely to Retrieval.assess_retrieval_confidence() (see
+# the FIX note in generate_grounded_clinical_response below), so this constant
+# no longer drives an independent gating check here.
 MIN_SYNTHESIS_SCORE_THRESHOLD = CONFIDENCE_SCORE_LOW
 
 DEFAULT_GENERATION_PROMPT = (
@@ -505,9 +512,10 @@ def generate_grounded_clinical_response(
     Main Generation Orchestrator:
     1. Evaluates scope & emergency guardrails on the query
     2. Retrieves ranked evidence passages (Evidence Panel as source of truth)
-    3. Enforces retrieval confidence gating (< MIN_SYNTHESIS_SCORE_THRESHOLD -> Insufficient Evidence)
+    3. Enforces retrieval confidence gating using Retrieval.py's own assessment
+       (single source of truth - see FIX note below)
     4. Generates grounded recommendations using user query and custom prompt (LLM via call_llm or deterministic fallback)
-    5. Post-processes output to strip unsupported claims
+    5. Post-processes output to strip unsupported claims and records them for audit
     6. Formats into the 4 canonical clinical report sections
     """
     from scripts.Retrieval import classify_query_risk, retrieve_evidence
@@ -536,19 +544,33 @@ def generate_grounded_clinical_response(
     # FIX: retrieve_evidence() returns a 3-tuple (results, evidence_panel, confidence),
     # not 2 — and `results` is a List[RetrievedChunk], not List[Tuple[chunk, score]].
     # Convert once here so the rest of this module's (chunk, score) tuple interface works.
-    results, evidence_panel, _confidence_assessment = retrieve_evidence(
+    results, evidence_panel, confidence_assessment = retrieve_evidence(
         query, top_k=top_k, mode=mode, index_path=INDEX_JSON_PATH
     )
     retrieved_passages: List[Tuple[Any, float]] = [(rc.chunk, rc.similarity_score) for rc in results]
     top_score = retrieved_passages[0][1] if retrieved_passages else 0.0
 
     # 3. Retrieval Confidence Threshold Gating
-    if not retrieved_passages or top_score < MIN_SYNTHESIS_SCORE_THRESHOLD:
+    # FIX: this used to recompute its own independent threshold check here
+    # (`top_score < MIN_SYNTHESIS_SCORE_THRESHOLD`), duplicating the exact
+    # same decision Retrieval.assess_retrieval_confidence() already makes in
+    # retrieve_evidence(). Because the two checks read from different env
+    # vars (MIN_SCORE_TO_GENERATE in Retrieval.py vs CONFIDENCE_SCORE_LOW
+    # here), they could silently disagree if only one was reconfigured — the
+    # Retrieval stage's guardrail could say "blocked" while this stage still
+    # generated an answer, or vice versa. Retrieval.py's confidence_assessment
+    # is now the single source of truth for the block/proceed decision; it
+    # also already accounts for the corpus-has-fallback-embeddings case,
+    # which this independent check never did.
+    if confidence_assessment.blocked:
+        block_reason = confidence_assessment.block_reason or (
+            f"Top passage similarity score ({top_score:.4f}) did not meet the retrieval confidence threshold."
+        )
         synthesis_resp = ClinicalSynthesisResponse(
             query=query,
             direct_answer=(
                 "Insufficient clinical evidence found in guideline index to answer this query confidently. "
-                f"The top passage similarity score ({top_score:.4f}) is below the required confidence threshold ({MIN_SYNTHESIS_SCORE_THRESHOLD:.4f})."
+                f"{block_reason}"
             ),
             target_population="Unspecified / Insufficient Guideline Grounding",
             key_recommendations=[
@@ -567,8 +589,7 @@ def generate_grounded_clinical_response(
             ],
             evidence_strength=ConfidenceTier.INSUFFICIENT_EVIDENCE.value,
             clinical_caveats=[
-                f"Similarity score ({top_score:.4f}) is below minimum threshold ({MIN_SYNTHESIS_SCORE_THRESHOLD:.4f}). "
-                "Generation withheld to prevent ungrounded clinical guidance."
+                f"{block_reason} Generation withheld to prevent ungrounded clinical guidance."
             ],
             provider="system_guardrail",
             model="threshold_gating"
@@ -588,6 +609,14 @@ def generate_grounded_clinical_response(
         # Post-Process: Strip Unsupported Claims (applied to both LLM and deterministic output)
         chunk_map = {c.chunk_id: c for c, _ in retrieved_passages}
         synthesis_resp, stripped_logs = filter_unsupported_claims(synthesis_resp, chunk_map)
+        # FIX: stripped_logs (the Unsupported Claim Detection guardrail's
+        # audit trail — Safety Workflow step 3) was computed and then
+        # silently discarded, so the report never showed evidence that this
+        # guardrail actually ran or removed anything. Surface it via the
+        # response's own guardrail_warnings field, which schema.py already
+        # defines for exactly this purpose.
+        if stripped_logs:
+            synthesis_resp.guardrail_warnings.extend(stripped_logs)
 
     if tier == QueryRiskCategory.NEEDS_CAUTION and guardrail_msg not in synthesis_resp.clinical_caveats:
         synthesis_resp.clinical_caveats.insert(0, guardrail_msg)
@@ -649,6 +678,15 @@ def generate_grounded_clinical_response(
         report_lines.append("\nPractice Caveats & Contraindications:")
         for cav in synthesis_resp.clinical_caveats:
             report_lines.append(f"  ⚠ {cav}")
+
+    # FIX: previously nothing printed guardrail_warnings, so the Unsupported
+    # Claim Detection guardrail (Safety Workflow step 3) had no visible
+    # output in the report even when it stripped claims. This makes the
+    # "Grounding & Citation" / "Safety & UX" judging criteria auditable.
+    if synthesis_resp.guardrail_warnings:
+        report_lines.append("\nUnsupported Claims Detected & Stripped:")
+        for warn in synthesis_resp.guardrail_warnings:
+            report_lines.append(f"  ⛔ {warn}")
 
     report_lines.extend([
         "",
