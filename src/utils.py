@@ -82,10 +82,10 @@ def clean_text(text: str) -> str:
 
 
 def strip_punctuation(text: str) -> str:
-    """Strip leading and trailing ASCII punctuation using string.punctuation."""
+    """Strip leading and trailing ASCII punctuation and whitespace using string.punctuation."""
     if not text:
         return ""
-    return text.strip(string.punctuation)
+    return text.strip().strip(string.punctuation)
 
 
 def count_tokens(text: str) -> int:

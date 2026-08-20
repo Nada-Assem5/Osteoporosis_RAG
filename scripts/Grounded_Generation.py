@@ -66,6 +66,103 @@ DEFAULT_GENERATION_PROMPT = (
 )
 
 
+# =====================================================================
+# Domain Scope Guard
+# =====================================================================
+
+# This RAG is intentionally limited to the osteoporosis / bone-health
+# guideline corpus. Retrieval similarity alone must NOT be used to decide
+# whether a question belongs to this domain, because generic PDF text
+# (tables of contents, headings, boilerplate, etc.) can receive a high
+# semantic similarity score for completely unrelated questions.
+DOMAIN_TERMS = {
+    "osteoporosis", "osteoporotic", "osteopenia",
+    "bone", "bone health", "bone density", "bone mass",
+    "fracture", "fractures", "fragility fracture", "vertebral fracture",
+    "dxa", "dexascan", "bmd", "bone mineral density",
+    "qct", "vfa", "vertebral fracture assessment",
+    "falls", "fall risk",
+    "bisphosphonate", "denosumab", "teriparatide",
+    "romosozumab", "alendronate", "risedronate", "zoledronate",
+    "calcium", "vitamin d",
+    "osteoporosis screening", "fracture risk",
+    "nice ng259", "ng259",
+    "uspstf osteoporosis", "osteoporosis screening"
+}
+
+# Terms that strongly indicate a generic non-clinical question.
+# They are not enough by themselves to reject a question if it also contains
+# a domain term; the domain check below always takes precedence.
+GENERIC_OFF_TOPIC_PATTERNS = [
+    r"\bcapital of\b",
+    r"\bprime minister of\b",
+    r"\bpresident of\b",
+    r"\bweather in\b",
+    r"\bpopulation of\b",
+    r"\bwho won\b",
+    r"\bfootball\b",
+    r"\bsoccer\b",
+    r"\brecipe\b",
+    r"\bmovie\b",
+    r"\bsong\b",
+    r"\bprogramming\b",
+    r"\bpython\b",
+    r"\bjavascript\b",
+    r"\bjava\b"
+]
+
+
+def _normalize_query_for_scope(query: str) -> str:
+    """Normalize a query for deterministic domain-scope matching."""
+    return re.sub(r"\s+", " ", (query or "").strip().lower())
+
+
+def is_query_in_domain(query: str) -> bool:
+    """
+    Return True only when the query contains clear evidence that it belongs
+    to this osteoporosis/bone-health guideline domain.
+
+    IMPORTANT:
+    This runs BEFORE retrieval. A retrieval score must never be allowed to
+    turn an unrelated question into a clinical answer.
+    """
+    q = _normalize_query_for_scope(query)
+
+    if not q:
+        return False
+
+    # A clear domain term is the strongest signal.
+    for term in DOMAIN_TERMS:
+        if re.search(r"(?<![a-z])" + re.escape(term) + r"(?![a-z])", q):
+            return True
+
+    # Explicitly generic/off-topic questions are rejected.
+    for pattern in GENERIC_OFF_TOPIC_PATTERNS:
+        if re.search(pattern, q):
+            return False
+
+    return False
+
+
+def build_out_of_scope_response(query: str) -> Dict[str, Any]:
+    """Build a clean user-facing response without performing retrieval."""
+    message = (
+        "Sorry, but this question is outside my scope.\n\n"
+        "I can only answer questions related to osteoporosis, bone health, "
+        "fracture risk, bone-density assessment, and the clinical guidelines "
+        "available in my knowledge base."
+    )
+    return {
+        "query": query,
+        "prompt": None,
+        "custom_prompt": None,
+        "status": "out_of_scope",
+        "risk_tier": "out_of_scope",
+        "message": message,
+        "output_text": message
+    }
+
+
 def compute_confidence_tier(top_score: float) -> ConfidenceTier:
     """Classify top retrieval similarity score into a canonical confidence tier."""
     if top_score >= CONFIDENCE_SCORE_HIGH:
@@ -75,6 +172,29 @@ def compute_confidence_tier(top_score: float) -> ConfidenceTier:
     elif top_score >= CONFIDENCE_SCORE_LOW:
         return ConfidenceTier.LOW
     return ConfidenceTier.INSUFFICIENT_EVIDENCE
+
+
+# =====================================================================
+# Small utility: safe attribute/key access for citation entries
+# =====================================================================
+
+def _cit_get(cit: Any, key: str, default: Any = None) -> Any:
+    """
+    Safely read a field off a citation entry, whether it's a plain dict
+    (as built by ClinicalSynthesizer._build_citations) or a Citation
+    object/pydantic model (if src.schema.ClinicalSynthesisResponse coerces
+    the citations field into typed Citation instances on assignment).
+
+    FIX: previously the report-formatting loop in
+    generate_grounded_clinical_response() called `cit.get(...)` directly,
+    which crashed with `'Citation' object has no attribute 'get'` whenever
+    the schema layer converted the citation dicts into Citation objects.
+    This helper works for both shapes so that conversion (or lack of it)
+    never breaks report generation.
+    """
+    if isinstance(cit, dict):
+        return cit.get(key, default)
+    return getattr(cit, key, default)
 
 
 # =====================================================================
@@ -274,44 +394,47 @@ class ClinicalSynthesizer:
 
         instruction_text = custom_prompt.strip() if (custom_prompt and custom_prompt.strip()) else DEFAULT_GENERATION_PROMPT
 
-        prompt = f"""You are an expert Comparative Clinical Guideline Synthesizer.
-Your sole role is to synthesize and COMPARE official clinical practice guidelines from multiple sources into clear, evidence-based guidance, explicitly surfacing agreements and disagreements between sources.
+        prompt = f"""You are a clinical evidence assistant.
+Answer the user's question naturally, clearly, and directly, as if you were explaining the result to them in a helpful conversation.
 
 USER GENERATION INSTRUCTION:
 {instruction_text}
 
-USER CLINICAL QUERY:
+USER QUESTION:
 "{query}"
 
-RETRIEVED GUIDELINE EVIDENCE (STRICT SOURCE OF TRUTH):
+RETRIEVED GUIDELINE EVIDENCE (YOUR ONLY SOURCE OF TRUTH):
 {evidence_text}
 
-MANDATORY GROUNDING & SAFETY INSTRUCTIONS:
-1. STRICT SOURCE OF TRUTH: Use ONLY the provided Retrieved Guideline Evidence. Do NOT use outside medical knowledge, assumptions, or ungrounded facts.
-2. EVIDENCE SYNTHESIZER PERSONA: You are an Evidence Synthesizer, NEVER an autonomous diagnostician. Do not diagnose the patient or prescribe unverified treatments.
-3. SOURCE SEPARATION: If evidence is retrieved from more than one guideline source, NEVER merge or average their recommendations into a single blended claim. Attribute every recommendation to its specific source (e.g., "NICE NG259" or "USPSTF 2025").
-4. CONFLICT FLAGGING: If two sources give different thresholds, ages, or recommendations for the same clinical question, explicitly flag this as a "source_conflict" rather than silently picking one or reconciling them.
-5. INLINE CITATIONS: Every clinical claim, recommendation, and finding MUST include an inline citation in the exact format [chunk_id] (e.g. [{retrieved_passages[0][0].chunk_id}]).
-6. TARGET POPULATION: Explicitly state the target patient demographic / clinical cohort indicated in the evidence, per source if they differ.
-7. INSUFFICIENT EVIDENCE: If the retrieved evidence does not contain sufficient facts to address the query or custom instruction, explicitly state that there is insufficient guideline evidence. Do not fill the gap with outside knowledge.
-8. OUTPUT FORMAT: Output a valid JSON object matching the schema below.
+IMPORTANT RULES:
+1. Use ONLY the evidence provided above. Do not add medical facts from your own knowledge.
+2. Answer the actual question first. Do not start with technical details about retrieval, similarity scores, chunks, or the RAG system.
+3. Write in natural, easy-to-read language.
+4. If the question asks for a comparison, explicitly compare the sources using simple wording such as "NICE..." and "USPSTF...".
+5. If evidence for one source is missing, say: "The retrieved evidence does not provide a clear recommendation from [source]." Do not guess.
+6. Do not merge recommendations from different guidelines.
+7. Every clinical claim must have an inline [chunk_id] citation.
+8. Mention important limitations only when they are supported by the retrieved evidence.
+9. Keep the answer concise. Avoid repeating the same recommendation in multiple sections.
+10. Do not mention internal implementation details such as similarity scores, confidence bands, chunk IDs (except citations), retrieval mode, or guardrails in the natural-language answer.
 
-JSON SCHEMA:
+Return valid JSON only:
+
 {{
-  "direct_answer": "Concise 2-3 sentence clinical summary answering the query with inline [chunk_id] citations for every claim.",
-  "target_population": "Exact target patient population indicated in the guidelines, noted per source if they differ.",
+  "direct_answer": "A natural 2-4 sentence answer that directly answers the user's question. Use source names when comparing guidelines and include [chunk_id] citations.",
+  "target_population": "Only if relevant to understanding the answer.",
   "key_recommendations": [
-    "Specific actionable recommendation with citation [chunk_id] and source name"
+    "Only the most important guideline findings, written naturally and briefly, with [chunk_id] citations."
   ],
   "source_conflicts": [
-    "Description of any disagreement between sources on this topic, citing both [chunk_id]s, or an empty list if none found."
+    "Only if the retrieved guidelines actually disagree. Otherwise return an empty list."
   ],
   "clinical_caveats": [
-    "Key contraindication, caution, or clinical boundary condition noted in the guidelines."
+    "Only important evidence limitations supported by the retrieved text. Otherwise return an empty list."
   ]
 }}
 
-Respond with valid JSON only:"""
+Return JSON only."""
         return prompt
 
     def _parse_llm_json(self, raw_text: str) -> Optional[Dict[str, Any]]:
@@ -510,8 +633,9 @@ def generate_grounded_clinical_response(
 ) -> Dict[str, Any]:
     """
     Main Generation Orchestrator:
-    1. Evaluates scope & emergency guardrails on the query
-    2. Retrieves ranked evidence passages (Evidence Panel as source of truth)
+    1. Rejects questions outside the osteoporosis/bone-health domain BEFORE retrieval
+    2. Evaluates safety/emergency guardrails on in-domain queries
+    3. Retrieves ranked evidence passages (Evidence Panel as source of truth)
     3. Enforces retrieval confidence gating using Retrieval.py's own assessment
        (single source of truth - see FIX note below)
     4. Generates grounded recommendations using user query and custom prompt (LLM via call_llm or deterministic fallback)
@@ -524,7 +648,17 @@ def generate_grounded_clinical_response(
     active_prompt = prompt if prompt is not None else custom_prompt
     effective_prompt = active_prompt.strip() if (active_prompt and active_prompt.strip()) else DEFAULT_GENERATION_PROMPT
 
-    # 1. Guardrail Safety Check
+    # 1. DOMAIN SCOPE CHECK — MUST happen BEFORE retrieval.
+    # Retrieval similarity is not a domain classifier. Unrelated questions can
+    # match generic guideline/PDF text (for example a table of contents) with a
+    # very high score. Stop those questions before they ever reach Retrieval.py.
+    if not is_query_in_domain(query):
+        out_of_scope = build_out_of_scope_response(query)
+        out_of_scope["prompt"] = active_prompt
+        out_of_scope["custom_prompt"] = active_prompt
+        return out_of_scope
+
+    # 2. Guardrail Safety Check
     # FIX: compare against the QueryRiskCategory enum values, not mismatched
     # snake_case strings — the old comparison never matched, silently
     # bypassing the emergency/out-of-scope refusal guardrail.
@@ -540,7 +674,7 @@ def generate_grounded_clinical_response(
             "output_text": f"\n[SAFETY & GUARDRAIL REFUSAL]\n  {guardrail_msg}\n"
         }
 
-    # 2. Retrieval & Evidence Panel Construction
+    # 3. Retrieval & Evidence Panel Construction
     # FIX: retrieve_evidence() returns a 3-tuple (results, evidence_panel, confidence),
     # not 2 — and `results` is a List[RetrievedChunk], not List[Tuple[chunk, score]].
     # Convert once here so the rest of this module's (chunk, score) tuple interface works.
@@ -550,7 +684,7 @@ def generate_grounded_clinical_response(
     retrieved_passages: List[Tuple[Any, float]] = [(rc.chunk, rc.similarity_score) for rc in results]
     top_score = retrieved_passages[0][1] if retrieved_passages else 0.0
 
-    # 3. Retrieval Confidence Threshold Gating
+    # 4. Retrieval Confidence Threshold Gating
     # FIX: this used to recompute its own independent threshold check here
     # (`top_score < MIN_SYNTHESIS_SCORE_THRESHOLD`), duplicating the exact
     # same decision Retrieval.assess_retrieval_confidence() already makes in
@@ -621,78 +755,93 @@ def generate_grounded_clinical_response(
     if tier == QueryRiskCategory.NEEDS_CAUTION and guardrail_msg not in synthesis_resp.clinical_caveats:
         synthesis_resp.clinical_caveats.insert(0, guardrail_msg)
 
-    # 4. Format 4 Canonical Sections
+    # 5. Format a conversational, assistant-like user-facing answer
     report_lines = [
-        "=" * 92,
-        "  CLINICAL PRACTICE GUIDELINE EVIDENCE SYNTHESIS",
-        "=" * 92,
-        f"Query: \"{query}\" [Mode: {mode.upper()} | Top Similarity: {top_score:.4f}]",
-        f"Safety Classification: {tier.value.upper()} ({guardrail_msg})"
-    ]
-    if active_prompt and active_prompt != DEFAULT_GENERATION_PROMPT:
-        report_lines.append(f"Custom Instruction   : \"{active_prompt}\"")
-
-    report_lines.extend([
-        "",
-        "SECTION 1: RECOMMENDATION & GUIDELINE ACTIONS",
-        "-" * 92,
-        f"Eligible Population: {synthesis_resp.target_population}",
+        "Clinical Guideline Answer",
         "",
         synthesis_resp.direct_answer,
-        ""
-    ])
-    for rec in synthesis_resp.key_recommendations:
-        report_lines.append(f"  • {rec}")
+    ]
 
-    report_lines.extend([
-        "",
-        "SECTION 2: SUPPORTING EVIDENCE (QUOTED PASSAGES)",
-        "-" * 92
-    ])
-    for i, (chunk, score) in enumerate(retrieved_passages, 1):
-        clean_excerpt = " ".join(chunk.text.split()[:45])
-        report_lines.append(f"  [{i}] (Score: {score:.4f}, Page {chunk.page_number}): \"{clean_excerpt}...\" [{chunk.chunk_id}]")
+    if synthesis_resp.key_recommendations:
+        report_lines.extend(["", "In short:"])
+        for rec in synthesis_resp.key_recommendations:
+            report_lines.append(f"• {rec}")
 
-    report_lines.extend([
-        "",
-        "SECTION 3: SOURCE LINEAGE & CITATIONS",
-        "-" * 92
-    ])
-    for cit in synthesis_resp.citations:
-        cid = cit.get("chunk_id", "")
-        doc = cit.get("document_name", cit.get("document_id", ""))
-        sec = cit.get("section_title", "General Clinical Guidance")
-        page = cit.get("page_number", 1)
-        url = cit.get("source_url", "")
-        url_str = f" | URL: {url}" if url else ""
-        report_lines.append(f"  • [{cid}] {doc} (Section: '{sec}', Page {page}){url_str}")
+    source_conflicts = getattr(synthesis_resp, "source_conflicts", None)
+    if source_conflicts:
+        report_lines.extend(["", "One important difference:"])
+        for conflict in source_conflicts:
+            report_lines.append(f"• {conflict}")
 
-    report_lines.extend([
-        "",
-        "SECTION 4: CONFIDENCE LEVEL & CLINICAL SAFETY DISCLAIMER",
-        "-" * 92,
-        f"Confidence Rating: {synthesis_resp.evidence_strength.upper()}",
-        f"Rationale        : Top passage retrieval score: {top_score:.4f} (Band Cutoff: High >= {CONFIDENCE_SCORE_HIGH:.2f}, Med >= {CONFIDENCE_SCORE_MEDIUM:.2f}, Low >= {CONFIDENCE_SCORE_LOW:.3f})"
-    ])
     if synthesis_resp.clinical_caveats:
-        report_lines.append("\nPractice Caveats & Contraindications:")
+        report_lines.extend(["", "A note on the evidence:"])
         for cav in synthesis_resp.clinical_caveats:
-            report_lines.append(f"  ⚠ {cav}")
+            report_lines.append(f"• {cav}")
 
-    # FIX: previously nothing printed guardrail_warnings, so the Unsupported
-    # Claim Detection guardrail (Safety Workflow step 3) had no visible
-    # output in the report even when it stripped claims. This makes the
-    # "Grounding & Citation" / "Safety & UX" judging criteria auditable.
+    # Keep only the most relevant evidence snippets.
+    report_lines.extend(["", "Evidence from the guidelines:"])
+    seen_chunks = set()
+    evidence_count = 0
+
+    for chunk, score in retrieved_passages:
+        cid = getattr(chunk, "chunk_id", "")
+        if cid in seen_chunks:
+            continue
+        seen_chunks.add(cid)
+
+        excerpt = " ".join(chunk.text.split())
+        if len(excerpt) > 300:
+            excerpt = excerpt[:300].rsplit(" ", 1)[0] + "..."
+
+        page = getattr(chunk, "page_number", 1)
+        report_lines.append(f'• "{excerpt}" [{cid}] — p. {page}')
+        evidence_count += 1
+
+        if evidence_count >= 2:
+            break
+
+    # Present sources in a compact, human-readable way.
+    report_lines.extend(["", "Sources:"])
+    seen_sources = set()
+
+    for cit in synthesis_resp.citations:
+        doc = _cit_get(cit, "document_name", "") or _cit_get(cit, "document_id", "")
+        sec = _cit_get(cit, "section_title", "General Clinical Guidance")
+        page = _cit_get(cit, "page_number", 1)
+        url = _cit_get(cit, "source_url", "")
+
+        source_key = (doc, page, url)
+        if source_key in seen_sources:
+            continue
+        seen_sources.add(source_key)
+
+        source_line = f"• {doc}"
+        if sec:
+            source_line += f" — {sec}"
+        if page:
+            source_line += f", p. {page}"
+        report_lines.append(source_line)
+
+        if url:
+            report_lines.append(f"  {url}")
+
+    # Keep confidence as a small, unobtrusive footer.
+    confidence = (
+        synthesis_resp.evidence_strength.value
+        if hasattr(synthesis_resp.evidence_strength, "value")
+        else synthesis_resp.evidence_strength
+    )
+    report_lines.extend(["", f"Evidence confidence: {confidence.capitalize()}"])
+
+    # Audit warnings are shown only when something was actually stripped.
     if synthesis_resp.guardrail_warnings:
-        report_lines.append("\nUnsupported Claims Detected & Stripped:")
-        for warn in synthesis_resp.guardrail_warnings:
-            report_lines.append(f"  ⛔ {warn}")
+        report_lines.extend([
+            "",
+            "Evidence check:",
+            "• Some claims were removed because they could not be verified against the retrieved guideline text."
+        ])
 
-    report_lines.extend([
-        "",
-        synthesis_resp.disclaimer,
-        "=" * 92
-    ])
+    report_lines.extend(["", synthesis_resp.disclaimer])
 
     formatted_output = "\n".join(report_lines)
     return {
@@ -729,9 +878,9 @@ if __name__ == "__main__":
 
     if not active_query:
         # Prompt user dynamically if no CLI argument is supplied
-        print("=" * 80)
+        print("_" * 80)
         print("  CLINICAL PRACTICE GUIDELINE RAG: GROUNDED GENERATION")
-        print("=" * 80)
+        print("_" * 80)
         user_input_query = input("\nEnter clinical query (or press Enter for default): ").strip()
         if not user_input_query:
             active_query = "When should a central DXA bone density scan be offered according to NICE guidelines?"

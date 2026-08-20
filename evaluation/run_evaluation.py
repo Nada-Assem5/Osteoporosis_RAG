@@ -31,7 +31,7 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from src.schema import Chunk, EvalQuestion
+from src.schema import Chunk, EvalQuestion, QueryRiskCategory
 from src.utils import count_tokens, compute_content_hash
 from scripts.Chunk import chunk_extracted_elements
 from scripts.Embeddings import generate_embeddings
@@ -159,7 +159,7 @@ class ExperimentCache:
                 pass
 
         chunk_dicts = [c.to_dict() for c in chunks]
-        embedded = generate_embeddings(chunk_dicts, model_name=model_name)
+        embedded, _run_stats = generate_embeddings(chunk_dicts, model_name=model_name)
         with open(emb_file, "w", encoding="utf-8") as f:
             json.dump(embedded, f, indent=2, ensure_ascii=False)
         return embedded
@@ -533,7 +533,7 @@ class GridExperimentRunner:
 
             if q.category == "out_of_scope":
                 lat = (time.perf_counter() - start_t) * 1000.0
-                is_def = (tier == "refuse_redirect")
+                is_def = (tier == QueryRiskCategory.REFUSE_REDIRECT)
                 score_v = 1.0 if is_def else 0.0
 
                 for k in k_values:
@@ -568,14 +568,16 @@ class GridExperimentRunner:
             lat = (time.perf_counter() - start_t) * 1000.0
             total_latency_ms += lat
 
-            top1_sim = results[0][1] if results else 0.0
+            retrieved_pairs: List[Tuple[Any, float]] = [(rc.chunk, rc.similarity_score) for rc in results]
+
+            top1_sim = retrieved_pairs[0][1] if retrieved_pairs else 0.0
             similarity_top1_total += top1_sim
 
             expected_ids = q.expected_chunk_ids
             num_expected = max(1, len(expected_ids))
 
             relevant_ranks = []
-            for rank_idx, (c_obj, sim_score) in enumerate(results, start=1):
+            for rank_idx, (c_obj, sim_score) in enumerate(retrieved_pairs, start=1):
                 similarity_all_total += sim_score
                 similarity_count += 1
 

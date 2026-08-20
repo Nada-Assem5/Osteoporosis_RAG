@@ -3,7 +3,7 @@
     "chunk_id": "0cbf9f5384e7_chk_ce71c170",
     "document_id": "0cbf9f5384e7",
     "document_name": "osteoporosis-risk-assessment-pdf-66144025463749",
-    "section_title": "1.5 DXA-based vertebral fracture assessment (VFA) scan ..............................",
+    "section_title": "Contents",
     "page_number": 3,
     "source_url": "https://www.nice.org.uk/guidance/ng259",
     "text": "Osteoporosis: risk assessment\n\nNICE guideline\n\nPublished: 29 July 2026\n\nwww.nice.org.uk/guidance/ng259\n\nYour responsibility\n\nThe recommendations in this guideline represent the view of NICE, arrived at after careful\n\nconsideration of the evidence available. When exercising their judgement, professionals\n\nand practitioners are expected to take this guideline fully into account, alongside the\n\nindividual needs, preferences and values of their patients or the people using their service.\n\nIt is not mandatory to apply the recommendations, and the guideline does not override the\n\nresponsibility to make decisions appropriate to the circumstances of the individual, in\n\nconsultation with them and their families and carers or guardian.\n\nAll problems (adverse events) related to a medicine or medical device used for treatment\n\nor in a procedure should be reported to the Medicines and Healthcare products Regulatory\n\nAgency using the Yellow Card Scheme.\n\nLocal commissioners and providers of healthcare have a responsibility to enable the\n\nguideline to be applied when individual professionals and people using services wish to\n\nuse it. They should do so in the context of local and national priorities for funding and\n\ndeveloping services, and in light of their duties to have due regard to the need to eliminate\n\nunlawful discrimination, to advance equality of opportunity and to reduce health\n\ninequalities. Nothing in this guideline should be interpreted in a way that would be\n\ninconsistent with complying with those duties.\n\nCommissioners and providers have a responsibility to promote an environmentally\n\nsustainable health and care system and should assess and reduce the environmental\n\nimpact of implementing NICE recommendations wherever possible.\n\nContents\n\nUsing this guideline ..................................................................................................................... 4\n\nFragility fracture risk assessment .............................................................................................. 5\n\n1.1 Risk factors for fragility fractures ................................................................................................... 5\n\n1.2 Electronic health records ................................................................................................................ 11\n\n1.3 Risk prediction tools ........................................................................................................................ 11\n\n1.4 Bone density assessment ............................................................................................................... 15\n\nIdentifying vertebral fragility fractures ......................................................................................20",
@@ -14,7 +14,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -35,7 +35,7 @@
         "Vertebral Fracture Assessment"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -56,7 +56,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -76,7 +76,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -95,7 +95,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -115,7 +115,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -136,7 +136,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -156,7 +156,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -175,7 +175,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -195,14 +195,14 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
     "chunk_id": "0cbf9f5384e7_chk_b9f7f79e",
     "document_id": "0cbf9f5384e7",
     "document_name": "osteoporosis-risk-assessment-pdf-66144025463749",
-    "section_title": "recommendation for research on identifying vertebral fractures because there is",
+    "section_title": "of fracture.",
     "page_number": 14,
     "source_url": "https://www.nice.org.uk/guidance/ng259",
     "text": "such as aromatase inhibitors or androgen deprivation therapy). They also noted that\n\nthe same risk prediction tool should be used throughout a person's care. This is\n\nbecause FRAX and QFracture assess risk differently, for example, quantity-dependent\n\nrisk factors may not be treated as continuous variables. Alcohol intake is measured in\n\nFRAX as either over or under 3 units per day, whereas in QFracture there are several\n\nlevels of alcohol intake. FRAX also has fewer criteria than QFracture so is less\n\ndetailed. In contrast, FRAX gives a risk score adjusted for mortality whereas QFracture\n\ndoes not. QFracture also includes oestrogen-only hormone replacement therapy\n\n(HRT) use in its assessment. The committee agreed that when doing the risk\n\nassessment, it is important to take into account that systemic HRT can reduce the risk\n\nof fracture.\n\nWhen assessing fragility fractures for some groups the committee agreed that advice\n\nfrom a specialist should be sought to understand the impact of potential causes or\n\nrisk factors on the person's fracture risk. For people under the age of 30 they agreed\n\nit is important to treat the underlying cause before any osteoporosis treatments are\n\nconsidered. Advice from a specialist is also needed when the person is suspected of\n\nhaving a rare form of osteoporosis or another rare bone disease because the person\n\nis likely to need different management to most people with osteoporosis.\n\nA single study was found on the risk prediction tool CFracture (developed in 2023)\n\nthat uses the same risk factors as QFracture. A recommendation for research to\n\nvalidate the CFracture tool was made because there is limited evidence and the\n\ncalculator is not currently available. There was 1 study (limited to women aged 65 and\n\nover) on the vertebral fracture clinical decision tool (Vfrac) that was developed to\n\nidentify people with a suspected vertebral fracture. The committee made a",
@@ -218,7 +218,7 @@
         "Adults with Secondary Risk Factors",
         "Women Aged >= 65"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -240,7 +240,7 @@
       "population": [
         "Women Aged >= 65"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -260,7 +260,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -280,7 +280,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -301,7 +301,7 @@
         "Vertebral Fracture Assessment"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -324,7 +324,7 @@
         "Adults with Secondary Risk Factors",
         "Men Aged >= 70"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -345,7 +345,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -366,7 +366,7 @@
       "population": [
         "Men Aged >= 70"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -387,7 +387,7 @@
       "population": [
         "Men Aged >= 70"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -409,7 +409,7 @@
       "population": [
         "Adults with Prior Fragility Fracture"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -430,7 +430,7 @@
         "Adults with Prior Fragility Fracture",
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -450,7 +450,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -472,7 +472,7 @@
         "Adults with Prior Fragility Fracture",
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -492,7 +492,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -511,14 +511,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
     "chunk_id": "0cbf9f5384e7_chk_7dc6f9fc",
     "document_id": "0cbf9f5384e7",
     "document_name": "osteoporosis-risk-assessment-pdf-66144025463749",
-    "section_title": "1.9 People whose condition did not meet the criteria for treatment",
+    "section_title": "change.",
     "page_number": 32,
     "source_url": "https://www.nice.org.uk/guidance/ng259",
     "text": "Full details of the evidence and the committee's discussion are in evidence review E:\n\neffectiveness of fragility fracture risk prediction tools.\n\nHow the recommendations might affect practice\n\nThe committee discussed that, in current practice, criteria for DXA scans and\n\ntreatment vary locally but in England they are usually based on NOGG guidance. The\n\nnew recommendations will therefore be a change in clinical practice. They agreed\n\nthat, based on the cost analysis, the new recommendations covering revised DXA\n\nscan and treatment criteria should be associated with lower DXA-related resource\n\nuse than the approach based on NOGG guidance. This is because when all scans\n\nrelating to starting treatment are taken into account, not just those needed to\n\ndetermine eligibility for treatment, anyone considered for treatment by the NOGG\n\napproach would receive a DXA scan before treatment is started. Treatment-related\n\nresource use was not anticipated to increase and may decrease because of better\n\ntargeting of treatment.\n\nBut the committee highlighted that risk assessment rates are currently low,\n\nparticularly for people who have not had a fragility fracture. If risk assessment\n\nincreases, resource use associated with DXA scans and treatment will also increase\n\nbecause more people will be identified. This will be irrespective of which criteria for\n\nDXA scans and treatment are used. The committee reiterated the importance of\n\nlimiting risk assessment for people who have not had a fragility fracture to those with\n\nclinical risk factors to ensure resource use is best targeted to those most likely to\n\nbenefit from treatment and to avoid unnecessary DXA scans.\n\nFollow-up for people not having treatment\n\n1.8 People who have declined or delayed treatment\n\n1.8.1\n\nAdvise people who have declined or delayed treatment:\n\nwhen and how to re-access the service and\n\nto contact their GP if they change their mind or their clinical circumstances\n\nchange.\n\n1.9 People whose condition did not meet the criteria for treatment\n\n1.9.1",
@@ -530,14 +530,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
     "chunk_id": "0cbf9f5384e7_chk_24989da7",
     "document_id": "0cbf9f5384e7",
     "document_name": "osteoporosis-risk-assessment-pdf-66144025463749",
-    "section_title": "1.10 Timing of follow-up DXA scans",
+    "section_title": "DXA scan.",
     "page_number": 34,
     "source_url": "https://www.nice.org.uk/guidance/ng259",
     "text": "when and how to re-access the service and\n\nto contact their GP if they change their mind or their clinical circumstances\n\nchange.\n\n1.9 People whose condition did not meet the criteria for treatment\n\n1.9.1\n\nFor people with a 10-year risk of major osteoporotic fracture of less than 10%, consider reassessing their risk using the same risk prediction tool used at the\n\nbaseline assessment:\n\nwhen there is any change in their clinical circumstances (for example, a\n\nfragility fracture or other new risk factor as listed in the section on risk\n\nfactors for fragility fractures) or\n\nat 5 years if there are no changes in clinical circumstances.\n\n1.9.2\n\nFor people with a 10-year risk of major osteoporotic fracture of 10% or more, or who had a DXA scan to assess their bone health, but whose condition did not\n\nmeet the criteria for treatment:\n\nconsider reassessing their BMD with a DXA scan (and a VFA if they meet the\n\ncriteria in the recommendations in the section on DXA-based VFA scan):\n\n- within 2 to 3 years if their condition was close to meeting the criteria for treatment, especially if they have a significant risk of accelerated bone loss or\n\n- if there is any change in their clinical circumstances (for example, a\n\nfragility fracture or other new risk factor as listed in the section on risk\n\nfactors for fragility fractures) unless this is within 2 years of their most\n\nrecent DXA scan\n\n- at 5 years if there are no changes in clinical circumstances.\n\nconsider their need for treatment without reassessing their BMD with a DXA\n\nscan if their clinical circumstances change within 2 years of their most recent\n\nDXA scan.\n\n1.10 Timing of follow-up DXA scans\n\n1.10.1\n\nDo not routinely repeat a DXA scan within 2 years of the person's most recent\n\nDXA scan unless there are exceptional circumstances.\n\nWhy the committee made the recommendations",
@@ -550,14 +550,14 @@
         "Vertebral Fracture Assessment"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
     "chunk_id": "0cbf9f5384e7_chk_6ee07187",
     "document_id": "0cbf9f5384e7",
     "document_name": "osteoporosis-risk-assessment-pdf-66144025463749",
-    "section_title": "1.10 Timing of follow-up DXA scans",
+    "section_title": "DXA scan.",
     "page_number": 35,
     "source_url": "https://www.nice.org.uk/guidance/ng259",
     "text": "1.10 Timing of follow-up DXA scans\n\n1.10.1\n\nDo not routinely repeat a DXA scan within 2 years of the person's most recent\n\nDXA scan unless there are exceptional circumstances.\n\nWhy the committee made the recommendations\n\nThere was no evidence on follow-up for people who had a risk assessment but had\n\nnot started treatment. The committee agreed it was important to advise people when\n\nthey could be reassessed and so made consensus recommendations.\n\nPeople who have declined or delayed treatment\n\nSome people whose condition has met the criteria for treatment may decline or delay\n\ntreatment. There can be several reasons for this including:\n\nto try lifestyle changes first\n\nto treat a different condition first (such as dental problems or cancer)\n\nadverse effects of treatment\n\npersonal reasons such as caring responsibilities.\n\nIn all of these situations, the committee agreed it was important to agree an\n\nappropriate time to revisit the person's decision with them, to ensure they have\n\naccess to treatment should they want it later, and to re-evaluate their risk because\n\nthis will increase with age, even if they have no new risk factors. Advice should also\n\nbe given on who to contact should their clinical circumstances change, or they\n\nchange their mind.\n\nPeople whose condition did not meet the criteria for treatment\n\nPeople who had a risk assessment but did not meet the criteria for treatment are still\n\nlikely to be at increased risk of fracture compared with the general population, and\n\nthis risk is likely to increase as they get older.\n\nSo, the committee agreed that people who have a 10-year fracture risk of less than 10% should be considered for reassessment at 5 years, unless their clinical\n\ncircumstances change. This time period would be long enough to see an age-related\n\nchange. But if there was a change in clinical circumstances that would negatively\n\nimpact bone health within 5 years, this could imply a change in risk and warrant\n\nreassessment. The committee agreed the same risk assessment tool used at the\n\nperson's baseline assessment should be used again to give an accurate reflection of a",
@@ -570,7 +570,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -592,7 +592,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -613,7 +613,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -633,7 +633,7 @@
       "population": [
         "Adults with Prior Fragility Fracture"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -654,7 +654,7 @@
       "population": [
         "Adults with Prior Fragility Fracture"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -676,7 +676,7 @@
         "Adults with Prior Fragility Fracture",
         "Women Aged >= 65"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -700,7 +700,7 @@
       "population": [
         "Adults with Prior Fragility Fracture"
       ],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
@@ -718,14 +718,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "Other"
+      "guideline_issuer": "NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE (NICE)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_a5ca11b9",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "RECOMMENDATION The USPSTF recommends screening for osteoporosis to prevent osteoporotic fractur",
+    "section_title": "CME at jamacmelookup.com",
     "page_number": 1,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "JAMA | USPreventiveServicesTaskForce | RECOMMENDATIONSTATEMENT Screening for Osteoporosis to Prevent Fractures US Preventive Services Task Force Recommendation Statement\n\nUS Preventive Services Task Force\n\nEditorial\n\nIMPORTANCE Osteoporotic fractures are associated with psychological distress, subsequent fractures, loss of independence, reduced ability to perform activities of daily living, and death.\n\nMultimedia\n\nRelated article and JAMA PatientPage\n\nOBJECTIVE The US Preventive Services Task Force (USPSTF) commissioned a systematic review to evaluate the evidence on the benefits and harms of screening for osteoporosis to prevent fractures in adults 40 years or older with no known diagnosis of osteoporosis or history of fragility fracture.\n\nPOPULATION Adults 40 years or older without known osteoporosis or history of fragility fractures.\n\nSupplementalcontent\n\nCME at jamacmelookup.com\n\nRelated article at jamanetworkopen.com\n\nEVIDENCE ASSESSMENT The USPSTF concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in women 65 years or older has moderate net benefit. The USPSTF concludes with moderate certainty that screening for osteoporosis to prevent osteoporotic fractures in postmenopausal women younger than 65 years at increased risk has moderate net benefit. The USPSTF concludes that the evidence is insufficient and the balance of benefits and harms for screening for osteoporosis to prevent osteoporotic fractures in men cannot be determined.",
@@ -739,7 +739,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -760,7 +760,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -781,7 +781,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -801,7 +801,7 @@
       "population": [
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -823,7 +823,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -844,7 +844,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -865,7 +865,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -883,7 +883,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -903,7 +903,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -924,7 +924,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -946,7 +946,7 @@
         "Women Aged >= 65",
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -965,7 +965,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -983,7 +983,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1003,7 +1003,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1021,7 +1021,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1039,7 +1039,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1060,7 +1060,7 @@
       "population": [
         "Adults with Secondary Risk Factors"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1079,7 +1079,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1098,7 +1098,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1121,7 +1121,7 @@
         "Adults with Secondary Risk Factors",
         "Men Aged >= 70"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1140,7 +1140,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1159,7 +1159,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1177,7 +1177,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1195,7 +1195,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1213,7 +1213,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1233,7 +1233,7 @@
         "Vertebral Fracture Assessment"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1251,7 +1251,7 @@
         "Vertebral Fracture Assessment"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1269,7 +1269,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1289,18 +1289,18 @@
         "Vertebral Fracture Assessment"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
-    "chunk_id": "2bb498bfcfe5_chk_d9ed9dc2",
+    "chunk_id": "2bb498bfcfe5_chk_ad2dc4de",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
     "section_title": "AccuracyofRiskAssessmentInstrumentstoIdentifyOsteoporosis Forty-threeuniquecohortsreportedondiagnosticaccuracyof15risk assessmentinstrumentsforidentifyingosteoporosis.Morethanonehalfofthecohortsincludedpopulationswithameanagebetween",
     "page_number": 8,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
-    "text": "HarmsofScreeningandTreatment Evidence on the harms of screening for osteoporosis is limited.1,46 TheSCOOPtrialreportednodifferenceinanxietybetweenparticipants in the screening and control groups.55\n\nSeveral trials reported on the harms of treatment of bisphosphonates. A pooled analysis of 21 RCTs found no significant differenceinseriousadverseevents.Onetrialreportedastatisticallysignificantincreaseingastrointestinaladverseeventsinthetreatment group compared with placebo61; however, a pooled analysis of 26 RCTs (representing 27 comparisons) found no significantly increased risk of gastrointestinal adverse events in participants takingbisphosphonatescomparedwiththosetakingplacebo.SixRCTs that reported on the incidence of atrial fibrillation found no statisticallysignificantincreasedrisk.ThreeRCTsreportingonincidence ofmyocardialinfarctionhadveryimpreciseRRestimateswithwide CIs because of small sample sizes and rare events.1,46",
-    "token_estimate": 206,
+    "text": "HarmsofScreeningandTreatment Evidence on the harms of screening for osteoporosis is limited.1,46 TheSCOOPtrialreportednodifferenceinanxietybetweenparticipants in the screening and control groups.55\n\nSeveral trials reported on the harms of treatment of bisphosphonates. A pooled analysis of 21 RCTs found no significant differenceinseriousadverseevents.Onetrialreportedastatisticallysignificantincreaseingastrointestinaladverseeventsinthetreatment group compared with placebo61; however, a pooled analysis of 26 RCTs (representing 27 comparisons) found no significantly increased risk of gastrointestinal adverse events in participants takingbisphosphonatescomparedwiththosetakingplacebo.SixRCTs that reported on the incidence of atrial fibrillation found no statisticallysignificantincreasedrisk.ThreeRCTsreportingonincidence ofmyocardialinfarctionhadveryimpreciseRRestimateswithwide CIs because of small sample sizes and rare events.1,46\n\nAlthough 1 study of zoledronic acid in men reported a statisticallysignificantincreaseinincidentmyocardialinfarction(RR,4.68 [95%CI,1.02-21.5]),thisoutcomewasnotstatisticallysignificantin 2 other RCTs.",
+    "token_estimate": 267,
     "metadata": {
       "topics": [
         "Pharmacological Interventions",
@@ -1308,18 +1308,18 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
-    "chunk_id": "2bb498bfcfe5_chk_d5a9ad09",
+    "chunk_id": "2bb498bfcfe5_chk_587e98c6",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
     "section_title": "AccuracyofRiskAssessmentInstrumentstoIdentifyOsteoporosis Forty-threeuniquecohortsreportedondiagnosticaccuracyof15risk assessmentinstrumentsforidentifyingosteoporosis.Morethanonehalfofthecohortsincludedpopulationswithameanagebetween",
     "page_number": 8,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
-    "text": "Although 1 study of zoledronic acid in men reported a statisticallysignificantincreaseinincidentmyocardialinfarction(RR,4.68 [95%CI,1.02-21.5]),thisoutcomewasnotstatisticallysignificantin 2 other RCTs. Relative risk estimates were imprecise and CIs were wideinallthesestudies.1,46Onecohortstudyofzoledronicacidusers found no statistically significant differences in atrial fibrillation (adjustedhazardratio[aHR],1.18[95%CI,0.99-1.40]),myocardial infarction (aHR, 0.92 [95% CI, 0.64-1.31]), or cardiovascular mortality (aHR, 0.97 [95% CI, 0.81-1.15]) but did find a statistically significant increased risk for heart failure (aHR, 1.32 [95% CI, 1.08- 1.61]),althoughitdidnotcontrolforknownconfoundersofheartfailuresuchasBMI,smokingandalcoholexposure,orhypertension.62 Osteonecrosisofthejawandatypicalfracturesofthefemurare potentialrareharmsofbisphosphonates.Fivetrialsofbisphosphonatesreportednocasesofosteonecrosisofthejaw,andnotrialsreportedonatypicalfemurfractures.1,46Acohortstudyofnewusers ofzoledronicacidreportedanincreasedriskofatypicalfemurfractures(aHR,2.46[95%CI,1.17-5.15]),62andacohortstudyofnewbisphosphonateusersreportedanincreasedriskofatypicalfemurfrac- tureswithbisphosphonateuse(aHR,1.53[95%CI,1.36-1.73])over ameanfollow-upof1year,63althoughbothstudiesmayhavebeen subjecttoresidualconfounding.Onesystematicreviewthatdidnot meetinclusioncriteriaforthecurrentreviewbecausenocomparator group of nonusers was included reported incidence estimates forosteonecrosisofthejawinindividualsusingbisphophonatesranging from 0.01% to 0.06%.64",
-    "token_estimate": 500,
+    "text": "Relative risk estimates were imprecise and CIs were wideinallthesestudies.1,46Onecohortstudyofzoledronicacidusers found no statistically significant differences in atrial fibrillation (adjustedhazardratio[aHR],1.18[95%CI,0.99-1.40]),myocardial infarction (aHR, 0.92 [95% CI, 0.64-1.31]), or cardiovascular mortality (aHR, 0.97 [95% CI, 0.81-1.15]) but did find a statistically significant increased risk for heart failure (aHR, 1.32 [95% CI, 1.08- 1.61]),althoughitdidnotcontrolforknownconfoundersofheartfailuresuchasBMI,smokingandalcoholexposure,orhypertension.62 Osteonecrosisofthejawandatypicalfracturesofthefemurare potentialrareharmsofbisphosphonates.Fivetrialsofbisphosphonatesreportednocasesofosteonecrosisofthejaw,andnotrialsreportedonatypicalfemurfractures.1,46Acohortstudyofnewusers ofzoledronicacidreportedanincreasedriskofatypicalfemurfractures(aHR,2.46[95%CI,1.17-5.15]),62andacohortstudyofnewbisphosphonateusersreportedanincreasedriskofatypicalfemurfrac- tureswithbisphosphonateuse(aHR,1.53[95%CI,1.36-1.73])over ameanfollow-upof1year,63althoughbothstudiesmayhavebeen subjecttoresidualconfounding.Onesystematicreviewthatdidnot meetinclusioncriteriaforthecurrentreviewbecausenocomparator group of nonusers was included reported incidence estimates forosteonecrosisofthejawinindividualsusingbisphophonatesranging from 0.01% to 0.06%.64",
+    "token_estimate": 440,
     "metadata": {
       "topics": [
         "Monitoring & Rescreening",
@@ -1327,7 +1327,7 @@
         "Risk Assessment Tools"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1346,7 +1346,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1367,7 +1367,7 @@
       "population": [
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1387,7 +1387,7 @@
       "population": [
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1408,7 +1408,7 @@
       "population": [
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1426,7 +1426,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1441,7 +1441,7 @@
     "metadata": {
       "topics": [],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1458,7 +1458,7 @@
         "Risk Assessment Tools"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
@@ -1476,14 +1476,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_2632286b",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "3. Sarafrazi N, Wambogo EA, Shepherd JA. Osteoporosis or Low Bone Mass in Older Adul",
+    "section_title": "REFERENCES",
     "page_number": 9,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "Disclaimer: Recommendations made by the USPSTF are independent of the US government. They should not be construed as an official position of AHRQ or the US Department of Health and Human Services.\n\nAdditional Contributions: We thank Howard Tracer, MD (AHRQ), who contributed to the writing of the manuscript, and Lisa Nicolella, MA (AHRQ), who assisted with coordination and editing.\n\nAdditional Information: Published by JAMA®- Journal of the American Medical Association under arrangement with the Agency for Healthcare Research and Quality (AHRQ). ©2025 AMA and United States Government, as represented by the Secretary of the Department of Health and Human Services (HHS), by assignment from the members of the United States Preventive Services Task Force (USPSTF). All rights reserved.\n\nREFERENCES\n\n1. Kahwati LC, Kistler CE, Booth G, et al. Screening for Osteoporosis to Prevent Fractures: An Evidence Review for the US Preventive Services Task Force. Evidence Synthesis No. 238. Agency for Healthcare Research and Quality; 2025. AHRQ publication 23-05312-EF-1.\n\n2. Dyer SM, Crotty M, Fairhall N, et al; Fragility Fracture Network (FFN) Rehabilitation Research Special Interest Group. A critical review of the long-term disability outcomes following hip fracture. BMC Geriatr. 2016;16(1):158. doi:10.1186/ s12877-016-0332-0\n\n3. Sarafrazi N, Wambogo EA, Shepherd JA. Osteoporosis or Low Bone Mass in Older Adults: United States, 2017-2018. NCHS Data Brief No. 45.",
@@ -1494,14 +1494,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_26ffae87",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "9. Kanis JA, Johnell O, Oden A, Dawson A, De Laet C, Jonsson B. Ten year probabiliti",
+    "section_title": "REFERENCES",
     "page_number": 10,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "3. Sarafrazi N, Wambogo EA, Shepherd JA. Osteoporosis or Low Bone Mass in Older Adults: United States, 2017-2018. NCHS Data Brief No. 45.\n\nNational Center for Health Statistics; 2021. doi:10. 15620/cdc:103477 4. QuickStats: percentage of adults aged (cid:3)50 years with osteoporosis, by race and Hispanic origin-United States, 2017-2018. MMWR Morb Mortal Wkly Rep. 2021;70(19):731. doi:10.15585/ mmwr.mm7019a5\n\n5. USPreventiveServicesTaskForce.USPreventive ServicesTaskForceProcedureManual.Published 2021.AccessedNovember18,2024.https://www. uspreventiveservicestaskforce.org/uspstf/aboutuspstf/methods-and-processes/procedure-manual\n\n6. Assessment of fracture risk and its application to screening for postmenopausal osteoporosis. Report of a WHO Study Group. World Health Organ Tech Rep Ser. 1994;843:1-129.\n\n7. International Society for Clinical Densitometry. Indications for Bone Mineral Density (BMD) Testing. Accessed May 15, 2024. https://iscd.org/learn/ official-positions/adult-positions\n\n8. Kanis JA; World Health Organization Scientific Group. Assessment of Osteoporosis at the Primary Health Care Level: Technical Report. World Health OrganizationCollaboratingCentreforMetabolicBone Diseases; 2008.",
@@ -1512,14 +1512,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_fe31b918",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "19. Kanis JA. Diagnosis of osteoporosis and assessment of fracture risk. Lancet. 2002",
+    "section_title": "REFERENCES",
     "page_number": 10,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "8. Kanis JA; World Health Organization Scientific Group. Assessment of Osteoporosis at the Primary Health Care Level: Technical Report. World Health OrganizationCollaboratingCentreforMetabolicBone Diseases; 2008.\n\n9. Kanis JA, Johnell O, Oden A, Dawson A, De Laet C, Jonsson B. Ten year probabilities of osteoporotic fractures according to BMD and diagnostic thresholds. Osteoporos Int. 2001;12(12):989-995. doi:10.1007/s001980170006\n\n10. Heaney RP. Bone mass, bone loss, and osteoporosis prophylaxis. Ann Intern Med. 1998;128 (4):313-314. doi:10.7326/0003-4819-128-4- 199802150-00014\n\n11. Richelson LS, Wahner HW, Melton LJ III, Riggs BL. Relative contributions of aging and estrogen deficiency to postmenopausal bone loss. N Engl J Med. 1984;311(20):1273-1275. doi:10.1056/ NEJM198411153112002\n\n12. Cummings SR, Nevitt MC, Browner WS, et al; Study of Osteoporotic Fractures Research Group. Risk factors for hip fracture in white women. N Engl J Med. 1995;332(12):767-773. doi:10.1056/ NEJM199503233321202\n\n13. Liu LH, Chandra M, Gonzalez JR, Lo JC. Racial and ethnic differences in hip fracture outcomes in men. Am J Manag Care. 2017;23(9):560-564.\n\nmineral density. J Am Coll Radiol. 2017;14(5S):S189- S202. doi:10.1016/j.jacr.2017.02.018",
@@ -1530,14 +1530,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_995cb44e",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "25. Fuggle NR, Curtis EM, Ward KA, Harvey NC, Dennison EM, Cooper C. Fracture predict",
+    "section_title": "REFERENCES",
     "page_number": 10,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "mineral density. J Am Coll Radiol. 2017;14(5S):S189- S202. doi:10.1016/j.jacr.2017.02.018\n\n19. Kanis JA. Diagnosis of osteoporosis and assessment of fracture risk. Lancet. 2002;359 (9321):1929-1936. doi:10.1016/S0140-6736(02) 08761-5\n\n20. Sanders KM, Nicholson GC, Watts JJ, et al. Half the burden of fragility fractures in the community occur in women without osteoporosis. When is fracture prevention cost-effective? Bone. 2006;38 (5):694-700. doi:10.1016/j.bone.2005.06.004\n\n21. Lo JC, Pressman AR, Chandra M, Ettinger B. Fracture risk tool validation in an integrated healthcare delivery system. Am J Manag Care. 2011; 17(3):188-194.\n\n22. Nguyen ND, Frost SA, Center JR, Eisman JA, Nguyen TV. Development of prognostic nomograms for individualizing 5-year and 10-year fracturerisks.OsteoporosInt.2008;19(10):1431-1444. doi:10.1007/s00198-008-0588-0\n\n23. Nguyen ND, Frost SA, Center JR, Eisman JA, Nguyen TV. Development of a nomogram for individualizing hip fracture risk in men and women. Osteoporos Int. 2007;18(8):1109-1117. doi:10.1007/ s00198-007-0362-8\n\n24. FRAX Fracture Risk Assessment Tool. Charts to download. Accessed November 18, 2024. https:// www.sheffield.ac.uk/FRAX/charts.aspx",
@@ -1548,14 +1548,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_8c52baf1",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "34. Koh LK, Sedrine WB, Torralba TP, et al; Osteoporosis Self-Assessment Tool for Asi",
+    "section_title": "REFERENCES",
     "page_number": 10,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "24. FRAX Fracture Risk Assessment Tool. Charts to download. Accessed November 18, 2024. https:// www.sheffield.ac.uk/FRAX/charts.aspx\n\n25. Fuggle NR, Curtis EM, Ward KA, Harvey NC, Dennison EM, Cooper C. Fracture prediction, imaging and screening in osteoporosis. Nat Rev Endocrinol. 2019;15(9):535-547. doi:10.1038/s41574- 019-0220-8\n\n26. Kanis JA, Harvey NC, Johansson H, Odén A, Leslie WD, McCloskey EV. FRAX Update. J Clin Densitom. 2017;20(3):360-367. doi:10.1016/j.jocd. 2017.06.022\n\n27. Kanis JA, McCloskey E, Johansson H, Odén A, Leslie WD. FRAX(®) with and without bone mineral density. Calcif Tissue Int. 2012;90(1):1-13. doi:10. 1007/s00223-011-9544-7\n\n28. Dawson-Hughes B, Tosteson AN, Melton LJ III, et al; National Osteoporosis Foundation Guide Committee. Implications of absolute fracture risk assessment for osteoporosis practice guidelines in the USA. Osteoporos Int. 2008;19(4):449-458. doi:10.1007/s00198-008-0559-5\n\n(Baltimore). 2016;95(20):e3415. doi:10.1097/MD. 0000000000003415",
@@ -1566,14 +1566,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_5b4cc634",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "39. Lewiecki EM, Chastek B, Sundquist K, et al. Osteoporotic fracture trends in a pop",
+    "section_title": "REFERENCES",
     "page_number": 10,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "(Baltimore). 2016;95(20):e3415. doi:10.1097/MD. 0000000000003415\n\n34. Koh LK, Sedrine WB, Torralba TP, et al; Osteoporosis Self-Assessment Tool for Asians (OSTA) Research Group. A simple tool to identify asian women at increased risk of osteoporosis. Osteoporos Int. 2001;12(8):699-705. doi:10.1007/ s001980170070\n\n35. Cadarette SM, Jaglal SB, Kreiger N, McIsaac WJ, Darlington GA, Tu JV. Development and validation of the Osteoporosis Risk Assessment Instrument to facilitate selection of women for bone densitometry. CMAJ. 2000;162(9):1289-1294.\n\n36. Gourlay ML, Fine JP, Preisser JS, et al; Study of Osteoporotic Fractures Research Group. Bone-density testing interval and transition to osteoporosis in older women. N Engl J Med. 2012; 366(3):225-233. doi:10.1056/NEJMoa1107142\n\n37. Kanis JA, Cooper C, Dawson-Hughes B, et al; International Osteoporosis Foundation. FRAX and ethnicity. Osteoporos Int. 2020;31(11):2063-2067. doi:10.1007/s00198-020-05631-6\n\n38. Lewiecki EM, Wright NC, Singer AJ. Racial disparities, FRAX, and the care of patients with osteoporosis.OsteoporosInt.2020;31(11):2069-2071. doi:10.1007/s00198-020-05655-y",
@@ -1585,14 +1585,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_7a6744b0",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "15. Lo JC, Chandra M, Lee C, Darbinian JA, Ramaswamy M, Ettinger B. Bone mineral dens",
+    "section_title": "REFERENCES",
     "page_number": 10,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "39. Lewiecki EM, Chastek B, Sundquist K, et al. Osteoporotic fracture trends in a population of US managed care enrollees from 2007 to 2017. Osteoporos Int. 2020;31(7):1299-1304. doi:10.1007/ s00198-020-05334-y\n\n40. Bliuc D, Nguyen ND, Milch VE, Nguyen TV, Eisman JA, Center JR. Mortality risk associated with low-trauma osteoporotic fracture and subsequent fracture in men and women. JAMA. 2009;301(5): 513-521. doi:10.1001/jama.2009.50\n\n41. Kannegaard PN, van der Mark S, Eiken P, Abrahamsen B. Excess mortality in men compared with women following a hip fracture. National analysis of comedications, comorbidity and survival. Age Ageing. 2010;39(2):203-209. doi:10. 1093/ageing/afp221\n\n42. Drake MT, Murad MH, Mauck KF, et al. Clinical review. Risk factors for low bone mass-related fractures in men: a systematic review and meta-analysis. J Clin Endocrinol Metab. 2012;97(6): 1861-1870. doi:10.1210/jc.2011-3058\n\n14. Lo JC, Zheng P, Grimsrud CD, et al. Racial/ethnic differences in hip and diaphyseal femur fractures. Osteoporos Int. 2014;25(9):2313-2318. doi:10.1007/ s00198-014-2750-1",
@@ -1602,14 +1602,14 @@
         "Risk Assessment Tools"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_f780184c",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "31. LeBoff MS, Greenspan SL, Insogna KL, et al. The clinician’s guide to prevention a",
+    "section_title": "REFERENCES",
     "page_number": 10,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "15. Lo JC, Chandra M, Lee C, Darbinian JA, Ramaswamy M, Ettinger B. Bone mineral density in older U.S. Filipino, Chinese, Japanese, and White women. J Am Geriatr Soc. 2020;68(11):2656-2661. doi:10.1111/jgs.16785\n\n16. Walker MD, Babbar R, Opotowsky AR, et al. A referent bone mineral density database for Chinese American women. Osteoporos Int. 2006;17 (6):878-887. doi:10.1007/s00198-005-0059-9\n\n17. Lo JC, Kim S, Chandra M, Ettinger B. Applying ethnic-specific bone mineral density T-scores to Chinese women in the USA. Osteoporos Int. 2016;27(12):3477-3484. doi:10.1007/s00198-016- 3673-9\n\n18. Ward RJ, Roberts CC, Bencardino JT, et al; Expert Panel on Musculoskeletal Imaging. ACR Appropriateness Criteria® osteoporosis and bone\n\n29. Vyas DA, Eisenstein LG, Jones DS. Hidden in plain sight-reconsidering the use of race correction in clinical algorithms. N Engl J Med. 2020;383(9): 874-882. doi:10.1056/NEJMms2004740\n\n30. Lewiecki EM, Erb SF. Racial disparities and inequalities in the management of patients with osteoporosis. Orthop Nurs. 2022;41(2):125-134. doi:10.1097/NOR.0000000000000832",
@@ -1620,14 +1620,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_ea43fed4",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "45. Curry SJ, Krist AH, Owens DK, et al; US Preventive Services Task Force. Screening",
+    "section_title": "REFERENCES",
     "page_number": 10,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "31. LeBoff MS, Greenspan SL, Insogna KL, et al. The clinician’s guide to prevention and treatment of osteoporosis. Osteoporos Int. 2022;33(10):2049- 2102. doi:10.1007/s00198-021-05900-y\n\n32. Reid HW, Selvan B, Batch BC, Lee RH. The break in FRAX: Equity concerns in estimating fracture risk in racial and ethnic minorities. J Am Geriatr Soc. 2021;69(9):2692-2695. doi:10.1111/jgs. 17316\n\n33. Chen SJ, Chen YJ, Cheng CH, Hwang HF, Chen CY, Lin MR. Comparisons of different screening tools for identifying fracture/osteoporosis risk among community-dwelling older people. Medicine\n\n43. Nicholson WK, Silverstein M, Wong JB, et al; US Preventive Services Task Force. Interventions to prevent falls in community-dwelling older adults: US Preventive Services Task Force recommendation statement. JAMA. 2024;332(1):51- 57. doi:10.1001/jama.2024.8481\n\n44. Grossman DC, Curry SJ, Owens DK, et al; US Preventive Services Task Force. Vitamin D, calcium, or combined supplementation for the primary prevention of fractures in community-dwelling adults: US Preventive Services Task Force recommendation statement. JAMA. 2018;319(15):1592-1599.doi:10.1001/jama.2018.3185",
@@ -1639,14 +1639,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_cc956bc9",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "55. Shepstone L, Lenaghan E, Cooper C, et al; SCOOP Study Team. Screening in the comm",
+    "section_title": "Task Force. JAMA. Published January 14, 2025. doi:10.1001/jama.2024.21653",
     "page_number": 11,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "45. Curry SJ, Krist AH, Owens DK, et al; US Preventive Services Task Force. Screening for osteoporosis to prevent fractures: US Preventive Services Task Force recommendation statement. JAMA. 2018;319(24):2521-2531. doi:10.1001/jama. 2018.7498\n\n46. Kahwati LC, Kistler CE, Booth G, et al. Screening for osteoporosis to prevent fractures: a systematic review for the US Preventive Services\n\nTask Force. JAMA. Published January 14, 2025. doi:10.1001/jama.2024.21653\n\n47. Stewart A, Kumar V, Reid DM. Long-term fracture prediction by DXA and QUS: a 10-year prospective study. J Bone Miner Res. 2006;21(3): 413-418. doi:10.1359/JBMR.051205\n\n48. Gourlay ML, Ritter VS, Fine JP, et al; Osteoporotic Fractures in Men (MrOS) Study Group. Comparison of fracture risk assessment tools in older men without prior hip or spine fracture: the MrOS study. Arch Osteoporos. 2017;12 (1):91. doi:10.1007/s11657-017-0389-1\n\n49. Marques A, Ferreira RJ, Santos E, Loza E, Carmona L, da Silva JA. The accuracy of osteoporotic fracture risk prediction tools: a systematic review and meta-analysis. Ann Rheum Dis. 2015;74(11):1958-1967. doi:10.1136/ annrheumdis-2015-207907\n\nHealth Initiative Study. JAMA Intern Med. 2023;183 (7):696-704.doi:10.1001/jamainternmed.2023.1253",
@@ -1657,14 +1657,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_cb154ab6",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "64. Anastasilakis AD, Pepe J, Napoli N, et al. Osteonecrosis of the jaw and antiresor",
+    "section_title": "Task Force. JAMA. Published January 14, 2025. doi:10.1001/jama.2024.21653",
     "page_number": 11,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "Health Initiative Study. JAMA Intern Med. 2023;183 (7):696-704.doi:10.1001/jamainternmed.2023.1253\n\n55. Shepstone L, Lenaghan E, Cooper C, et al; SCOOP Study Team. Screening in the community to reduce fractures in older women (SCOOP): a randomised controlled trial. Lancet. 2018; 391(10122):741-747. doi:10.1016/S0140-6736(17) 32640-5\n\n56. Rubin KH, Rothmann MJ, Holmberg T, et al. Effectiveness of a two-step population-based osteoporosis screening program using FRAX: the randomized Risk-stratified Osteoporosis Strategy Evaluation (ROSE) study. Osteoporos Int. 2018;29 (3):567-578. doi:10.1007/s00198-017-4326-3\n\n57. Merlijn T, Swart KM, van Schoor NM, et al. The effect of a screening and treatment program for the prevention of fractures in older women: a randomized pragmatic trial. J Bone Miner Res. 2019;34(11):1993-2000. doi:10.1002/jbmr.3815\n\nstudy using Danish and Swedish health registries. Bone. 2020;134:115296. doi:10.1016/j.bone.2020. 115296\n\n63. LeeYK,ByunDW,JungSM,etal. Bisphosphonatesuseandriskofsubtrochantericand diaphysealfemurfracturesinKorea:resultsfromthe NationalClaimRegistry.CalcifTissueInt.2019;104(3): 313-319.doi:10.1007/s00223-018-0493-2",
@@ -1676,14 +1676,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_bc21578b",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "53. Crandall CJ, Larson J, LaCroix A, et al. Predicting fracture risk in younger post",
+    "section_title": "Task Force. JAMA. Published January 14, 2025. doi:10.1001/jama.2024.21653",
     "page_number": 11,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "64. Anastasilakis AD, Pepe J, Napoli N, et al. Osteonecrosis of the jaw and antiresorptive agents in benign and malignant diseases: a critical review organized by the ECTS. J Clin Endocrinol Metab. 2022;107(5):1441-1460.doi:10.1210/clinem/dgab888\n\n65. Thériault G, Limburg H, Klarenbach S, et al; Canadian Task Force on Preventive Health Care. Recommendations on screening for primary prevention of fragility fractures. CMAJ. 2023;195 (18):E639-E649. doi:10.1503/cmaj.221219\n\n50. Sun X, Chen Y, Gao Y, et al. Prediction models for osteoporotic fractures risk: a systematic review andcriticalappraisal.AgingDis.2022;13(4):1215-1238. doi:10.14336/AD.2021.1206\n\n51. Adami G, Biffi A, Porcu G, et al. A systematic review on the performance of fracture risk assessment tools: FRAX, DeFRA, FRA-HS. J Endocrinol Invest. 2023;46(11):2287-2297. doi:10. 1007/s40618-023-02082-8\n\n52. Crandall CJ, Larson JC, Watts NB, et al. Comparison of fracture risk prediction by the US Preventive Services Task Force strategy and two alternative strategies in women 50-64 years old in the Women’s Health Initiative. J Clin Endocrinol Metab. 2014;99(12):4514-4522. doi:10.1210/jc.2014- 2332",
@@ -1694,14 +1694,14 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_c9b5b494",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "61. Grey A, Bolland M, Wong S, Horne A, Gamble G, Reid IR. Low-dose zoledronate in os",
+    "section_title": "Task Force. JAMA. Published January 14, 2025. doi:10.1001/jama.2024.21653",
     "page_number": 11,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "53. Crandall CJ, Larson J, LaCroix A, et al. Predicting fracture risk in younger postmenopausal women: comparison of the Garvan and FRAX risk calculators in the Women’s Health Initiative Study. J Gen Intern Med. 2019;34(2):235-242. doi:10.1007/ s11606-018-4696-z\n\n54. Crandall CJ, Larson JC, Schousboe JT, et al. Race and ethnicity and fracture prediction among younger postmenopausal women in the Women’s\n\n58. Boonen S, Reginster JY, Kaufman JM, et al. Fracture risk and zoledronic acid therapy in men with osteoporosis. N Engl J Med. 2012;367(18):1714- 1723. doi:10.1056/NEJMoa1204061\n\n59. Cummings SR, San Martin J, McClung MR, et al; FREEDOM Trial. Denosumab for prevention of fractures in postmenopausal women with osteoporosis. N Engl J Med. 2009;361(8):756-765. doi:10.1056/NEJMoa0809493\n\n60. Orwoll E, Teglbjærg CS, Langdahl BL, et al. A randomized, placebo-controlled study of the effects of denosumab for the treatment of men with low bone mineral density. J Clin Endocrinol Metab. 2012;97(9):3161-3169. doi:10.1210/jc.2012- 1569",
@@ -1715,14 +1715,14 @@
       "population": [
         "Younger Postmenopausal Women (< 65)"
       ],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   },
   {
     "chunk_id": "2bb498bfcfe5_chk_cf7b6ef8",
     "document_id": "2bb498bfcfe5",
     "document_name": "osteoporosis-screening-final-recommendation",
-    "section_title": "69. American Academy of Family Physicians. Choosing Wisely: DEXA for Osteoporosis. Ac",
+    "section_title": "Task Force. JAMA. Published January 14, 2025. doi:10.1001/jama.2024.21653",
     "page_number": 11,
     "source_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening",
     "text": "61. Grey A, Bolland M, Wong S, Horne A, Gamble G, Reid IR. Low-dose zoledronate in osteopenic postmenopausal women: a randomized controlled trial. J Clin Endocrinol Metab. 2012;97(1):286-292. doi:10.1210/jc.2011-2081\n\n62. Rubin KH, Möller S, Choudhury A, et al. Cardiovascular and skeletal safety of zoledronic acid in osteoporosis observational, matched cohort\n\n66. Camacho PM, Petak SM, Binkley N, et al. American Association of Clinical Endocrinologists/ American College of Endocrinology clinical practice guidelines for the diagnosis and treatment of postmenopausal osteoporosis-2020 update. Endocr Pract. 2020;26(suppl 1):1-46. doi:10.4158/ GL-2020-0524SUPPL\n\n67. American College of Obstetricians and Gynecologists. Osteoporosis prevention, screening, and diagnosis: ACOG Clinical Practice Guideline No. 1. Obstet Gynecol. 2021;138(3):494-506. doi:10. 1097/AOG.0000000000004514\n\n68. American Academy of Family Physicians. Osteoporosis Screening to Prevent Fractures. Accessed November 18, 2024. https://www.aafp. org/family-physician/patient-care/clinicalrecommendations/all-clinical-recommendations/ osteoporosis.html\n\n69. American Academy of Family Physicians. Choosing Wisely: DEXA for Osteoporosis. Accessed November 18, 2024. https://www.aafp.org/familyphysician/patient-care/clinicalrecommendations/all-clinical-recommendations/ cw-osteoporosis.html",
@@ -1734,7 +1734,7 @@
         "Screening & Diagnosis"
       ],
       "population": [],
-      "guideline_issuer": "USPSTF"
+      "guideline_issuer": "U.S. PREVENTIVE SERVICES TASK FORCE (USPSTF)"
     }
   }
 ]

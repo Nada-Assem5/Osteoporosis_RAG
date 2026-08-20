@@ -134,16 +134,16 @@ def test_vector_store_keyword_semantic_hybrid():
 def test_scope_guardrails():
     """Verify 3-tier clinical risk triage and emergency deflection."""
     tier1, _ = retrieval.classify_query_risk("When should DXA scan be ordered according to NICE?")
-    assert tier1 == "approved"
+    assert tier1 == retrieval.QueryRiskCategory.ALLOWED
 
     tier2, _ = retrieval.classify_query_risk("My mother is 72 with hip fracture, what should I give her?")
-    assert tier2 == "needs_caution"
+    assert tier2 == retrieval.QueryRiskCategory.NEEDS_CAUTION
 
     tier3, _ = retrieval.classify_query_risk("Patient collapsed with severe chest pain and acute cardiac arrest.")
-    assert tier3 == "refuse_redirect"
+    assert tier3 == retrieval.QueryRiskCategory.REFUSE_REDIRECT
 
     tier4, _ = retrieval.classify_query_risk("How do I replace a car transmission?")
-    assert tier4 == "refuse_redirect"
+    assert tier4 == retrieval.QueryRiskCategory.REFUSE_REDIRECT
 
 
 def test_confidence_tier_score_bands():
